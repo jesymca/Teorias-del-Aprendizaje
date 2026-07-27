@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Humanismo — Wiki Teorias del Aprendizaje | UPTPC</title>
+  <meta name="description" content="Modulo del Humanismo: autores, postulados e impacto en la educacion actual. Maslow, Rogers, Knowles, Combs. UPTPC — Jose Herrera." />
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+
+  <!-- Estilos minimos: solo animaciones fade-in y barra de progreso -->
+  <style>
+    .fade-in { opacity:0; transition:opacity .7s ease, transform .7s ease; transform:translateY(18px); }
+    .fade-in.visible { opacity:1; transform:translateY(0); }
+    .timeline-card { transition: border-color .3s ease, box-shadow .3s ease; }
+    #reading-progress { position:fixed; top:0; left:0; height:3px; background:var(--bs-primary); z-index:9999; width:0; transition:width .2s ease; }
+  </style>
+</head>
+<body class="bg-white">
+
+  <!-- Barra de progreso de lectura -->
+  <div id="reading-progress"></div>
+
+  <!-- Header (inyectado por JS) -->
+  <div id="wiki-header"></div>
+
+  <!-- ═══ BREADCRUMB ═══ -->
+  <nav aria-label="breadcrumb" class="bg-light py-2 border-bottom">
+    <div class="container">
+      <ol class="breadcrumb mb-0 small">
+        <li class="breadcrumb-item"><a href="../index.html" class="text-decoration-none"><i class="bi bi-house-door me-1"></i>Inicio</a></li>
+        <li class="breadcrumb-item"><a href="../index.html#modulos" class="text-decoration-none">Modulos</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Humanismo</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- ═══ HERO ═══ -->
+  <section class="py-5 text-center bg-white">
+    <div class="container fade-in">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <span class="badge bg-primary rounded-pill mb-3 px-3 py-2 fs-6">1950 — 1970</span>
+          <div class="mb-3">
+            <i class="bi bi-heart" style="font-size:3.5rem; color:#0a2a6c;"></i>
+          </div>
+          <h1 class="display-5 fw-bold mb-3" style="color:#0a2a6c;">Humanismo</h1>
+          <p class="lead text-secondary mb-4">El humanismo en educacion surge como respuesta critica al reduccionismo del conductismo y al excesivo racionalismo del cognitivismo temprano. Esta corriente situa a la persona en el centro del proceso educativo, enfatizando el desarrollo integral — emocional, social y cognitivo — del aprendiz. A diferencia de las teorias que conciben al estudiante como recipiente pasivo o como procesador de informacion, el humanismo postula que todo ser humano posee una tendencia innata hacia la auto-realizacion y el crecimiento personal, y que la educacion debe crear las condiciones propicias para que esa tendencia se manifieste plenamente. En este modulo exploraremos los autores fundamentales, los postulados basicos y el impacto perdurable de esta perspectiva en la educacion contemporanea.</p>
+          <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <a href="#autores" class="btn btn-primary"><i class="bi bi-people me-2"></i>Autores Principales</a>
+            <a href="#postulados" class="btn btn-outline-primary"><i class="bi bi-list-check me-2"></i>Postulados</a>
+            <a href="#impacto" class="btn btn-outline-primary"><i class="bi bi-graph-up me-2"></i>Impacto Actual</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ AUTORES PRINCIPALES ═══ -->
+  <section id="autores" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5 fade-in">
+        <h2 class="fw-bold" style="color:#0a2a6c;"><i class="bi bi-people me-2"></i>Autores Principales</h2>
+        <p class="text-secondary">Pensadores que fundamentaron la perspectiva humanista en la educacion y la psicologia del aprendizaje</p>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Abraham Maslow -->
+        <div class="col-md-6 col-lg-3 fade-in">
+          <div class="card border-light timeline-card shadow-sm h-100">
+            <div class="card-header bg-primary text-white text-center py-3">
+              <i class="bi bi-triangle-half fs-2 mb-2"></i>
+              <h5 class="fw-bold mb-0">Abraham Maslow</h5>
+              <small>1908 — 1970</small>
+            </div>
+            <div class="card-body">
+              <p class="small">Psicologo estadounidense considerado el padre del humanismo en psicologia. Maslow propuso que la motivacion humana se organiza de manera jerarquica en una piramide de necesidades: desde las fisiologicas basicas hasta la auto-realizacion en la cima. Su tesis central es que el ser humano posee una tendencia natural hacia el crecimiento y que, cuando las necesidades inferiores estan satisfechas, emerge la motivacion para alcanzar el maximo potencial personal. En el ambito educativo, su teoria implica que los estudiantes no pueden aprender eficazmente si sus necesidades de seguridad, pertenencia y estima no estan cubiertas. La auto-realizacion — el deseo de convertirse en todo lo que uno es capaz de ser — se convierte asi en la meta suprema del proceso formativo, y la educacion debe estructurarse para facilitar ese recorrido ascendente.</p>
+              <span class="badge bg-primary bg-opacity-10 text-primary">Jerarquia de necesidades</span>
+              <span class="badge bg-primary bg-opacity-10 text-primary">Auto-realizacion</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carl Rogers -->
+        <div class="col-md-6 col-lg-3 fade-in">
+          <div class="card border-light timeline-card shadow-sm h-100">
+            <div class="card-header bg-primary text-white text-center py-3">
+              <i class="bi bi-chat-heart fs-2 mb-2"></i>
+              <h5 class="fw-bold mb-0">Carl Rogers</h5>
+              <small>1902 — 1987</small>
+            </div>
+            <div class="card-body">
+              <p class="small">Psicologo clinico y educador que desarrollo el enfoque centrado en la persona. Rogers traslado los principios de la terapia no directiva al aula, argumentando que el aprendizaje significativo solo ocurre cuando el estudiante se siente aceptado, comprendido y valorado incondicionalmente. Introdujo tres condiciones esenciales para la facilitacion del aprendizaje: la autenticidad del facilitador, la aceptacion positiva incondicional y la empatia comprensiva. Para Rogers, el docente no es una autoridad que transmite conocimiento, sino un facilitador que crea un clima psicologico propicio para que el estudiante explore, asuma riesgos y construya su propio significado. Su influencia en la pedagogia humanista ha sido profunda, sentando las bases de la educacion centrada en el aprendiz y de las practicas de tutoria y acompanamiento que hoy se consideran fundamentales en la formacion docente.</p>
+              <span class="badge bg-primary bg-opacity-10 text-primary">Enfoque centrado en la persona</span>
+              <span class="badge bg-primary bg-opacity-10 text-primary">Empatia en educacion</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Malcolm Knowles -->
+        <div class="col-md-6 col-lg-3 fade-in">
+          <div class="card border-light timeline-card shadow-sm h-100">
+            <div class="card-header bg-primary text-white text-center py-3">
+              <i class="bi bi-mortarboard fs-2 mb-2"></i>
+              <h5 class="fw-bold mb-0">Malcolm Knowles</h5>
+              <small>1913 — 1997</small>
+            </div>
+            <div class="card-body">
+              <p class="small">Educador estadounidense que sistematizo la andragogia como teoria del aprendizaje adulto. Knowles distinguio entre pedagogia — orientada a la ensenanza de ninos — y andragogia — orientada al aprendizaje de adultos —, argumentando que los adultos aprenden de manera fundamentalmente diferente: son autonomos, poseen experiencia previa valiosa, buscan aprendizaje relevante para su vida real y prefieren un enfoque centrado en problemas. Sus seis principios andragogicos (necesidad de conocer, autoconcepto, experiencia previa, disposicion, orientacion y motivacion) han transformado la educacion de adultos en todo el mundo. Su trabajo es particularmente relevante en la educacion superior, la formacion corporativa y los programas de educacion continua, donde se reconoce que el aprendiz adulto no es un recipiente vacio sino un agente activo con intereses, necesidades y saberes propios que deben ser integrados en el proceso formativo.</p>
+              <span class="badge bg-primary bg-opacity-10 text-primary">Andragogia</span>
+              <span class="badge bg-primary bg-opacity-10 text-primary">Aprendizaje adulto</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Arthur Combs -->
+        <div class="col-md-6 col-lg-3 fade-in">
+          <div class="card border-light timeline-card shadow-sm h-100">
+            <div class="card-header bg-primary text-white text-center py-3">
+              <i class="bi bi-eye fs-2 mb-2"></i>
+              <h5 class="fw-bold mb-0">Arthur Combs</h5>
+              <small>1912 — 1999</small>
+            </div>
+            <div class="card-body">
+              <p class="small">Psicologo y educador que aporto la psicologia perceptual al campo educativo. Combs sostenia que el comportamiento humano no puede entenderse sin comprender como la persona percibe su mundo: lo que el individuo cree y siente determina su conducta mas que la realidad objetiva. En educacion, esto implica que el aprendizaje es un proceso subjetivo y que el docente debe comprender el marco perceptual del estudiante para facilitar experiencias significativas. Combs argumento que los maestros eficaces comparten caracteristicas perceptuales: se perciben a si mismos como adecuados, perciben a los alumnos como dignos de confianza y capaces, y perciben su trabajo como una oportunidad de contribuir al crecimiento humano. Su obra "El maestro humano" es un referente en la formacion docente humanista, enfatizando que la calidad de la relacion profesor-alumno es el factor mas determinante en el aprendizaje significativo.</p>
+              <span class="badge bg-primary bg-opacity-10 text-primary">Psicologia perceptual</span>
+              <span class="badge bg-primary bg-opacity-10 text-primary">Maestro humano</span>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- row -->
+    </div>
+  </section>
+
+  <!-- ═══ POSTULADOS BASICOS ═══ -->
+  <section id="postulados" class="py-5 bg-white">
+    <div class="container">
+      <div class="text-center mb-5 fade-in">
+        <h2 class="fw-bold" style="color:#0a2a6c;"><i class="bi bi-list-check me-2"></i>Postulados Basicos</h2>
+        <p class="text-secondary">Principios fundamentales que definen la perspectiva humanista del aprendizaje</p>
+      </div>
+
+      <div class="row justify-content-center fade-in">
+        <div class="col-lg-10">
+          <div class="accordion" id="accordionPostulados">
+
+            <!-- Postulado 1 -->
+            <div class="accordion-item border">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#postulado1" aria-expanded="true" aria-controls="postulado1">
+                  <i class="bi bi-1-circle me-2 text-primary"></i>
+                  <strong>Educacion integral de la persona</strong>
+                </button>
+              </h2>
+              <div id="postulado1" class="accordion-collapse collapse show" data-bs-parent="#accordionPostulados">
+                <div class="accordion-body">
+                  <p>El humanismo educativo sostiene que la formacion no puede reducirse a la transmision de conocimientos cognitivos o academicos. La educacion debe abordar a la persona en su totalidad, integrando las dimensiones emocional, social, etica y cognitiva. Un estudiante que domina contenidos pero carece de habilidades emocionales, de relacion interpersonal o de sentido etico no ha alcanzado una formacion plena. Esta perspectiva cuestiona la fragmentacion del curriculo en asignaturas aisladas y promueve enfoques interdisciplinarios y holistas que conectan el aprendizaje con la vida cotidiana del estudiante. En la practica, esto se traduce en la inclusion de actividades que favorecen la expresion emocional, la colaboracion, la reflexion etica y el desarrollo de la identidad personal dentro del proceso educativo. La educacion integral busca formar ciudadanos completos, no solo profesionales competentes, reconociendo que el desarrollo humano es un proceso multidimensional que trasciende lo meramente intelectual.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Postulado 2 -->
+            <div class="accordion-item border">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#postulado2" aria-expanded="false" aria-controls="postulado2">
+                  <i class="bi bi-2-circle me-2 text-primary"></i>
+                  <strong>La motivacion intrinseca es mas poderosa que la extrinseca</strong>
+                </button>
+              </h2>
+              <div id="postulado2" class="accordion-collapse collapse" data-bs-parent="#accordionPostulados">
+                <div class="accordion-body">
+                  <p>Los humanistas argumentan que las recompensas externas — calificaciones, premios, reconocimientos — pueden generar cumplimiento superficial, pero no aprendizaje profundo ni duradero. La motivacion intrinseca, que surge del interes genuino, la curiosidad y el deseo de comprender, es el motor mas poderoso del aprendizaje. Cuando un estudiante se involucra en una actividad porque la encuentra significativa, desafiante o placentera en si misma, el aprendizaje es mas profundo, mas transferible y mas sostenible en el tiempo. Este postulado tiene implicaciones directas para el diseno curricular: en lugar de depender de sistemas de castigos y recompensas para controlar la conducta del estudiante, las instituciones educativas deben crear experiencias que despierten la curiosidad natural, que conecten con los intereses personales y que permitan al aprendiz experimentar la satisfaccion intrinseca del descubrimiento y la comprension. La investigacion contemporanea en psicologia de la motivacion, como los trabajos de Deci y Ryan sobre la teoria de la autodeterminacion, ha confirmado empiricamente este principio humanista.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Postulado 3 -->
+            <div class="accordion-item border">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#postulado3" aria-expanded="false" aria-controls="postulado3">
+                  <i class="bi bi-3-circle me-2 text-primary"></i>
+                  <strong>La auto-realizacion como meta suprema del aprendizaje</strong>
+                </button>
+              </h2>
+              <div id="postulado3" class="accordion-collapse collapse" data-bs-parent="#accordionPostulados">
+                <div class="accordion-body">
+                  <p>Inspirado por la jerarquia de necesidades de Maslow, el humanismo postula que el objetivo ultimo de la educacion es facilitar la auto-realizacion del individuo: el proceso mediante el cual una persona desarrolla plenamente sus potencialidades y se convierte en la mejor version de si misma. La auto-realizacion no es un estado estatico sino un proceso continuo de crecimiento que implica autoconocimiento, creatividad, autonomia moral y capacidad de contribuir a la comunidad. En terminos educativos, esto significa que el curriculo, la pedagogia y la evaluacion deben orientarse hacia el desarrollo del potencial unico de cada estudiante, no hacia la estandarizacion de resultados. La educacion humanista reconoce que cada persona tiene talentos, intereses y ritmos diferentes, y que el sistema educativo debe ser lo suficientemente flexible para acomodar esa diversidad. Las personas auto-realizadas, segun Maslow, se caracterizan por su creatividad, su capacidad de pensar de forma independiente, su sentido del humor, su aceptacion de si mismas y su compromiso con valores trascendentes.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Postulado 4 -->
+            <div class="accordion-item border">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#postulado4" aria-expanded="false" aria-controls="postulado4">
+                  <i class="bi bi-4-circle me-2 text-primary"></i>
+                  <strong>El docente como facilitador, no como autoridad</strong>
+                </button>
+              </h2>
+              <div id="postulado4" class="accordion-collapse collapse" data-bs-parent="#accordionPostulados">
+                <div class="accordion-body">
+                  <p>Uno de los postulados mas transformadores del humanismo es la redefinicion del rol docente. En lugar de concebir al maestro como una figura de autoridad que deposita conocimiento en mentes pasivas — siguiendo el modelo bancario criticado por Freire —, el humanismo propone al docente como un facilitador que crea las condiciones optimas para que el estudiante aprenda por si mismo. El facilitador no abandona su responsabilidad pedagogica; al contrario, la ejerce de manera mas compleja y sofisticada: disena ambientes de aprendizaje enriquecidos, formula preguntas estimulantes, ofrece retroalimentacion constructiva, modela la autenticidad y la empatia, y acompana al estudiante en su proceso de descubrimiento. Este enfoque requiere que el docente posea un alto grado de inteligencia emocional, capacidad de escucha activa y disposicion genuina para poner al estudiante en el centro. La formacion docente humanista, por tanto, no se limita a la preparacion tecnica sino que incluye el desarrollo personal y la reflexion sobre las propias creencias, valores y actitudes frente al aprendizaje.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Postulado 5 -->
+            <div class="accordion-item border">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#postulado5" aria-expanded="false" aria-controls="postulado5">
+                  <i class="bi bi-5-circle me-2 text-primary"></i>
+                  <strong>Aprendizaje autodirigido y significativo</strong>
+                </button>
+              </h2>
+              <div id="postulado5" class="accordion-collapse collapse" data-bs-parent="#accordionPostulados">
+                <div class="accordion-body">
+                  <p>El humanismo sostiene que el aprendizaje mas efectivo y duradero es aquel que el individuo dirige por si mismo y que percibe como significativo para su vida. El aprendizaje autodirigido implica que el estudiante participa activamente en la definicion de sus objetivos, la seleccion de estrategias y la evaluacion de sus resultados. No significa aprender en aislamiento, sino asumir la responsabilidad del propio proceso formativo con la orientacion y el apoyo del facilitador. El aprendizaje significativo, en el sentido rogeriano, se distingue del aprendizaje memoristico o mecanico porque involucra a la persona completa — pensamientos, sentimientos y acciones — y porque se integra en la experiencia vital del aprendiz. Cuando un estudiante percibe que lo que aprende tiene relevancia para sus proyectos, sus relaciones o su comprension del mundo, la motivacion, la retencion y la transferencia del conocimiento se incrementan notablemente. Este principio fundamenta las metodologias activas, el aprendizaje basado en proyectos, los contratos de aprendizaje y las practicas de autoevaluacion que se han generalizado en la educacion moderna.</p>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- accordion -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ IMPACTO EN LA EDUCACION ACTUAL ═══ -->
+  <section id="impacto" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5 fade-in">
+        <h2 class="fw-bold" style="color:#0a2a6c;"><i class="bi bi-graph-up me-2"></i>Impacto en la Educacion Actual</h2>
+        <p class="text-secondary">Como los principios humanistas han transformado la practica educativa contemporanea</p>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- 1. Pedagogia centrada en la persona -->
+        <div class="col-md-6 col-lg-4 fade-in">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="card-body p-4">
+              <div class="rounded-circle bg-primary bg-opacity-10 d-inline-flex align-items-center justify-content-center mb-3" style="width:56px;height:56px;">
+                <i class="bi bi-person-check fs-4 text-primary"></i>
+              </div>
+              <h5 class="fw-bold" style="color:#0a2a6c;">Pedagogia centrada en la persona</h5>
+              <p class="small text-secondary">La influencia de Rogers ha impregnado profundamente la educacion moderna. La pedagogia centrada en la persona implica que el diseno curricular, la metodologia y la evaluacion se organizan en torno a las necesidades, intereses y ritmos del estudiante, no en torno a la comodidad del sistema o del docente. En la practica, esto se manifiesta en la personalizacion del aprendizaje, los planes de estudio flexibles, las tutorias individualizadas y los enfoques diferenciados que reconocen la diversidad del aula. Universidades como la Open University y modelos como el flipped classroom incorporan principios de autonomia del aprendiz que son directamente tributarios del humanismo rogeriano. La tendencia actual hacia la personalizacion impulsada por tecnologia — adaptive learning, plataformas inteligentes — es, en esencia, una extension digital del principio humanista de poner al aprendiz en el centro del proceso educativo.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Inteligencia emocional -->
+        <div class="col-md-6 col-lg-4 fade-in">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="card-body p-4">
+              <div class="rounded-circle bg-primary bg-opacity-10 d-inline-flex align-items-center justify-content-center mb-3" style="width:56px;height:56px;">
+                <i class="bi bi-emoji-smile fs-4 text-primary"></i>
+              </div>
+              <h5 class="fw-bold" style="color:#0a2a6c;">Inteligencia emocional en el curriculo</h5>
+              <p class="small text-secondary">El postulado humanista de la educacion integral ha encontrado su expresion contemporanea en los programas de inteligencia emocional y educacion socioemocional. Escuelas y universidades de todo el mundo incorporan ahora competencias emocionales — autoconciencia, autorregulacion, empatia, habilidades sociales — como componentes curriculares explicitos, no como complementos opcionales. Modelos como el SEL (Social and Emotional Learning) de CASEL, implementado en mas de 140 paises, tienen raices directas en la vision humanista de Maslow y Rogers. La investigacion demuestra que los programas de educacion socioemocional mejoran no solo el bienestar de los estudiantes sino tambien su rendimiento academico, su conducta y sus relaciones interpersonales. En America Latina, iniciativas como la educacion para la paz en Colombia y los programas de convivencia escolar en Chile y Mexico reflejan este compromiso con la formacion integral que el humanismo postulo desde mediados del siglo XX.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Autonomia y eleccion del estudiante -->
+        <div class="col-md-6 col-lg-4 fade-in">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="card-body p-4">
+              <div class="rounded-circle bg-primary bg-opacity-10 d-inline-flex align-items-center justify-content-center mb-3" style="width:56px;height:56px;">
+                <i class="bi bi-compass fs-4 text-primary"></i>
+              </div>
+              <h5 class="fw-bold" style="color:#0a2a6c;">Autonomia y eleccion del estudiante</h5>
+              <p class="small text-secondary">El principio humanista de la autodireccion ha inspirado modelos educativos que otorgan al estudiante mayor poder de decision sobre su propio aprendizaje. Los sistemas de creditos electivos, los itinerarios formativos personalizados, los contratos de aprendizaje y los portafolios de evidencias son manifestaciones concretas de este principio. En la educacion superior, el modelo de competencias y el enfoque por resultados de aprendizaje permiten al estudiante seleccionar rutas formativas coherentes con sus intereses y metas profesionales. En la educacion basica, movimientos como la educacion democratica y las escuelas libres — donde los estudiantes participan en la gobernanza de la institucion y en la definicion de su curriculo — representan la aplicacion mas radical del principio de autonomia. La investigacion indica que cuando los estudiantes tienen voz y eleccion, su motivacion intrinseca, su compromiso y su rendimiento academico aumentan significativamente.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Movimientos de aprendizaje a lo largo de la vida -->
+        <div class="col-md-6 col-lg-4 fade-in">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="card-body p-4">
+              <div class="rounded-circle bg-primary bg-opacity-10 d-inline-flex align-items-center justify-content-center mb-3" style="width:56px;height:56px;">
+                <i class="bi bi-infinity fs-4 text-primary"></i>
+              </div>
+              <h5 class="fw-bold" style="color:#0a2a6c;">Aprendizaje a lo largo de la vida</h5>
+              <p class="small text-secondary">La vision humanista de la auto-realizacion como proceso continuo ha fundamentado los movimientos de aprendizaje a lo largo de la vida (lifelong learning). La UNESCO, la OCDE y la Union Europea han adoptado este paradigma como eje de sus politicas educativas, reconociendo que la formacion no termina con la escolaridad formal sino que es un proceso permanente de desarrollo personal y profesional. Los programas de educacion continua, las certificaciones profesionales, los mooc, las plataformas de microcredenciales y los sistemas de reconocimiento de aprendizajes previos son instrumentos de esta filosofia. En Venezuela, la Mision Sucre y los programas de educacion universitaria para adultos responden a este principio de inclusividad y continuidad formativa. El humanismo proporciono la justificacion filosofica: si la auto-realizacion es un proceso que no termina, la educacion tampoco debe tener una fecha de caducidad.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Marco de la andragogia -->
+        <div class="col-md-6 col-lg-4 fade-in">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="card-body p-4">
+              <div class="rounded-circle bg-primary bg-opacity-10 d-inline-flex align-items-center justify-content-center mb-3" style="width:56px;height:56px;">
+                <i class="bi bi-person-workspace fs-4 text-primary"></i>
+              </div>
+              <h5 class="fw-bold" style="color:#0a2a6c;">Marcos de educacion de adultos</h5>
+              <p class="small text-secondary">La andragogia de Knowles ha transformado radicalmente la forma en que se concibe la educacion de adultos. Sus principios — que los adultos necesitan conocer el por que de lo que aprenden, que se autoperciben como responsables de sus decisiones, que aportan experiencia valiosa al proceso formativo, que estan dispuestos a aprender cuando enfrentan necesidades reales, que su orientacion es centrada en problemas y que su motivacion es predominantemente intrinseca — son ahora la base de los programas de educacion para adultos en todo el mundo. Los modelos de formacion corporativa, los programas de capacitacion laboral, la educacion comunitaria y los diplomados para profesionales se disenian bajo estos principios. La educacion superior a distancia, que ha experimentado un crecimiento exponencial, se fundamenta en la andragogia: respeta la autonomia del adulto, conecta con su experiencia y ofrece flexibilidad para compatibilizar estudio con responsabilidades laborales y familiares.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Educacion holistica y bienestar -->
+        <div class="col-md-6 col-lg-4 fade-in">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="card-body p-4">
+              <div class="rounded-circle bg-primary bg-opacity-10 d-inline-flex align-items-center justify-content-center mb-3" style="width:56px;height:56px;">
+                <i class="bi bi-flower1 fs-4 text-primary"></i>
+              </div>
+              <h5 class="fw-bold" style="color:#0a2a6c;">Educacion holistica y bienestar escolar</h5>
+              <p class="small text-secondary">La perspectiva humanista de la formacion integral ha impulsado el movimiento de educacion holistica, que busca integrar lo academico con lo emocional, lo social, lo artistico, lo espiritual y lo fisico. Escuelas holistas en mas de 50 paises aplican este enfoque, promoviendo la atencion plena (mindfulness), las artes expresivas, la educacion al aire libre y la conexion comunitaria como dimensiones esenciales del curriculo. Paralelamente, el enfoque en el bienestar y la salud mental en las escuelas se ha convertido en una prioridad global. La pandemia de COVID-19 acelero esta tendencia, revelando que el bienestar emocional de los estudiantes es condicion necesaria — no solo deseable — para el aprendizaje efectivo. Programas de consejeria escolar, protocolos de prevencion del suicidio, espacios de escucha y acompanamiento psicologico son ahora componentes normales de la infraestructura educativa, exactamente como el humanismo lo habia propuesto desde sus origenes.</p>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- row -->
+    </div>
+  </section>
+
+  <!-- ═══ TABLA COMPARATIVA ═══ -->
+  <section id="tabla" class="py-5 bg-white">
+    <div class="container">
+      <div class="text-center mb-5 fade-in">
+        <h2 class="fw-bold" style="color:#0a2a6c;"><i class="bi bi-table me-2"></i>Tabla Comparativa</h2>
+        <p class="text-secondary">Comparacion de los principales autores y aportes del humanismo educativo</p>
+      </div>
+
+      <div class="row justify-content-center fade-in">
+        <div class="col-lg-11">
+          <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle bg-white shadow-sm">
+              <thead class="table-primary">
+                <tr class="text-center">
+                  <th scope="col" style="color:#0a2a6c;">Autor</th>
+                  <th scope="col" style="color:#0a2a6c;">Periodo</th>
+                  <th scope="col" style="color:#0a2a6c;">Aporte principal</th>
+                  <th scope="col" style="color:#0a2a6c;">Concepto clave</th>
+                  <th scope="col" style="color:#0a2a6c;">Implicacion educativa</th>
+                  <th scope="col" style="color:#0a2a6c;">Rol del docente</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="fw-semibold text-center" style="color:#0a2a6c;">Abraham Maslow</td>
+                  <td class="text-center">1908 — 1970</td>
+                  <td>Jerarquia de necesidades y teoria de la auto-realizacion</td>
+                  <td>Piramide de necesidades: fisiologicas, seguridad, pertenencia, estima, auto-realizacion</td>
+                  <td>Satisfacer necesidades basicas del estudiante antes de aspirar al aprendizaje significativo</td>
+                  <td>Crear condiciones para que el estudiante ascienda en la jerarquia de necesidades</td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold text-center" style="color:#0a2a6c;">Carl Rogers</td>
+                  <td class="text-center">1902 — 1987</td>
+                  <td>Enfoque centrado en la persona y aprendizaje significativo</td>
+                  <td>Empatia, aceptacion positiva incondicional, autenticidad</td>
+                  <td>Construir relaciones de confianza y respeto que habiliten el aprendizaje profundo</td>
+                  <td>Facilitador que ofrece un clima psicologico de aceptacion y comprension</td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold text-center" style="color:#0a2a6c;">Malcolm Knowles</td>
+                  <td class="text-center">1913 — 1997</td>
+                  <td>Andragogia como teoria del aprendizaje adulto</td>
+                  <td>Autoconcepto, experiencia previa, disposicion, orientacion a problemas, motivacion intrinseca</td>
+                  <td>Disenar experiencias formativas que respeten la autonomia y la experiencia del adulto</td>
+                  <td>Guia y recurso que facilita el aprendizaje autodirigido del adulto</td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold text-center" style="color:#0a2a6c;">Arthur Combs</td>
+                  <td class="text-center">1912 — 1999</td>
+                  <td>Psicologia perceptual aplicada a la educacion</td>
+                  <td>Percepcion subjetiva, marco perceptual, maestro humano</td>
+                  <td>Comprender como el estudiante percibe su mundo para disenar experiencias significativas</td>
+                  <td>Maestro humano que percibe al alumno como digno de confianza y capaz</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tabla comparativa humanismo vs otras teorias -->
+      <div class="row justify-content-center mt-5 fade-in">
+        <div class="col-lg-11">
+          <h5 class="fw-bold mb-3" style="color:#0a2a6c;"><i class="bi bi-arrow-left-right me-2"></i>Humanismo frente a otras teorias</h5>
+          <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle bg-white shadow-sm">
+              <thead class="table-primary">
+                <tr class="text-center">
+                  <th scope="col" style="color:#0a2a6c;">Dimension</th>
+                  <th scope="col" style="color:#0a2a6c;">Conductismo</th>
+                  <th scope="col" style="color:#0a2a6c;">Cognitivismo</th>
+                  <th scope="col" style="color:#0a2a6c;">Humanismo</th>
+                  <th scope="col" style="color:#0a2a6c;">Constructivismo</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="fw-semibold" style="color:#0a2a6c;">Concepcion del aprendiz</td>
+                  <td>Reactivo, responde a estimulos</td>
+                  <td>Procesador de informacion</td>
+                  <td class="table-warning fw-semibold">Persona integral con potencial de crecimiento</td>
+                  <td>Constructor activo del conocimiento</td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold" style="color:#0a2a6c;">Motivacion</td>
+                  <td>Extrinseca (refuerzos y castigos)</td>
+                  <td>Interna y externa</td>
+                  <td class="table-warning fw-semibold">Intrinseca, hacia la auto-realizacion</td>
+                  <td>Intrinseca, vinculada a saberes previos</td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold" style="color:#0a2a6c;">Rol del docente</td>
+                  <td>Disenador de estimulos y refuerzos</td>
+                  <td>Organizador de la informacion</td>
+                  <td class="table-warning fw-semibold">Facilitador y acompanante</td>
+                  <td>Mediador y guia</td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold" style="color:#0a2a6c;">Evaluacion</td>
+                  <td>Conducta observable</td>
+                  <td>Procesos mentales y retencion</td>
+                  <td class="table-warning fw-semibold">Autoevaluacion y crecimiento personal</td>
+                  <td>Portafolios y construccion de evidencias</td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold" style="color:#0a2a6c;">Meta de la educacion</td>
+                  <td>Modificacion de conducta</td>
+                  <td>Procesamiento eficiente de informacion</td>
+                  <td class="table-warning fw-semibold">Auto-realizacion y formacion integral</td>
+                  <td>Construccion significativa del saber</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ NAVIGACION ENTRE MODULOS ═══ -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row g-4 justify-content-between fade-in">
+        <div class="col-md-5">
+          <a href="constructivismo.html" class="card border-0 shadow-sm h-100 text-decoration-none d-block">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center gap-3">
+                <i class="bi bi-arrow-left fs-3 text-primary"></i>
+                <div>
+                  <small class="text-secondary">Modulo anterior</small>
+                  <h6 class="fw-bold mb-0" style="color:#0a2a6c;">Constructivismo</h6>
+                  <p class="small text-secondary mb-0">Construccion activa del saber — 1960-2000</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-5">
+          <a href="cambios-conceptuales.html" class="card border-0 shadow-sm h-100 text-decoration-none d-block">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center gap-3 justify-content-end text-end">
+                <div>
+                  <small class="text-secondary">Modulo siguiente</small>
+                  <h6 class="fw-bold mb-0" style="color:#0a2a6c;">Cambios Conceptuales</h6>
+                  <p class="small text-secondary mb-0">Reestructuracion de esquemas mentales — 1980-2000</p>
+                </div>
+                <i class="bi bi-arrow-right fs-3 text-primary"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="text-center mt-4 fade-in">
+        <a href="../index.html#modulos" class="btn btn-outline-primary"><i class="bi bi-grid me-2"></i>Ver todos los modulos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (inyectado por JS) -->
+  <div id="wiki-footer"></div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Componentes compartidos -->
+  <script src="../components.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Constructivismo — Wiki Teorias del Aprendizaje | UPTPC</title>
+  <meta name="description" content="Modulo sobre la teoria del Constructivismo: autores principales, postulados basicos, impacto en la educacion actual. Lev Vygotsky, Jean Piaget, John Dewey, Albert Bandura." />
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+
+  <!-- Estilos mínimos: solo animaciones -->
+  <style>
+    .fade-in { opacity:0; transition:opacity .7s ease, transform .7s ease; transform:translateY(18px); }
+    .fade-in.visible { opacity:1; transform:translateY(0); }
+    .timeline-card { transition: border-color .3s ease, box-shadow .3s ease; }
+    #reading-progress { position:fixed; top:0; left:0; height:3px; background:var(--bs-primary); z-index:9999; width:0; transition:width .2s ease; }
+  </style>
+</head>
+<body class="bg-white">
+
+  <!-- Barra de progreso de lectura -->
+  <div id="reading-progress"></div>
+
+  <!-- Header (inyectado por JS) -->
+  <div id="wiki-header"></div>
+
+  <!-- ═══ BREADCRUMB ═══ -->
+  <nav aria-label="breadcrumb" class="bg-light py-2 border-bottom">
+    <div class="container">
+      <ol class="breadcrumb mb-0 small">
+        <li class="breadcrumb-item"><a href="../index.html" class="text-decoration-none"><i class="bi bi-house-door me-1"></i>Inicio</a></li>
+        <li class="breadcrumb-item"><a href="../index.html#modulos" class="text-decoration-none">Modulos</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Constructivismo</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- ═══ HERO ═══ -->
+  <section id="inicio" class="py-5 text-center bg-white">
+    <div class="container fade-in">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <span class="badge bg-primary rounded-pill mb-3 px-3 py-2 fs-6">1960 — 2000</span>
+          <h1 class="display-4 fw-bold mb-3" style="color:#0a2a6c;"><i class="bi bi-puzzle me-3"></i>Constructivismo</h1>
+          <p class="lead text-secondary mb-4">El constructivismo postula que el conocimiento no se transmite de manera pasiva, sino que es construido activamente por el aprendiz a partir de sus experiencias previas, su contexto sociocultural y la interacción con otros sujetos. Esta corriente, que integra aportes de la psicología cognitiva y la psicología social, constituye uno de los pilares fundamentales de la pedagogía contemporánea y ha transformado profundamente las prácticas educativas en todo el mundo.</p>
+          <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <a href="#autores" class="btn btn-primary btn-lg"><i class="bi bi-people me-2"></i>Autores</a>
+            <a href="#postulados" class="btn btn-outline-primary btn-lg"><i class="bi bi-list-check me-2"></i>Postulados</a>
+            <a href="#impacto" class="btn btn-outline-primary btn-lg"><i class="bi bi-graph-up me-2"></i>Impacto</a>
+          </div>
+          <p class="small text-muted mt-3">Elaborado por <strong>Jose Herrera</strong> — UPTPC, Unidad de Ciencia y Tecnologia</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ AUTORES PRINCIPALES ═══ -->
+  <section id="autores" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5 fade-in">
+        <h2 class="fw-bold" style="color:#0a2a6c;"><i class="bi bi-people me-2"></i>Autores Principales</h2>
+        <p class="text-secondary">Pensadores fundamentales cuya obra configuro el paradigma constructivista</p>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Lev Vygotsky -->
+        <div class="col-md-6 col-lg-3 fade-in">
+          <div class="card border-light shadow-sm h-100 timeline-card">
+            <div class="card-header bg-primary text-white text-center py-3">
+              <i class="bi bi-chat-dots fs-2 mb-2 d-block"></i>
+              <h5 class="fw-bold mb-0">Lev Vygotsky</h5>
+              <span class="badge bg-white text-primary mt-1">1896 — 1934</span>
+            </div>
+            <div class="card-body">
+              <p class="small">Psicólogo soviético cuya obra, desarrollada en un contexto sociocultural marxista, propuso que el aprendizaje es inherentemente un proceso social. Vygotsky argumentó que las funciones psicológicas superiores se originan en la interacción social antes de ser internalizadas por el individuo. Su concepto de <strong>Zona de Desarrollo Próximo (ZDP)</strong> describe la distancia entre lo que un aprendiz puede realizar de manera independiente y lo que puede lograr con la guía de un tutor o un par más competente. Este concepto ha sido fundamental para el desarrollo de las estrategias de andamiaje pedagógico y la educación colaborativa. La perspectiva vygotskiana enfatiza que el lenguaje, como herramienta mediadora, desempeña un papel central en la construcción del pensamiento y que la cultura proporciona los instrumentos cognitivos que el individuo utiliza para comprender el mundo.</p>
+            </div>
+            <div class="card-footer bg-white border-0 text-center">
+              <span class="badge bg-primary bg-opacity-10 text-primary">Aprendizaje social</span>
+              <span class="badge bg-primary bg-opacity-10 text-primary">ZDP</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Jean Piaget -->
+        <div class="col-md-6 col-lg-3 fade-in">
+          <div class="card border-light shadow-sm h-100 timeline-card">
+            <div class="card-header bg-primary text-white text-center py-3">
+              <i class="bi bi-diagram-2 fs-2 mb-2 d-block"></i>
+              <h5 class="fw-bold mb-0">Jean Piaget</h5>
+              <span class="badge bg-white text-primary mt-1">1896 — 1980</span>
+            </div>
+            <div class="card-body">
+              <p class="small">Epistemólogo y psicólogo suizo, Piaget es considerado el fundador del constructivismo cognitivo. Su teoría del desarrollo intelectual plantea que el niño construye activamente su conocimiento del mundo a través de procesos de <strong>asimilación</strong> (incorporar nuevas experiencias a esquemas existentes) y <strong>acomodación</strong> (modificar los esquemas para integrar información nueva). Piaget describió cuatro estadios universales del desarrollo cognitivo —sensoriomotor, preoperacional, operaciones concretas y operaciones formales—, cada uno con estructuras mentales cualitativamente diferentes. Aunque su enfoque ha sido criticado por subestimar las capacidades infantiles y por su escasa atención a los factores socioculturales, su contribución a la comprensión de cómo el sujeto construye activamente el conocimiento sigue siendo un referente ineludible en la psicología evolutiva y la pedagogía.</p>
+            </div>
+            <div class="card-footer bg-white border-0 text-center">
+              <span class="badge bg-primary bg-opacity-10 text-primary">Asimilación</span>
+              <span class="badge bg-primary bg-opacity-10 text-primary">Acomodación</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- John Dewey -->
+        <div class="col-md-6 col-lg-3 fade-in">
+          <div class="card border-light shadow-sm h-100 timeline-card">
+            <div class="card-header bg-primary text-white text-center py-3">
+              <i class="bi bi-lightbulb fs-2 mb-2 d-block"></i>
+              <h5 class="fw-bold mb-0">John Dewey</h5>
+              <span class="badge bg-white text-primary mt-1">1859 — 1952</span>
+            </div>
+            <div class="card-body">
+              <p class="small">Filósofo y pedagogo estadounidense, Dewey es considerado uno de los precursores más importantes del constructivismo y del pragmatismo educativo. Su filosofía de la educación se fundamenta en la idea de que <strong>el aprendizaje es un proceso activo</strong> que surge de la experiencia y la reflexión sobre la misma. Dewey rechazó la enseñanza meramente transmisiva y abogó por una educación centrada en el estudiante, donde la acción y la indagación son los motores del conocimiento. Su defensa de la democracia en el aula —donde los estudiantes participan como ciudadanos activos— y su insistencia en que la educación debe estar conectada con la vida real constituyen antecedentes directos del aprendizaje basado en proyectos y de la pedagogía experiencial contemporánea. La escuela laboratorio que fundó en la Universidad de Chicago fue un espacio pionero de innovación pedagógica.</p>
+            </div>
+            <div class="card-footer bg-white border-0 text-center">
+              <span class="badge bg-primary bg-opacity-10 text-primary">Experiencia</span>
+              <span class="badge bg-primary bg-opacity-10 text-primary">Democracia</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Albert Bandura -->
+        <div class="col-md-6 col-lg-3 fade-in">
+          <div class="card border-light shadow-sm h-100 timeline-card">
+            <div class="card-header bg-primary text-white text-center py-3">
+              <i class="bi bi-eye fs-2 mb-2 d-block"></i>
+              <h5 class="fw-bold mb-0">Albert Bandura</h5>
+              <span class="badge bg-white text-primary mt-1">1925 — 2021</span>
+            </div>
+            <div class="card-body">
+              <p class="small">Psicólogo canadiense-estadounidense, Bandura desarrolló la <strong>teoría del aprendizaje social</strong> (también llamada aprendizaje vicario u observacional), que demostró que los individuos pueden adquirir nuevos comportamientos simplemente observando a otros, sin necesidad de reforzamiento directo. Su célebre experimento del muñeco Bobo (1961) evidenció que los niños imitaban conductas agresivas observadas en modelos adultos, lo que desafió las explicaciones conductistas puras. Bandura introdujo el concepto de <strong>autoeficacia</strong>: la creencia del individuo en su capacidad para lograr metas específicas, un factor determinante en la motivación y el rendimiento académico. Su teoría social cognitiva integra factores personales, conductuales y ambientales en un modelo de determinación recíproca, constituyendo un puente fundamental entre el conductismo y el constructivismo sociocultural.</p>
+            </div>
+            <div class="card-footer bg-white border-0 text-center">
+              <span class="badge bg-primary bg-opacity-10 text-primary">Aprendizaje vicario</span>
+              <span class="badge bg-primary bg-opacity-10 text-primary">Autoeficacia</span>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- row -->
+    </div>
+  </section>
+
+  <!-- ═══ POSTULADOS BÁSICOS ═══ -->
+  <section id="postulados" class="py-5 bg-white">
+    <div class="container">
+      <div class="text-center mb-5 fade-in">
+        <h2 class="fw-bold" style="color:#0a2a6c;"><i class="bi bi-list-check me-2"></i>Postulados Basicos</h2>
+        <p class="text-secondary">Principios fundamentales que definen el paradigma constructivista</p>
+      </div>
+
+      <div class="row justify-content-center fade-in">
+        <div class="col-lg-10">
+          <div class="accordion" id="accordionPostulados">
+
+            <!-- Postulado 1 -->
+            <div class="accordion-item border">
+              <h2 class="accordion-header" id="heading1">
+                <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                  <i class="bi bi-1-circle me-2 text-primary"></i>Construccion activa del conocimiento
+                </button>
+              </h2>
+              <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#accordionPostulados">
+                <div class="accordion-body">
+                  <p>El constructivismo sostiene que el ser humano no es un recipiente pasivo que recibe información de manera uncritica; por el contrario, el aprendiz construye activamente su propio conocimiento al interpretar, organizar y dar sentido a la información nueva a la luz de sus esquemas cognitivos previos. Este proceso de construcción implica operaciones mentales complejas como la comparación, la inferencia, la hipótesis y la revisión de creencias. En el aula, esto implica que la enseñanza no puede reducirse a la mera transmisión de contenidos, sino que debe ofrecer oportunidades para que el estudiante manipule, explore, cuestione y reelabore los saberes. La investigación educativa ha demostrado consistentemente que los aprendizajes más profundos y duraderos se producen cuando el estudiante es agente activo de su propio proceso cognitivo, no un receptor pasivo de información externa.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Postulado 2 -->
+            <div class="accordion-item border">
+              <h2 class="accordion-header" id="heading2">
+                <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                  <i class="bi bi-2-circle me-2 text-primary"></i>Importancia de la experiencia previa y el contexto cultural
+                </button>
+              </h2>
+              <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionPostulados">
+                <div class="accordion-body">
+                  <p>Toda persona llega a cualquier situación de aprendizaje con un bagaje de conocimientos, creencias, actitudes y experiencias que filtra e interpreta la información nueva. El constructivismo reconoce que estos saberes previos no son obstáculos a superar, sino recursos fundamentales sobre los cuales se construyen nuevos aprendizajes. Ausubel lo expresó con claridad: «El factor más importante que influye en el aprendizaje es lo que el alumno ya sabe. Averígüese esto y enséñese en consecuencia». Asimismo, el contexto cultural en el que se desarrolla el individuo proporciona las herramientas simbólicas —lenguaje, normas, valores, prácticas— que median la construcción del conocimiento. Un aprendiz inmerso en una comunidad letrada construye significados diferentes a los de quien se desarrolla en un contexto oral, lo que subraya la necesidad de una pedagogía culturalmente sensible y contextualizada que reconozca la diversidad de los repertorios experienciales de los estudiantes.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Postulado 3 -->
+            <div class="accordion-item border">
+              <h2 class="accordion-header" id="heading3">
+                <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                  <i class="bi bi-3-circle me-2 text-primary"></i>La interaccion social como motor del desarrollo cognitivo
+                </button>
+              </h2>
+              <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionPostulados">
+                <div class="accordion-body">
+                  <p>La perspectiva vygotskiana postula que las funciones psicológicas superiores —atención voluntaria, memoria lógica, pensamiento abstracto— se originan en la vida social antes de ser internalizadas como procesos individuales. En otras palabras, el aprendizaje precede al desarrollo: primero el niño realiza una actividad con la ayuda de otros (nivel interpsicológico) y luego la realiza de manera autónoma (nivel intrapsicológico). La interacción social no es un complemento del aprendizaje, sino su condición de posibilidad. El diálogo, la negociación de significados, la colaboración entre pares y la guía del docente constituyen los mecanismos mediante los cuales el aprendiz accede a formas superiores de pensamiento. Esta tesis ha sido corroborada por investigaciones sobre aprendizaje cooperativo, tutoría entre iguales y comunidades de práctica, que demuestran que los contextos sociales ricos en interacción promueven desarrollo cognitivo más profundo que las situaciones de aprendizaje individual.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Postulado 4 -->
+            <div class="accordion-item border">
+              <h2 class="accordion-header" id="heading4">
+                <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                  <i class="bi bi-4-circle me-2 text-primary"></i>La Zona de Desarrollo Proximo (ZDP)
+                </button>
+              </h2>
+              <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionPostulados">
+                <div class="accordion-body">
+                  <p>Concepto central de la teoría vygotskiana, la Zona de Desarrollo Próximo (ZDP) se define como la distancia entre el nivel real de desarrollo —lo que el aprendiz puede hacer de manera independiente— y el nivel de desarrollo potencial —lo que puede lograr con la asistencia de un adulto o un par más competente. La ZDP delimita el espacio donde la enseñanza resulta verdaderamente eficaz: si la tarea está demasiado lejos de las posibilidades del aprendiz, la instrucción resulta inútil; si está demasiado cerca, no genera desarrollo. De este concepto se derivan las estrategias de <strong>andamiaje</strong> (scaffolding), que consisten en proporcionar apoyos temporales ajustados al nivel del aprendiz y que se retiran progresivamente a medida que el estudiante adquiere autonomía. La ZDP también fundamenta la tutoría entre pares, el aprendizaje cooperativo y la evaluación formativa, pues orienta al docente sobre qué tipo de ayuda proporcionar y cuándo retirarla para promover la autonomía del aprendiz.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Postulado 5 -->
+            <div class="accordion-item border">
+              <h2 class="accordion-header" id="heading5">
+                <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                  <i class="bi bi-5-circle me-2 text-primary"></i>El aprendizaje es contextual y situacional
+                </button>
+              </h2>
+              <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionPostulados">
+                <div class="accordion-body">
+                  <p>El constructivismo enfatiza que el conocimiento no es abstracto ni descontextualizado; por el contrario, se construye en situación y está indisolublemente ligado al contexto en el que se produce. Aprender un concepto de manera significativa requiere comprenderlo en relación con situaciones reales, problemas auténticos y prácticas sociales específicas. Esta tesis cuestiona la idea de que el conocimiento adquirido en un contexto puede transferirse automáticamente a otros contextos diferentes. La investigación sobre cognición situada ha demostrado que el aprendizaje es más efectivo cuando se integra en actividades auténticas que reflejan las prácticas de las comunidades de expertos. De ahí la importancia de diseñar experiencias educativas que conecten los contenidos curriculares con problemas reales, escenarios profesionales y comunidades de práctica, de modo que el aprendiz no solo adquiera conocimientos declarativos, sino que desarrolle la capacidad de aplicarlos en contextos diversos y complejos.</p>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- accordion -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ IMPACTO EN LA EDUCACIÓN ACTUAL ═══ -->
+  <section id="impacto" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5 fade-in">
+        <h2 class="fw-bold" style="color:#0a2a6c;"><i class="bi bi-graph-up me-2"></i>Impacto en la Educacion Actual</h2>
+        <p class="text-secondary">Como el constructivismo ha transformado las practicas pedagogicas contemporaneas</p>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Aprendizaje colaborativo -->
+        <div class="col-md-6 col-lg-4 fade-in">
+          <div class="card border-0 shadow-sm h-100 timeline-card">
+            <div class="card-body p-4">
+              <div class="rounded-circle bg-primary bg-opacity-10 d-inline-flex align-items-center justify-content-center mb-3" style="width:56px;height:56px;">
+                <i class="bi bi-people-fill fs-4 text-primary"></i>
+              </div>
+              <h5 class="fw-bold" style="color:#0a2a6c;">Aprendizaje colaborativo</h5>
+              <p class="text-secondary">Derivado directamente de la teoría vygotskiana de la mediación social, el aprendizaje colaborativo se ha consolidado como una de las estrategias más influyentes en la educación contemporánea. En este enfoque, los estudiantes trabajan juntos en tareas estructuradas donde cada miembro es responsable tanto de su propio aprendizaje como del de sus compañeros. La investigación ha demostrado que la colaboración promueve el desarrollo de habilidades cognitivas de orden superior, la capacidad argumentativa, la empatía y la regulación metacognitiva. Modelos como el Aprendizaje Cooperativo de Johnson y Johnson, la técnica del Rompecabezas (Jigsaw) de Aronson y los Grupos de Investigación de Sharan son aplicaciones directas del principio constructivista de que la interacción social es un motor fundamental del desarrollo cognitivo.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Aprendizaje basado en proyectos -->
+        <div class="col-md-6 col-lg-4 fade-in">
+          <div class="card border-0 shadow-sm h-100 timeline-card">
+            <div class="card-body p-4">
+              <div class="rounded-circle bg-primary bg-opacity-10 d-inline-flex align-items-center justify-content-center mb-3" style="width:56px;height:56px;">
+                <i class="bi bi-kanban fs-4 text-primary"></i>
+              </div>
+              <h5 class="fw-bold" style="color:#0a2a6c;">Aprendizaje basado en proyectos</h5>
+              <p class="text-secondary">El aprendizaje basado en proyectos (ABP o PBL, por sus siglas en inglés) es una metodología que sitúa al estudiante en el centro del proceso educativo, convocándolo a resolver problemas reales y auténticos mediante la planificación, investigación y producción de entregables concretos. Esta metodología se fundamenta en los principios constructivistas de aprendizaje activo, contextualización y construcción social del conocimiento. En un proyecto, los estudiantes movilizan conocimientos de diversas disciplinas, desarrollan habilidades de comunicación, pensamiento crítico y gestión del tiempo, y construyen significados a partir de la experiencia directa. El legado de Dewey —«aprender haciendo»— se manifiesta plenamente en esta metodología que ha sido adoptada por marcos curriculares internacionales como el Bachillerato Internacional y los estándares de la National Science Teachers Association.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Estrategias de andamiaje -->
+        <div class="col-md-6 col-lg-4 fade-in">
+          <div class="card border-0 shadow-sm h-100 timeline-card">
+            <div class="card-body p-4">
+              <div class="rounded-circle bg-primary bg-opacity-10 d-inline-flex align-items-center justify-content-center mb-3" style="width:56px;height:56px;">
+                <i class="bi bi-layers fs-4 text-primary"></i>
+              </div>
+              <h5 class="fw-bold" style="color:#0a2a6c;">Estrategias de andamiaje</h5>
+              <p class="text-secondary">El concepto de andamiaje (scaffolding), desarrollado a partir de la Zona de Desarrollo Próximo de Vygotsky y formalizado por Wood, Bruner y Ross en 1976, se refiere al conjunto de apoyos temporales que un docente o un par más competente proporciona al aprendiz para ayudarle a realizar una tarea que no podría completar de manera independiente. Estos apoyos —que pueden incluir modelado, pistas, preguntas orientadoras, organizadores gráficos o ejemplos parcialmente resueltos— se ajustan al nivel de competencia del estudiante y se retiran gradualmente a medida que este adquiere autonomía. El andamiaje es un principio rector en el diseño instruccional contemporáneo y se aplica en contextos tan diversos como la enseñanza de la escritura, la resolución de problemas matemáticos, la comprensión lectora y la formación profesional técnica.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pedagogía centrada en el estudiante -->
+        <div class="col-md-6 col-lg-4 fade-in">
+          <div class="card border-0 shadow-sm h-100 timeline-card">
+            <div class="card-body p-4">
+              <div class="rounded-circle bg-primary bg-opacity-10 d-inline-flex align-items-center justify-content-center mb-3" style="width:56px;height:56px;">
+                <i class="bi bi-person-check fs-4 text-primary"></i>
+              </div>
+              <h5 class="fw-bold" style="color:#0a2a6c;">Pedagogia centrada en el estudiante</h5>
+              <p class="text-secondary">El constructivismo ha impulsado un cambio de paradigma en la relación pedagógica: del docente como transmisor de conocimientos al docente como facilitador, mediador y guía del aprendizaje. En la pedagogía centrada en el estudiante, se reconocen los saberes previos, los intereses, las motivaciones y los ritmos individuales de cada aprendiz. El currículo se flexibiliza para adaptarse a las necesidades del grupo, y se promueve la autonomía, la autorregulación y la metacognición. Este enfoque no implica la ausencia de estructura, sino una estructura diseñada para empower al estudiante. En la práctica, esto se traduce en negociación de objetivos de aprendizaje, evaluación compartida, portfolios de evidencias y espacios de reflexión donde el estudiante monitorea y ajusta sus propios procesos cognitivos.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Evaluación formativa -->
+        <div class="col-md-6 col-lg-4 fade-in">
+          <div class="card border-0 shadow-sm h-100 timeline-card">
+            <div class="card-body p-4">
+              <div class="rounded-circle bg-primary bg-opacity-10 d-inline-flex align-items-center justify-content-center mb-3" style="width:56px;height:56px;">
+                <i class="bi bi-clipboard-check fs-4 text-primary"></i>
+              </div>
+              <h5 class="fw-bold" style="color:#0a2a6c;">Evaluacion formativa</h5>
+              <p class="text-secondary">La evaluación formativa, concebida como un proceso continuo de recolección de evidencias para ajustar la enseñanza y mejorar el aprendizaje, es una consecuencia directa del principio constructivista de que el conocimiento se construye progresivamente. A diferencia de la evaluación sumativa, que certifica resultados al final del proceso, la evaluación formativa proporciona retroalimentación oportuna y específica que permite al estudiante identificar sus zonas de mejora y al docente ajustar sus estrategias de intervención. Instrumentos como las rúbricas, los portfolios, los diarios de aprendizaje y las autoevaluaciones reflejan la filosofía constructivista de involucrar al aprendiz en la reflexión sobre su propio proceso. La evaluación formativa ha sido reconocida por investigadores como Black y Wiliam como una de las intervenciones con mayor impacto en el rendimiento académico de los estudiantes.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Enseñanza dialógica y enfoques socioculturales -->
+        <div class="col-md-6 col-lg-4 fade-in">
+          <div class="card border-0 shadow-sm h-100 timeline-card">
+            <div class="card-body p-4">
+              <div class="rounded-circle bg-primary bg-opacity-10 d-inline-flex align-items-center justify-content-center mb-3" style="width:56px;height:56px;">
+                <i class="bi bi-chat-left-text fs-4 text-primary"></i>
+              </div>
+              <h5 class="fw-bold" style="color:#0a2a6c;">Ensenanza dialogica y enfoques socioculturales</h5>
+              <p class="text-secondary">La enseñanza dialógica, promovida por investigadores como Alexander y Wells, se fundamenta en la idea vygotskiana de que el diálogo es el principal instrumento de mediación semiótica mediante el cual se construyen significados compartidos. En el aula dialógica, el discurso no es unidireccional (docente-alumno), sino que se establecen espacios de argumentación, cuestionamiento y negociación de sentidos donde todas las voces son valoradas. Los enfoques socioculturales en el currículo, por su parte, reconocen que los contenidos educativos no son neutros sino que están atravesados por relaciones de poder, identidades culturales y prácticas discursivas específicas. Incorporar esta perspectiva implica diseñar currículos que integren los saberes comunitarios, que reconozcan la diversidad lingüística y cultural del estudiantado, y que promuevan una educación crítica y transformadora comprometida con la justicia social.</p>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- row -->
+    </div>
+  </section>
+
+  <!-- ═══ TABLA COMPARATIVA ═══ -->
+  <section id="tabla" class="py-5 bg-white">
+    <div class="container">
+      <div class="text-center mb-5 fade-in">
+        <h2 class="fw-bold" style="color:#0a2a6c;"><i class="bi bi-table me-2"></i>Tabla Comparativa</h2>
+        <p class="text-secondary">Comparacion de los principales enfoques dentro del constructivismo</p>
+      </div>
+
+      <div class="row justify-content-center fade-in">
+        <div class="col-lg-10">
+          <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle bg-white shadow-sm">
+              <thead class="table-primary">
+                <tr class="text-center">
+                  <th scope="col" class="fw-bold">Dimension</th>
+                  <th scope="col" class="fw-bold">Constructivismo cognitivo (Piaget)</th>
+                  <th scope="col" class="fw-bold">Constructivismo social (Vygotsky)</th>
+                  <th scope="col" class="fw-bold">Constructivismo experiencial (Dewey)</th>
+                  <th scope="col" class="fw-bold">Teoria social cognitiva (Bandura)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="fw-semibold" style="color:#0a2a6c;">Concepcion del aprendiz</td>
+                  <td>Constructor individual de esquemas cognitivos</td>
+                  <td>Sujeto social que internaliza herramientas culturales</td>
+                  <td>Agente experiencial que aprende haciendo</td>
+                  <td>Observador activo que aprende de modelos</td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold" style="color:#0a2a6c;">Rol del docente</td>
+                  <td>Facilitador que crea conflictos cognitivos</td>
+                  <td>Mediador que proporciona andamiaje</td>
+                  <td>Guia que disen experiencias de aprendizaje</td>
+                  <td>Modelo que demuestra conductas y estrategias</td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold" style="color:#0a2a6c;">Motor del aprendizaje</td>
+                  <td>Desequilibrio cognitivo y reequilibración</td>
+                  <td>Interaccion social y mediación semiotica</td>
+                  <td>Experiencia reflexiva y accion democratica</td>
+                  <td>Observacion, imitacion y autoeficacia</td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold" style="color:#0a2a6c;">Concepto clave</td>
+                  <td>Asimilacion, acomodacion, estadios</td>
+                  <td>ZDP, mediacion, internalizacion</td>
+                  <td>Experiencia educativa, inquiry</td>
+                  <td>Aprendizaje vicario, autoeficacia</td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold" style="color:#0a2a6c;">Evaluacion</td>
+                  <td>Observacion de estadios cognitivos</td>
+                  <td>Evaluacion dinamica en la ZDP</td>
+                  <td>Evaluacion del proceso experiencial</td>
+                  <td>Medicion de autoeficacia y desempeno</td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold" style="color:#0a2a6c;">Contexto de aplicacion</td>
+                  <td>Educacion infantil y desarrollo evolutivo</td>
+                  <td>Aulas colaborativas y tutoria entre pares</td>
+                  <td>Proyectos, laboratorios, comunidad</td>
+                  <td>Modelado, formacion profesional</td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold" style="color:#0a2a6c;">Limitacion</td>
+                  <td>Subestima factores socioculturales</td>
+                  <td>Dificultad para operacionalizar la ZDP</td>
+                  <td>Exige docentes altamente capacitados</td>
+                  <td>Enfasis en lo observable, no en la estructura interna</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SÍNTESIS ═══ -->
+  <section id="sintesis" class="py-5 bg-light">
+    <div class="container">
+      <div class="row justify-content-center fade-in">
+        <div class="col-lg-8">
+          <div class="card border-0 shadow-sm">
+            <div class="card-body p-5">
+              <h3 class="fw-bold mb-3" style="color:#0a2a6c;"><i class="bi bi-puzzle me-2"></i>Sintesis del Constructivismo</h3>
+              <p class="text-secondary">El constructivismo, en sus diversas variantes, ha supuesto una revolución paradigmática en la comprensión del aprendizaje y la enseñanza. Al desplazar el centro de gravedad desde la transmisión de conocimientos hacia la construcción activa del saber por parte del aprendiz, esta corriente ha redefinido las relaciones pedagógicas, los métodos de enseñanza y los sistemas de evaluación. La influencia de Vygotsky ha destacado la dimensión social y cultural del aprendizaje; la de Piaget, los mecanismos cognitivos de la construcción del conocimiento; la de Dewey, la centralidad de la experiencia y la democracia; y la de Bandura, el papel de la observación y la autoeficacia. Juntos, estos aportes configuran un marco teórico robusto que sigue orientando la innovación pedagógica en el siglo XXI, desde las aulas universitarias hasta los programas de formación profesional técnica, y que constituye la base de metodologías activas como el aprendizaje colaborativo, el aprendizaje basado en proyectos y la evaluación formativa.</p>
+              <div class="d-flex flex-wrap gap-2 mt-3">
+                <span class="badge bg-primary rounded-pill px-3 py-2">Construccion activa</span>
+                <span class="badge bg-primary rounded-pill px-3 py-2">ZDP</span>
+                <span class="badge bg-primary rounded-pill px-3 py-2">Andamiaje</span>
+                <span class="badge bg-primary rounded-pill px-3 py-2">Contexto sociocultural</span>
+                <span class="badge bg-primary rounded-pill px-3 py-2">Aprendizaje social</span>
+                <span class="badge bg-primary rounded-pill px-3 py-2">Experiencia</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ NAVEGACIÓN ENTRE MÓDULOS ═══ -->
+  <section class="py-4 bg-white border-top">
+    <div class="container">
+      <div class="row g-3 align-items-center fade-in">
+        <div class="col-md-6 text-center text-md-start">
+          <a href="cognitivismo.html" class="btn btn-outline-primary">
+            <i class="bi bi-arrow-left me-2"></i>Cognitivismo
+          </a>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <a href="humanismo.html" class="btn btn-primary">
+            Humanismo<i class="bi bi-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+      <div class="text-center mt-3">
+        <a href="../index.html" class="btn btn-sm btn-link text-decoration-none text-secondary">
+          <i class="bi bi-house-door me-1"></i>Volver al inicio
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (inyectado por JS) -->
+  <div id="wiki-footer"></div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Componentes compartidos -->
+  <script src="../components.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conductismo — Wiki Teorías del Aprendizaje | UPTPC</title>
+  <meta name="description" content="Módulo dedicado al Conductismo: autores principales, postulados básicos, impacto en la educación actual y tabla comparativa. Wiki de Teorías del Aprendizaje — UPTPC." />
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+
+  <!-- Estilos mínimos: solo animaciones fade-in, sin CSS personalizado de layout -->
+  <style>
+    .fade-in { opacity:0; transition:opacity .7s ease, transform .7s ease; transform:translateY(18px); }
+    .fade-in.visible { opacity:1; transform:translateY(0); }
+    .timeline-card { transition: border-color .3s ease, box-shadow .3s ease; }
+    #reading-progress { position:fixed; top:0; left:0; height:3px; background:var(--bs-primary); z-index:9999; width:0; transition:width .2s ease; }
+  </style>
+</head>
+<body class="bg-white">
+
+  <!-- Barra de progreso de lectura -->
+  <div id="reading-progress"></div>
+
+  <!-- Header (inyectado por components.js) -->
+  <div id="wiki-header"></div>
+
+  <!-- ═══ BREADCRUMB ═══ -->
+  <nav aria-label="breadcrumb" class="bg-light py-2 border-bottom">
+    <div class="container">
+      <ol class="breadcrumb mb-0 small">
+        <li class="breadcrumb-item"><a href="../index.html" class="text-decoration-none"><i class="bi bi-house-door me-1"></i>Inicio</a></li>
+        <li class="breadcrumb-item"><a href="../index.html#modulos" class="text-decoration-none">Módulos</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Conductismo</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- ═══ HERO ═══ -->
+  <section id="inicio" class="py-5 text-center bg-white">
+    <div class="container fade-in">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="rounded-circle bg-primary bg-opacity-10 d-inline-flex align-items-center justify-content-center mb-4" style="width:96px;height:96px;">
+            <i class="bi bi-robot text-primary" style="font-size:3rem;"></i>
+          </div>
+          <span class="badge bg-primary rounded-pill mb-3 px-3 py-2 fs-6">1900 — 1960</span>
+          <h1 class="display-4 fw-bold mb-3" style="color:#0a2a6c;">Conductismo</h1>
+          <p class="lead text-secondary mb-4">El conductismo constituye una de las corrientes psicológicas más influyentes del siglo XX, la cual postula que el aprendizaje debe entenderse exclusivamente como un cambio observable en la conducta del organismo, producido por la relación sistemática entre estímulos ambientales y las respuestas del individuo. Al rechazar la introspección y los estados mentales internos como objeto de estudio científico, esta escuela transformó la psicología y sentó las bases de la tecnología educativa moderna.</p>
+          <div class="d-flex justify-content-center gap-2 flex-wrap">
+            <a href="#autores" class="btn btn-primary"><i class="bi bi-people me-1"></i>Autores</a>
+            <a href="#postulados" class="btn btn-outline-primary"><i class="bi bi-list-check me-1"></i>Postulados</a>
+            <a href="#impacto" class="btn btn-outline-primary"><i class="bi bi-graph-up me-1"></i>Impacto</a>
+            <a href="#tabla" class="btn btn-outline-primary"><i class="bi bi-table me-1"></i>Comparativa</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ AUTORES PRINCIPALES ═══ -->
+  <section id="autores" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5 fade-in">
+        <h2 class="fw-bold" style="color:#0a2a6c;"><i class="bi bi-people me-2"></i>Autores Principales</h2>
+        <p class="text-secondary">Los pensadores que definieron y consolidaron la escuela conductista</p>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Ivan Pavlov -->
+        <div class="col-md-6 col-lg-3 fade-in">
+          <div class="card border-0 shadow-sm h-100 timeline-card">
+            <div class="card-header bg-primary text-white text-center py-3">
+              <i class="bi bi-lightning-charge fs-2 mb-2 d-block"></i>
+              <h5 class="fw-bold mb-0">Ivan Pavlov</h5>
+              <span class="badge bg-white text-primary mt-1">1849 — 1936</span>
+            </div>
+            <div class="card-body">
+              <h6 class="fw-semibold text-primary mb-2">Condicionamiento Clásico</h6>
+              <p class="small text-secondary">Fisiólogo ruso galardonado con el Premio Nobel de Medicina en 1904, Pavlov descubrió de manera accidental el condicionamiento clásico mientras estudiaba las glándulas digestivas de los perros. Observó que los animales salivaban no solo ante la presencia de alimento, sino también ante estímulos previamente neutros que se habían asociado repetidamente con la comida, como el sonido de una campana. Este hallazgo demostró que las respuestas fisiológicas pueden ser aprendidas mediante la asociación de estímulos, sentando las bases del paradigma Estímulo-Respuesta (E-R) que sería fundamental para toda la tradición conductista posterior.</p>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <span class="badge bg-primary bg-opacity-10 text-primary rounded-pill"><i class="bi bi-lightning-charge me-1"></i>Estímulo incondicionado</span>
+              <span class="badge bg-primary bg-opacity-10 text-primary rounded-pill"><i class="bi bi-arrow-repeat me-1"></i>Asociación E-R</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- John B. Watson -->
+        <div class="col-md-6 col-lg-3 fade-in">
+          <div class="card border-0 shadow-sm h-100 timeline-card">
+            <div class="card-header bg-primary text-white text-center py-3">
+              <i class="bi bi-megaphone fs-2 mb-2 d-block"></i>
+              <h5 class="fw-bold mb-0">John B. Watson</h5>
+              <span class="badge bg-white text-primary mt-1">1878 — 1958</span>
+            </div>
+            <div class="card-body">
+              <h6 class="fw-semibold text-primary mb-2">Fundador del Conductismo</h6>
+              <p class="small text-secondary">Psicólogo estadounidense que en 1913 publicó el manifiesto fundacional del conductismo, «La psicología tal como la ve el conductista», donde declaró que la psicología debía ser una ciencia objetiva basada en la observación de la conducta, rechazando categóricamente la introspección y el estudio de la conciencia. Watson argumentó que cualquier individuo, independientemente de su herencia, puede ser moldeado mediante el control adecuado del ambiente. Su célebre experimento con el «Pequeño Albert» demostró que las emociones pueden ser condicionadas, consolidando la idea de que el comportamiento humano es producto del aprendizaje ambiental.</p>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <span class="badge bg-primary bg-opacity-10 text-primary rounded-pill"><i class="bi bi-flag me-1"></i>Manifiesto 1913</span>
+              <span class="badge bg-primary bg-opacity-10 text-primary rounded-pill"><i class="bi bi-baby me-1"></i>Pequeño Albert</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Edward Thorndike -->
+        <div class="col-md-6 col-lg-3 fade-in">
+          <div class="card border-0 shadow-sm h-100 timeline-card">
+            <div class="card-header bg-primary text-white text-center py-3">
+              <i class="bi bi-puzzle fs-2 mb-2 d-block"></i>
+              <h5 class="fw-bold mb-0">Edward Thorndike</h5>
+              <span class="badge bg-white text-primary mt-1">1874 — 1949</span>
+            </div>
+            <div class="card-body">
+              <h6 class="fw-semibold text-primary mb-2">Ley del Efecto</h6>
+              <p class="small text-secondary">Psicólogo y pedagogo pionero, Thorndike realizó sus famosos experimentos con la «caja problema», donde colocaba gatos que debían aprender a accionar un mecanismo para escapar y obtener alimento. De estas observaciones formuló la Ley del Efecto, que establece que las respuestas seguidas de consecuencias satisfactorias tienden a repetirse, mientras que las seguidas de consecuencias desagradables tienden a debilitarse. También propuso la Ley del Ejercicio, según la cual la repetición fortalece las conexiones E-R, y la Ley de la Disposición, que señala que el aprendizaje es más efectivo cuando el organismo está motivado. Estas leyes constituyen el antecedente directo del reforzamiento skinneriano.</p>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <span class="badge bg-primary bg-opacity-10 text-primary rounded-pill"><i class="bi bi-check-circle me-1"></i>Ley del Efecto</span>
+              <span class="badge bg-primary bg-opacity-10 text-primary rounded-pill"><i class="bi bi-box me-1"></i>Caja problema</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- B.F. Skinner -->
+        <div class="col-md-6 col-lg-3 fade-in">
+          <div class="card border-0 shadow-sm h-100 timeline-card">
+            <div class="card-header bg-primary text-white text-center py-3">
+              <i class="bi bi-gear fs-2 mb-2 d-block"></i>
+              <h5 class="fw-bold mb-0">B.F. Skinner</h5>
+              <span class="badge bg-white text-primary mt-1">1904 — 1990</span>
+            </div>
+            <div class="card-body">
+              <h6 class="fw-semibold text-primary mb-2">Condicionamiento Operante</h6>
+              <p class="small text-secondary">El psicólogo más influyente del conductismo radical, Skinner desarrolló la teoría del condicionamiento operante, según la cual las consecuencias que siguen a una conducta determinan la probabilidad de que esta se repita. Diseñó la «caja de Skinner» para estudiar experimentalmente cómo los refuerzos y castigos moldean el comportamiento animal y humano. Distinguió entre reforzamiento positivo (presentar un estímulo agradable) y negativo (retirar un estímulo aversivo), así como entre castigo positivo y negativo. Su influencia en la educación fue enorme: la instrucción programada, las máquinas de enseñar y los sistemas de economía de fichas son herencia directa de su obra.</p>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <span class="badge bg-primary bg-opacity-10 text-primary rounded-pill"><i class="bi bi-box me-1"></i>Caja de Skinner</span>
+              <span class="badge bg-primary bg-opacity-10 text-primary rounded-pill"><i class="bi bi-arrow-up-circle me-1"></i>Reforzamiento</span>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- row -->
+    </div>
+  </section>
+
+  <!-- ═══ POSTULADOS BÁSICOS ═══ -->
+  <section id="postulados" class="py-5 bg-white">
+    <div class="container">
+      <div class="text-center mb-5 fade-in">
+        <h2 class="fw-bold" style="color:#0a2a6c;"><i class="bi bi-list-check me-2"></i>Postulados Básicos</h2>
+        <p class="text-secondary">Los principios fundamentales que definen la perspectiva conductista del aprendizaje</p>
+      </div>
+
+      <div class="accordion fade-in" id="accordionPostulados">
+
+        <!-- Postulado 1 -->
+        <div class="accordion-item border">
+          <h2 class="accordion-header" id="heading1">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+              <i class="bi bi-eye me-2 text-primary"></i>
+              <strong>El aprendizaje como cambio observable en la conducta</strong>
+            </button>
+          </h2>
+          <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#accordionPostulados">
+            <div class="accordion-body">
+              <p>El conductismo sostiene que el aprendizaje únicamente puede ser verificado y medido a través de cambios observables y cuantificables en la conducta del organismo. Este principio epistemológico implica que todo fenómeno interno — pensamientos, emociones, creencias — queda excluido del análisis científico por no ser directamente observable ni medible de manera objetiva. Para los conductistas, si un proceso no puede ser detectado mediante la observación externa, no constituye un dato legítimo para la ciencia psicológica.</p>
+              <p>Esta posición metodológica, heredera del positivismo y del pragmatismo americano, implicó una ruptura radical con la psicología de la época, dominada por la introspección y el estudio de la conciencia. Al delimitar el objeto de estudio a la conducta manifiesta, el conductismo aspiraba a elevar la psicología al estatuto de ciencia natural, con métodos experimentales rigurosos, variables controlables y resultados replicables. En el ámbito educativo, este postulado se traduce en la evaluación del aprendizaje a través de desempeños observables: respuestas correctas, ejecuciones motrices, producciones tangibles, lo que fundamenta la evaluación sumativa y la medición de competencias conductuales.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Postulado 2 -->
+        <div class="accordion-item border">
+          <h2 class="accordion-header" id="heading2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+              <i class="bi bi-slash-circle me-2 text-primary"></i>
+              <strong>Irrelevancia de los estados mentales internos</strong>
+            </button>
+          </h2>
+          <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionPostulados">
+            <div class="accordion-body">
+              <p>Uno de los postulados más polémicos del conductismo es la consideración de que los estados mentales internos — como la conciencia, la motivación intrínseca, los pensamientos o los sentimientos — son irrelevantes para la explicación científica del aprendizaje. Watson los calificó de «caja negra», argumentando que lo que ocurre dentro del organismo no puede ser investigado con rigor experimental y, por tanto, no debe formar parte de las teorías psicológicas. Skinner, en su versión del conductismo radical, fue aún más lejos al afirmar que los eventos privados son conductas encubiertas que también obedecen a las mismas leyes del condicionamiento.</p>
+              <p>Esta postura tuvo implicaciones profundas en la pedagogía: el docente conductista no indaga sobre lo que el estudiante «siente» o «piensa» respecto al contenido, sino que se concentra en las condiciones ambientales que anteceden y siguen a la conducta del aprendiz. El diseño instruccional se reduce a la planificación de estímulos, la presentación de información y la administración de refuerzos. Aunque esta perspectiva ha sido criticada por reduccionista, su legado perdura en los enfoques de diseño instruccional basados en competencias observables y en la formulación de objetivos conductuales precisos que predominan en la planificación educativa contemporánea.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Postulado 3 -->
+        <div class="accordion-item border">
+          <h2 class="accordion-header" id="heading3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+              <i class="bi bi-arrow-up-circle me-2 text-primary"></i>
+              <strong>El reforzamiento como moldeador de la conducta</strong>
+            </button>
+          </h2>
+          <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionPostulados">
+            <div class="accordion-body">
+              <p>El reforzamiento es el mecanismo central mediante el cual el conductismo explica la adquisición, mantenimiento y eliminación de las conductas. Un reforzador es cualquier evento que, al seguir a una respuesta, incrementa la probabilidad de que dicha respuesta se repita en el futuro. Skinner distinguió dos tipos fundamentales: el reforzamiento positivo, que consiste en presentar un estímulo agradable después de la conducta (por ejemplo, una recompensa o un elogio), y el reforzamiento negativo, que implica la retirada de un estímulo aversivo tras la conducta (por ejemplo, eliminar una tarea desagradable cuando el estudiante completa su trabajo).</p>
+              <p>Es crucial distinguir el reforzamiento negativo del castigo: mientras el primero fortalece la conducta al eliminar algo desagradable, el castigo debilita la conducta al introducir una consecuencia aversiva o retirar un estímulo positivo. Skinner también identificó distintos programas de reforzamiento — continuo, de razón fija, de razón variable, de intervalo fijo y de intervalo variable — cada uno de los cuales produce patrones distintos de adquisición y extinción de la conducta. En el aula, estos principios se traducen en sistemas de recompensas, reconocimiento público, calificaciones, privilegios y otras estrategias que buscan consolidar las conductas deseables en los estudiantes.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Postulado 4 -->
+        <div class="accordion-item border">
+          <h2 class="accordion-header" id="heading4">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+              <i class="bi bi-arrow-left-right me-2 text-primary"></i>
+              <strong>El patrón Estímulo-Respuesta (E-R)</strong>
+            </button>
+          </h2>
+          <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionPostulados">
+            <div class="accordion-body">
+              <p>El paradigma Estímulo-Respuesta (E-R) constituye el modelo explicativo central del conductismo. Según este esquema, todo aprendizaje puede ser descrito como la formación de una asociación entre un estímulo ambiental (E) y una respuesta conductual (R) del organismo. En el condicionamiento clásico pavloviano, un estímulo neutro se convierte en estímulo condicionado al asociarse repetidamente con un estímulo incondicionado que elicita una respuesta automática, produciendo así una respuesta condicionada. En el condicionamiento operante skinneriano, la relación es más compleja: la conducta opera sobre el ambiente y produce consecuencias que, a su vez, modifican la probabilidad futura de esa conducta (modelo E-R-C: Estímulo-Respuesta-Consecuencia).</p>
+              <p>Este modelo lineal y mecanicista implicó una concepción del organismo como un sistema reactivo: el individuo no es un agente activo que construye significados, sino un ente que responde a las contingencias ambientales. La educación, desde esta perspectiva, consiste en la disposición cuidadosa de los estímulos y las consecuencias para que el estudiante adquiera las respuestas deseables. La secuenciación del contenido, la presentación gradual de información, la práctica repetitiva y la retroalimentación inmediata son manifestaciones pedagógicas directas del modelo E-R, que aún hoy dominan numerosos programas de formación técnica, militar y corporativa.</p>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- accordion -->
+    </div>
+  </section>
+
+  <!-- ═══ IMPACTO EN LA EDUCACIÓN ACTUAL ═══ -->
+  <section id="impacto" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5 fade-in">
+        <h2 class="fw-bold" style="color:#0a2a6c;"><i class="bi bi-graph-up me-2"></i>Impacto en la Educación Actual</h2>
+        <p class="text-secondary">Huellas del conductismo en las prácticas pedagógicas contemporáneas</p>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Impacto 1 -->
+        <div class="col-md-6 col-lg-4 fade-in">
+          <div class="card border-0 shadow-sm h-100 timeline-card">
+            <div class="card-body p-4">
+              <div class="rounded-circle bg-primary bg-opacity-10 d-inline-flex align-items-center justify-content-center mb-3" style="width:56px;height:56px;">
+                <i class="bi bi-sliders fs-4 text-primary"></i>
+              </div>
+              <h5 class="fw-bold mb-2" style="color:#0a2a6c;">Técnicas de modificación de conducta</h5>
+              <p class="text-secondary">Los programas de modificación de conducta constituyen una de las aplicaciones más directas del conductismo en la educación. Estos programas utilizan procedimientos sistemáticos de reforzamiento, extinción y modelado para aumentar conductas deseables — como la participación en clase, la finalización de tareas o la asistencia — y reducir conductas problemáticas como la agresión, la disruptividad o el absentismo. En la educación especial, las técnicas de análisis conductual aplicado (ABA) son consideradas intervención de referencia para el autismo, y los planes de intervención conductual individualizados se han generalizado en los sistemas educativos de todo el mundo, demostrando la vigencia operativa del paradigma conductista.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Impacto 2 -->
+        <div class="col-md-6 col-lg-4 fade-in">
+          <div class="card border-0 shadow-sm h-100 timeline-card">
+            <div class="card-body p-4">
+              <div class="rounded-circle bg-primary bg-opacity-10 d-inline-flex align-items-center justify-content-center mb-3" style="width:56px;height:56px;">
+                <i class="bi bi-cpu fs-4 text-primary"></i>
+              </div>
+              <h5 class="fw-bold mb-2" style="color:#0a2a6c;">Instrucción programada</h5>
+              <p class="text-secondary">La instrucción programada, concebida por Skinner en la década de 1950, es un método de enseñanza que descompone el contenido en pequeñas unidades secuenciales, presentadas de manera gradual al estudiante, quien debe responder activamente a cada una de ellas. Tras cada respuesta, se proporciona retroalimentación inmediata que confirma o corrige la ejecución, y el avance solo es posible cuando se demuestra dominio de la unidad anterior. Este modelo fue implementado originalmente mediante las «máquinas de enseñar» de Skinner y constituye el antecedente directo de los sistemas de tutoría inteligente, los cursos en línea modularizados y las plataformas de aprendizaje adaptativo que dominan la educación digital actual.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Impacto 3 -->
+        <div class="col-md-6 col-lg-4 fade-in">
+          <div class="card border-0 shadow-sm h-100 timeline-card">
+            <div class="card-body p-4">
+              <div class="rounded-circle bg-primary bg-opacity-10 d-inline-flex align-items-center justify-content-center mb-3" style="width:56px;height:56px;">
+                <i class="bi bi-star fs-4 text-primary"></i>
+              </div>
+              <h5 class="fw-bold mb-2" style="color:#0a2a6c;">Sistemas de reforzamiento en el aula</h5>
+              <p class="text-secondary">Los sistemas de reforzamiento constituyen una práctica cotidiana en las aulas de todos los niveles educativos. Las economías de fichas, los sistemas de puntos, las tablas de reconocimiento, las insignias digitales y los sistemas de recompensas son aplicaciones directas de los principios de reforzamiento operante. Estos sistemas operan sobre la base de que las conductas que son seguidas de consecuencias positivas tienden a repetirse, y permiten al docente moldear sistemáticamente el comportamiento del grupo. En la educación virtual, las gamificaciones, los leaderboards y las badge systems extienden la lógica del reforzamiento a entornos digitales, demostrando la adaptabilidad del paradigma conductista a las nuevas tecnologías educativas.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Impacto 4 -->
+        <div class="col-md-6 col-lg-4 fade-in">
+          <div class="card border-0 shadow-sm h-100 timeline-card">
+            <div class="card-body p-4">
+              <div class="rounded-circle bg-primary bg-opacity-10 d-inline-flex align-items-center justify-content-center mb-3" style="width:56px;height:56px;">
+                <i class="bi bi-chat-left-text fs-4 text-primary"></i>
+              </div>
+              <h5 class="fw-bold mb-2" style="color:#0a2a6c;">Evaluación formativa con retroalimentación</h5>
+              <p class="text-secondary">La evaluación formativa, entendida como el proceso continuo de recolección de evidencias sobre el desempeño del estudiante con el fin de proporcionar retroalimentación oportuna, tiene raíces profundas en el conductismo. La retroalimentación inmediata — principio cardinal del condicionamiento operante — es el mecanismo mediante el cual el estudiante conoce si su respuesta es correcta o incorrecta, ajustando su conducta en consecuencia. Los quizzes frecuentes, las rúbricas detalladas, los sistemas de corrección automatizada y las devoluciones escritas del docente son todas manifestaciones contemporáneas del principio skinneriano de que la consecuencia inmediata de la conducta es el factor determinante del aprendizaje.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Impacto 5 -->
+        <div class="col-md-6 col-lg-4 fade-in">
+          <div class="card border-0 shadow-sm h-100 timeline-card">
+            <div class="card-body p-4">
+              <div class="rounded-circle bg-primary bg-opacity-10 d-inline-flex align-items-center justify-content-center mb-3" style="width:56px;height:56px;">
+                <i class="bi bi-laptop fs-4 text-primary"></i>
+              </div>
+              <h5 class="fw-bold mb-2" style="color:#0a2a6c;">Fundamentos de la tecnología educativa</h5>
+              <p class="text-secondary">La tecnología educativa moderna debe gran parte de su arquitectura conceptual al conductismo. Los sistemas de gestión del aprendizaje (LMS), los cuestionarios de opción múltiple automatizados, los sistemas de seguimiento de progreso, los algoritmos de aprendizaje adaptativo y los dashboards de analítica educativa operan bajo la lógica estímulo-respuesta-retroalimentación. Los modelos de diseño instruccional como el de ADDIE, el de Dick y Carey, o el de Gagné, aunque incorporan elementos cognitivos, mantienen en su estructura la secuencia conductista de objetivos conductuales, presentación de estímulos, práctica y evaluación. En este sentido, el conductismo no es solo una teoría del pasado, sino el sustrato operativo sobre el cual se construye la mayor parte de la educación digital contemporánea.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Impacto 6 -->
+        <div class="col-md-6 col-lg-4 fade-in">
+          <div class="card border-0 shadow-sm h-100 timeline-card">
+            <div class="card-body p-4">
+              <div class="rounded-circle bg-primary bg-opacity-10 d-inline-flex align-items-center justify-content-center mb-3" style="width:56px;height:56px;">
+                <i class="bi bi-person-workspace fs-4 text-primary"></i>
+              </div>
+              <h5 class="fw-bold mb-2" style="color:#0a2a6c;">Modelos de instrucción directa</h5>
+              <p class="text-secondary">La instrucción directa es un modelo pedagógico estructurado y explícito, derivado directamente de los principios conductistas, que se caracteriza por la presentación clara del contenido por parte del docente, la demostración guiada, la práctica supervisada y la práctica independiente. Este modelo, investigado extensamente por autores como Rosenshine y Engelmann, ha demostrado alta eficacia en la enseñanza de habilidades básicas, particularmente en lectura, escritura y matemáticas, con estudiantes de bajos recursos. La instrucción directa se fundamenta en la idea conductista de que el aprendizaje es más eficiente cuando el docente controla las contingencias: presenta los estímulos de manera ordenada, modela las respuestas correctas y proporciona retroalimentación sistemática hasta que el estudiante alcanza el dominio.</p>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- row -->
+    </div>
+  </section>
+
+  <!-- ═══ TABLA COMPARATIVA ═══ -->
+  <section id="tabla" class="py-5 bg-white">
+    <div class="container">
+      <div class="text-center mb-5 fade-in">
+        <h2 class="fw-bold" style="color:#0a2a6c;"><i class="bi bi-table me-2"></i>Tabla Comparativa</h2>
+        <p class="text-secondary">Comparación de los aspectos clave de los principales autores conductistas</p>
+      </div>
+
+      <div class="table-responsive fade-in">
+        <table class="table table-bordered table-hover align-middle bg-white shadow-sm">
+          <thead class="table-primary">
+            <tr class="text-center">
+              <th scope="col" style="color:#0a2a6c;"><i class="bi bi-aspect-ratio me-1"></i>Aspecto</th>
+              <th scope="col" style="color:#0a2a6c;"><i class="bi bi-lightning-charge me-1"></i>Pavlov</th>
+              <th scope="col" style="color:#0a2a6c;"><i class="bi bi-megaphone me-1"></i>Watson</th>
+              <th scope="col" style="color:#0a2a6c;"><i class="bi bi-puzzle me-1"></i>Thorndike</th>
+              <th scope="col" style="color:#0a2a6c;"><i class="bi bi-gear me-1"></i>Skinner</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="fw-semibold" style="color:#0a2a6c;">Tipo de condicionamiento</td>
+              <td>Clásico (respondiente)</td>
+              <td>Clásico (respondiente)</td>
+              <td>Instrumental (precursor)</td>
+              <td>Operante</td>
+            </tr>
+            <tr>
+              <td class="fw-semibold" style="color:#0a2a6c;">Concepto central</td>
+              <td>Asociación E-E (estímulo-estímulo)</td>
+              <td>Conducta como objeto de estudio</td>
+              <td>Ley del Efecto</td>
+              <td>Reforzamiento y consecuencias</td>
+            </tr>
+            <tr>
+              <td class="fw-semibold" style="color:#0a2a6c;">Rol del organismo</td>
+              <td>Reactivo (responde automáticamente)</td>
+              <td>Reactivo (producto del ambiente)</td>
+              <td>Activo (ensayo y error)</td>
+              <td>Operante (actúa sobre el ambiente)</td>
+            </tr>
+            <tr>
+              <td class="fw-semibold" style="color:#0a2a6c;">Método experimental</td>
+              <td>Experimentos con salivación canina</td>
+              <td>Estudio del Pequeño Albert</td>
+              <td>Caja problema con gatos</td>
+              <td>Caja de Skinner con ratas/palomas</td>
+            </tr>
+            <tr>
+              <td class="fw-semibold" style="color:#0a2a6c;">Aplicación educativa principal</td>
+              <td>Asociación de estímulos en el aula</td>
+              <td>Moldeamiento ambiental</td>
+              <td>Conexiones E-R por práctica</td>
+              <td>Instrucción programada y economía de fichas</td>
+            </tr>
+            <tr>
+              <td class="fw-semibold" style="color:#0a2a6c;">Visión del aprendizaje</td>
+              <td>Sustitución de estímulos</td>
+              <td>Formación de hábitos</td>
+              <td>Fortalecimiento de conexiones</td>
+              <td>Moldeamiento por consecuencias</td>
+            </tr>
+            <tr>
+              <td class="fw-semibold" style="color:#0a2a6c;">Contribución histórica</td>
+              <td>Base experimental del E-R</td>
+              <td>Manifiesto fundacional</td>
+              <td>Antecedente del reforzamiento</td>
+              <td>Sistematización del conductismo</td>
+            </tr>
+            <tr>
+              <td class="fw-semibold" style="color:#0a2a6c;">Periodo de mayor influencia</td>
+              <td><span class="badge bg-primary bg-opacity-10 text-primary">1890 — 1920</span></td>
+              <td><span class="badge bg-primary bg-opacity-10 text-primary">1910 — 1930</span></td>
+              <td><span class="badge bg-primary bg-opacity-10 text-primary">1900 — 1930</span></td>
+              <td><span class="badge bg-primary bg-opacity-10 text-primary">1940 — 1970</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SÍNTESIS ═══ -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row justify-content-center fade-in">
+        <div class="col-lg-8">
+          <div class="card border-0 shadow-sm">
+            <div class="card-body p-4 p-lg-5">
+              <h3 class="fw-bold mb-3" style="color:#0a2a6c;"><i class="bi bi-lightbulb me-2"></i>Síntesis del Módulo</h3>
+              <p class="text-secondary">El conductismo representó una revolución en la psicología al redefinir su objeto de estudio: de la conciencia a la conducta observable. A lo largo de más de seis décadas, desde los experimentos pavlovianos de asociación de estímulos hasta la sofisticada teoría del condicionamiento operante de Skinner, esta escuela construyó un corpus teórico y experimental riguroso que transformó la comprensión del aprendizaje. Aunque sus limitaciones — el reduccionismo, la exclusión de los procesos cognitivos y la visión mecanicista del ser humano — fueron señaladas por las corrientes posteriores, su influencia en la educación es innegable: la evaluación basada en conductas observables, los sistemas de refuerzo, la instrucción programada y la tecnología educativa son herencia directa del paradigma conductista. Comprender el conductismo es, por tanto, comprender uno de los cimientos sobre los cuales se edifica la pedagogía contemporánea.</p>
+              <div class="d-flex flex-wrap gap-2 mt-3">
+                <span class="badge bg-primary rounded-pill px-3 py-2"><i class="bi bi-lightning-charge me-1"></i>Condicionamiento clásico</span>
+                <span class="badge bg-primary rounded-pill px-3 py-2"><i class="bi bi-gear me-1"></i>Condicionamiento operante</span>
+                <span class="badge bg-primary rounded-pill px-3 py-2"><i class="bi bi-arrow-left-right me-1"></i>Paradigma E-R</span>
+                <span class="badge bg-primary rounded-pill px-3 py-2"><i class="bi bi-star me-1"></i>Reforzamiento</span>
+                <span class="badge bg-primary rounded-pill px-3 py-2"><i class="bi bi-cpu me-1"></i>Instrucción programada</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ NAVEGACIÓN ENTRE MÓDULOS ═══ -->
+  <section class="py-4 bg-white border-top">
+    <div class="container">
+      <div class="row g-3 align-items-center fade-in">
+        <div class="col-md-4 text-center text-md-start">
+          <a href="../index.html" class="btn btn-outline-primary">
+            <i class="bi bi-arrow-left me-1"></i>Inicio
+          </a>
+        </div>
+        <div class="col-md-4 text-center">
+          <span class="text-secondary small"><i class="bi bi-book me-1"></i>Módulo 1 de 7</span>
+        </div>
+        <div class="col-md-4 text-center text-md-end">
+          <a href="cognitivismo.html" class="btn btn-primary">
+            Cognitivismo<i class="bi bi-arrow-right ms-1"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (inyectado por components.js) -->
+  <div id="wiki-footer"></div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Componentes compartidos -->
+  <script src="../components.js"></script>
+
+</body>
+</html>

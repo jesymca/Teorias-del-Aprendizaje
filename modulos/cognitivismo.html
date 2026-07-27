@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cognitivismo — Wiki Teorias del Aprendizaje | UPTPC</title>
+  <meta name="description" content="Modulo sobre la teoria del Cognitivismo: procesos mentales, metacognicion, aprendizaje significativo. Autores: Piaget, Bruner, Ausubel, Gagne. UPTPC — Jose Herrera." />
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+
+  <!-- Estilos mínimos en head (solo animaciones fade-in, sin CSS personalizado de layout) -->
+  <style>
+    .fade-in { opacity:0; transition:opacity .7s ease, transform .7s ease; transform:translateY(18px); }
+    .fade-in.visible { opacity:1; transform:translateY(0); }
+    .timeline-card { transition: border-color .3s ease, box-shadow .3s ease; }
+    #reading-progress { position:fixed; top:0; left:0; height:3px; background:var(--bs-primary); z-index:9999; width:0; transition:width .2s ease; }
+  </style>
+</head>
+<body class="bg-white">
+
+  <!-- Barra de progreso de lectura -->
+  <div id="reading-progress"></div>
+
+  <!-- Header (inyectado por components.js) -->
+  <div id="wiki-header"></div>
+
+  <!-- ═══ BREADCRUMB ═══ -->
+  <nav aria-label="breadcrumb" class="bg-light py-2 border-bottom">
+    <div class="container">
+      <ol class="breadcrumb mb-0 small">
+        <li class="breadcrumb-item"><a href="../index.html" class="text-decoration-none"><i class="bi bi-house-door me-1"></i>Inicio</a></li>
+        <li class="breadcrumb-item"><a href="../index.html#modulos" class="text-decoration-none">Modulos</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Cognitivismo</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- ═══ HERO ═══ -->
+  <section id="inicio" class="py-5 text-center bg-white">
+    <div class="container fade-in">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="rounded-circle bg-primary bg-opacity-10 d-inline-flex align-items-center justify-content-center mb-4" style="width:96px;height:96px;">
+            <i class="bi bi-brain text-primary" style="font-size:3rem;"></i>
+          </div>
+          <span class="badge bg-primary rounded-pill mb-3 px-3 py-2 fs-6">1950 — 1980</span>
+          <h1 class="display-4 fw-bold mb-3" style="color:#0a2a6c;">Cognitivismo</h1>
+          <p class="lead text-secondary mb-4">La revolución cognitiva situó los procesos mentales internos en el centro de la escena educativa. Atención, memoria, metacognición y procesamiento de información se convirtieron en las claves para comprender cómo aprende el ser humano, superando la visión puramente conductista del estímulo-respuesta.</p>
+          <div class="d-flex justify-content-center gap-3 mb-3 flex-wrap">
+            <a href="#autores" class="btn btn-primary btn-lg"><i class="bi bi-people me-2"></i>Autores</a>
+            <a href="#postulados" class="btn btn-outline-primary btn-lg"><i class="bi bi-list-check me-2"></i>Postulados</a>
+            <a href="#impacto" class="btn btn-outline-primary btn-lg"><i class="bi bi-lightbulb me-2"></i>Impacto</a>
+          </div>
+          <p class="small text-muted">Elaborado por <strong>Jose Herrera</strong> — UPTPC, Unidad de Ciencia y Tecnologia</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ESTADÍSTICAS RÁPIDAS ═══ -->
+  <section class="py-4 bg-light">
+    <div class="container">
+      <div class="row text-center g-3 fade-in">
+        <div class="col-md-3 col-6">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="card-body p-3">
+              <i class="bi bi-calendar-range fs-2 text-primary"></i>
+              <h5 class="fw-bold mt-2 mb-0" style="color:#0a2a6c;">30</h5>
+              <p class="small text-secondary mb-0">Años de auge</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="card-body p-3">
+              <i class="bi bi-people fs-2 text-primary"></i>
+              <h5 class="fw-bold mt-2 mb-0" style="color:#0a2a6c;">4</h5>
+              <p class="small text-secondary mb-0">Autores clave</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="card-body p-3">
+              <i class="bi bi-card-checklist fs-2 text-primary"></i>
+              <h5 class="fw-bold mt-2 mb-0" style="color:#0a2a6c;">5</h5>
+              <p class="small text-secondary mb-0">Postulados</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="card-body p-3">
+              <i class="bi bi-lightbulb fs-2 text-primary"></i>
+              <h5 class="fw-bold mt-2 mb-0" style="color:#0a2a6c;">6</h5>
+              <p class="small text-secondary mb-0">Impactos actuales</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ INTRODUCCIÓN ═══ -->
+  <section class="py-5 bg-white">
+    <div class="container">
+      <div class="row justify-content-center fade-in">
+        <div class="col-lg-8">
+          <h2 class="fw-bold mb-4" style="color:#0a2a6c;"><i class="bi bi-bookmark-star me-2"></i>Introducción</h2>
+          <p class="text-secondary">El cognitivismo surge como respuesta a las limitaciones del conductismo para explicar los procesos internos del aprendizaje. A partir de la década de 1950, la llamada <em>revolución cognitiva</em> reorientó la investigación psicológica hacia el estudio de la mente como sistema de procesamiento de información. Inspirados por la metáfora computacional, los investigadores comenzaron a modelar la cognición humana en términos de entrada, codificación, almacenamiento y recuperación de datos. Este cambio de paradigma tuvo profundas consecuencias para la pedagogía: el docente dejó de ser un mero dispensador de estímulos para convertirse en un mediador que facilita la organización mental del conocimiento, y el estudiante pasó de receptor pasivo a procesador activo de la información.</p>
+          <p class="text-secondary">El enfoque cognitivo enfatiza que aprender no es simplemente acumular conductas, sino que implica transformaciones profundas en las estructuras mentales del individuo. La atención, la memoria de trabajo, la memoria a largo plazo, la metacognición y los esquemas de conocimiento son conceptos centrales que permiten explicar por qué dos estudiantes expuestos al mismo contenido pueden alcanzar niveles de comprensión muy distintos. El cognitivismo, al reconocer la agency del aprendiz, abrió la puerta a estrategias de enseñanza más sofisticadas — como el aprendizaje significativo, el andamiaje y la instrucción diferenciada — que siguen vigentes en la educación contemporánea.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ AUTORES PRINCIPALES ═══ -->
+  <section id="autores" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5 fade-in">
+        <h2 class="fw-bold" style="color:#0a2a6c;"><i class="bi bi-people me-2"></i>Autores Principales</h2>
+        <p class="text-secondary">Los pensadores que fundamentaron la teoría cognitiva del aprendizaje</p>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Jean Piaget -->
+        <div class="col-md-6 fade-in">
+          <div class="card border-0 shadow-sm h-100 timeline-card">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-start mb-3">
+                <div class="rounded-circle bg-primary bg-opacity-10 d-flex align-items-center justify-content-center flex-shrink-0 me-3" style="width:56px;height:56px;">
+                  <i class="bi bi-diagram-3 fs-4 text-primary"></i>
+                </div>
+                <div>
+                  <h5 class="fw-bold mb-1" style="color:#0a2a6c;">Jean Piaget</h5>
+                  <span class="badge bg-primary rounded-pill">1896 — 1980</span>
+                </div>
+              </div>
+              <p class="text-secondary">Psicólogo y epistemólogo suizo, Piaget es considerado el padre de la epistemología genética. Su teoría del desarrollo cognitivo propuso que el niño atraviesa cuatro estadios universales — sensoriomotor, preoperacional, operacional concreto y operacional formal — cada uno con estructuras mentales cualitativamente distintas. Para Piaget, el aprendizaje es un proceso constructivo en el que el sujeto asimila nuevas experiencias a sus esquemas existentes o los acomoda cuando la información resulta incompatible. Los conceptos de <strong>asimilación</strong>, <strong>acomodación</strong> y <strong>equilibración</strong> constituyen el núcleo de su explicación sobre cómo se reorganiza el conocimiento a lo largo del desarrollo. Su obra influyó decisivamente en la pedagogía al demostrar que la enseñanza debe respetar el estadio cognitivo del aprendiz y que el conocimiento no se transmite de forma directa, sino que se construye activamente.</p>
+              <p class="small text-muted mb-0"><i class="bi bi-key me-1"></i>Obra clave: <em>La psicología de la inteligencia</em> (1947)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Jerome Bruner -->
+        <div class="col-md-6 fade-in">
+          <div class="card border-0 shadow-sm h-100 timeline-card">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-start mb-3">
+                <div class="rounded-circle bg-primary bg-opacity-10 d-flex align-items-center justify-content-center flex-shrink-0 me-3" style="width:56px;height:56px;">
+                  <i class="bi bi-search fs-4 text-primary"></i>
+                </div>
+                <div>
+                  <h5 class="fw-bold mb-1" style="color:#0a2a6c;">Jerome Bruner</h5>
+                  <span class="badge bg-primary rounded-pill">1915 — 2016</span>
+                </div>
+              </div>
+              <p class="text-secondary">Psicólogo estadounidense, Bruner propuso el <strong>aprendizaje por descubrimiento</strong> como estrategia central del proceso educativo. Según su perspectiva, el estudiante debe explorar y resolver problemas de manera autónoma para que el conocimiento sea verdaderamente significativo. Bruner desarrolló también el concepto de <strong>curriculum en espiral</strong>, según el cual los contenidos deben revisitarse en niveles de complejidad creciente a lo largo de la escolaridad, lo que permite que el aprendiz profundice progresivamente en los mismos temas. Su teoría de las tres representaciones — enactiva, icónica y simbólica — describe cómo el ser humano transita de la manipulación concreta a la representación visual y finalmente al lenguaje abstracto. Además, Bruner introdujo la noción de <strong>andamiaje</strong> (scaffolding), que refiere al apoyo temporal que el docente proporciona al estudiante hasta que este logra autonomía en la tarea.</p>
+              <p class="small text-muted mb-0"><i class="bi bi-key me-1"></i>Obra clave: <em>El proceso de la educación</em> (1960)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- David Ausubel -->
+        <div class="col-md-6 fade-in">
+          <div class="card border-0 shadow-sm h-100 timeline-card">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-start mb-3">
+                <div class="rounded-circle bg-primary bg-opacity-10 d-flex align-items-center justify-content-center flex-shrink-0 me-3" style="width:56px;height:56px;">
+                  <i class="bi bi-link-45deg fs-4 text-primary"></i>
+                </div>
+                <div>
+                  <h5 class="fw-bold mb-1" style="color:#0a2a6c;">David Ausubel</h5>
+                  <span class="badge bg-primary rounded-pill">1918 — 2008</span>
+                </div>
+              </div>
+              <p class="text-secondary">Psicólogo educativo estadounidense, Ausubel es mundialmente reconocido por su teoría del <strong>aprendizaje significativo</strong>. Su premisa fundamental es que el factor más importante que influye en el aprendizaje es lo que el alumno ya sabe; a partir de ahí, la enseñanza debe diseñarse para conectar los nuevos contenidos con los conocimientos previos del estudiante. Ausubel distinguió entre aprendizaje significativo — en el que el aprendiz establece relaciones sustantivas entre la nueva información y su estructura cognitiva — y aprendizaje mecánico — en el que la información se incorpora de forma arbitraria sin vínculo con el saber previo. Los <strong>organizadores previos</strong>, conceptos introductorios presentados antes del material nuevo, son su contribución metodológica más influyente: funcionan como puentes cognitivos que activan los esquemas relevantes y facilitan la asimilación de contenidos complejos.</p>
+              <p class="small text-muted mb-0"><i class="bi bi-key me-1"></i>Obra clave: <em>Psicología educativa: un punto de vista cognoscitivo</em> (1968)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Robert Gagné -->
+        <div class="col-md-6 fade-in">
+          <div class="card border-0 shadow-sm h-100 timeline-card">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-start mb-3">
+                <div class="rounded-circle bg-primary bg-opacity-10 d-flex align-items-center justify-content-center flex-shrink-0 me-3" style="width:56px;height:56px;">
+                  <i class="bi bi-gear fs-4 text-primary"></i>
+                </div>
+                <div>
+                  <h5 class="fw-bold mb-1" style="color:#0a2a6c;">Robert Gagné</h5>
+                  <span class="badge bg-primary rounded-pill">1916 — 2002</span>
+                </div>
+              </div>
+              <p class="text-secondary">Psicólogo educativo estadounidense, Gagné elaboró la teoría de las <strong>condiciones del aprendizaje</strong>, un modelo que identifica los factores internos y externos necesarios para que se produzca cada tipo de aprendizaje. Propuso una taxonomía de cinco tipos de resultados de aprendizaje — información verbal, habilidades intelectuales, estrategias cognitivas, actitudes y habilidades motoras — y nueve eventos de instrucción que el docente debe secuenciar para optimizar el proceso: desde ganar la atención del estudiante hasta proporcionar retroalimentación y evaluación. Su modelo integrado del procesamiento de la información describe cómo el estímulo pasa por registros sensoriales, memoria de trabajo y memoria a largo plazo, lo que permite diseñar intervenciones pedagógicas alineadas con la arquitectura cognitiva del aprendiz. Gagné contribuyó de manera decisiva a la <strong>instrucción sistemática</strong> y al diseño instruccional basado en evidencia.</p>
+              <p class="small text-muted mb-0"><i class="bi bi-key me-1"></i>Obra clave: <em>Las condiciones del aprendizaje</em> (1965)</p>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- row -->
+    </div>
+  </section>
+
+  <!-- ═══ POSTULADOS BÁSICOS ═══ -->
+  <section id="postulados" class="py-5 bg-white">
+    <div class="container">
+      <div class="text-center mb-5 fade-in">
+        <h2 class="fw-bold" style="color:#0a2a6c;"><i class="bi bi-list-check me-2"></i>Postulados Básicos</h2>
+        <p class="text-secondary">Los principios fundamentales que definen el paradigma cognitivista</p>
+      </div>
+
+      <div class="row justify-content-center fade-in">
+        <div class="col-lg-8">
+          <div class="accordion" id="accordionPostulados">
+
+            <!-- Postulado 1 -->
+            <div class="accordion-item border-0 shadow-sm mb-3 rounded overflow-hidden">
+              <h3 class="accordion-header" id="heading1">
+                <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1" style="color:#0a2a6c;">
+                  <i class="bi bi-1-circle me-2 text-primary"></i>El aprendizaje es un proceso mental interno
+                </button>
+              </h3>
+              <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#accordionPostulados">
+                <div class="accordion-body text-secondary">
+                  <p>A diferencia del conductismo, que solo consideraba observable la conducta externa, el cognitivismo sostiene que los procesos mentales internos — como la atención, la codificación, la memoria de trabajo y la recuperación — son no solo relevantes sino centrales para explicar el aprendizaje. El aprendiz no es un recipiente pasivo que recibe estímulos del entorno, sino un agente activo que selecciona, transforma y organiza la información antes de almacenarla. Esta concepción implica que el aprendizaje no puede reducirse a una simple asociación estímulo-respuesta, pues entre el estímulo y la respuesta existe una compleja red de operaciones cognitivas que determinan la naturaleza y la calidad de lo aprendido. La investigación sobre la memoria, la atención selectiva y los procesos de codificación demostró que los factores internos — como la motivación, las expectativas y las estrategias de estudio — modulan profundamente el resultado del proceso de aprendizaje.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Postulado 2 -->
+            <div class="accordion-item border-0 shadow-sm mb-3 rounded overflow-hidden">
+              <h3 class="accordion-header" id="heading2">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2" style="color:#0a2a6c;">
+                  <i class="bi bi-2-circle me-2 text-primary"></i>La mente como procesador de información
+                </button>
+              </h3>
+              <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionPostulados">
+                <div class="accordion-body text-secondary">
+                  <p>La metáfora computacional constituye el eje articulador del cognitivismo: la mente humana opera de manera análoga a un sistema de procesamiento de información. La información ingresa a través de los órganos sensoriales (entrada), es filtrada y codificada por la atención selectiva, se mantiene temporalmente en la memoria de trabajo — de capacidad limitada — y, si es procesada adecuadamente, se transfiere a la memoria a largo plazo, donde queda almacenada en esquemas y redes semánticas. La recuperación de esa información depende de la calidad de la codificación original y de las pistas de recuperación disponibles en el momento del recall. Este modelo permitió a los investigadores desarrollar teorías precisas sobre la capacidad atencional, la carga cognitiva, la interferencia proactiva y retroactiva, y la consolidación de la memoria. En el ámbito educativo, este postulado ha derivado en recomendaciones concretas: evitar la sobrecarga informativa, segmentar los contenidos en unidades manejables y utilizar organizadores gráficos que faciliten la codificación visual.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Postulado 3 -->
+            <div class="accordion-item border-0 shadow-sm mb-3 rounded overflow-hidden">
+              <h3 class="accordion-header" id="heading3">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3" style="color:#0a2a6c;">
+                  <i class="bi bi-3-circle me-2 text-primary"></i>El conocimiento previo condiciona el nuevo aprendizaje
+                </button>
+              </h3>
+              <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionPostulados">
+                <div class="accordion-body text-secondary">
+                  <p>Uno de los postulados más influyentes del cognitivismo es que el aprendizaje nuevo no se produce en el vacío, sino que se ancla en los esquemas de conocimiento ya existentes en la estructura cognitiva del aprendiz. Ausubel lo formuló con máxima claridad: el factor más importante que influye en el aprendizaje es lo que el alumno ya sabe. Cuando la nueva información puede relacionarse de manera sustantiva y no arbitraria con los conocimientos previos, se produce un aprendizaje significativo que es más duradero, transferible y funcional. En cambio, cuando la información se presenta sin conexión con el saber previo, el aprendizaje resulta mecánico, efímero y difícil de aplicar. Este principio tiene implicaciones pedagógicas directas: el docente debe diagnosticar los conocimientos previos de sus estudiantes antes de introducir nuevos contenidos, activar esos esquemas mediante organizadores previos o preguntas generadoras, y diseñar secuencias didácticas que garanticen la conexión entre lo conocido y lo nuevo.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Postulado 4 -->
+            <div class="accordion-item border-0 shadow-sm mb-3 rounded overflow-hidden">
+              <h3 class="accordion-header" id="heading4">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4" style="color:#0a2a6c;">
+                  <i class="bi bi-4-circle me-2 text-primary"></i>La metacognición permite la autorregulación del aprendizaje
+                </button>
+              </h3>
+              <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionPostulados">
+                <div class="accordion-body text-secondary">
+                  <p>La metacognición — definida como el conocimiento y la regulación de los propios procesos cognitivos — es una contribución distintiva del paradigma cognitivista. Un estudiante metacognitivo no solo aprende, sino que sabe cómo aprende: puede planificar su estrategia de estudio, monitorear su comprensión mientras lee, detectar inconsistencias en su razonamiento y modificar su enfoque cuando advierte que no está funcionando. Flavell y posteriormente Brown identificaron dos componentes fundamentales: el conocimiento metacognitivo (saber sobre las variables de la persona, la tarea y las estrategias) y la regulación metacognitiva (planificación, supervisión y evaluación). En la práctica educativa, la promoción de la metacognición se ha traducido en estrategias como los diarios de aprendizaje reflexivo, el modelado de pensamiento en voz alta por parte del docente, las autoevaluaciones guiadas y las rúbricas de auto-regulación. Investigaciones empíricas han demostrado que los estudiantes con mayor desarrollo metacognitivo obtienen mejores resultados académicos y son más capaces de transferir lo aprendido a contextos novedosos.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Postulado 5 -->
+            <div class="accordion-item border-0 shadow-sm mb-3 rounded overflow-hidden">
+              <h3 class="accordion-header" id="heading5">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5" style="color:#0a2a6c;">
+                  <i class="bi bi-5-circle me-2 text-primary"></i>El aprendizaje ocurre en etapas del desarrollo cognitivo
+                </button>
+              </h3>
+              <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionPostulados">
+                <div class="accordion-body text-secondary">
+                  <p>Inspirado en la obra de Piaget, el cognitivismo reconoce que las capacidades cognitivas del individuo evolucionan a lo largo de estadios cualitativamente diferentes. El niño pequeño piensa de manera distinta al adolescente o al adulto no porque sepa menos, sino porque opera con estructuras mentales diferentes. En el estadio sensoriomotor (0-2 años), el conocimiento se construye a través de la acción directa sobre los objetos; en el preoperacional (2-7 años), surge la capacidad simbólica pero el pensamiento es egocéntrico y no reversible; en el operacional concreto (7-11 años), el niño desarrolla operaciones lógicas aplicadas a objetos tangibles; y en el operacional formal (11 años en adelante), se accede al pensamiento abstracto y hipotético-deductivo. Este postulado tiene consecuencias pedagógicas de gran alcance: la enseñanza debe adaptarse al nivel de desarrollo cognitivo de los estudiantes, no puede acelerarse artificialmente y debe ofrecer experiencias de aprendizaje que desafíen las competencias actuales del aprendiz sin superar su zona de capacidad — un principio que Bruner reformularía con su noción de andamiaje.</p>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- accordion -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ IMPACTO EN LA EDUCACIÓN ACTUAL ═══ -->
+  <section id="impacto" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5 fade-in">
+        <h2 class="fw-bold" style="color:#0a2a6c;"><i class="bi bi-lightbulb me-2"></i>Impacto en la Educación Actual</h2>
+        <p class="text-secondary">Cómo las ideas cognitivistas transforman la práctica pedagógica contemporánea</p>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- 1. Estrategias cognitivas en el diseño curricular -->
+        <div class="col-md-6 col-lg-4 fade-in">
+          <div class="card border-0 shadow-sm h-100 timeline-card">
+            <div class="card-body p-4">
+              <div class="rounded-circle bg-primary bg-opacity-10 d-inline-flex align-items-center justify-content-center mb-3" style="width:48px;height:48px;">
+                <i class="bi bi-clipboard-data text-primary fs-5"></i>
+              </div>
+              <h5 class="fw-bold mb-2" style="color:#0a2a6c;">Estrategias cognitivas en el diseño curricular</h5>
+              <p class="text-secondary">Los currículos contemporáneos incorporan de manera explícita el desarrollo de estrategias cognitivas — como la elaboración, la organización, la repetición y la monitorización — como objetivos de aprendizaje transversales. En lugar de centrarse exclusivamente en los contenidos declarativos, los programas educativos actuales incluyen el aprendizaje de cómo aprender, lo que constituye un legado directo del cognitivismo. Los marcos curriculares de países como Finlandia, Singapur y Australia integran competencias metacognitivas desde la educación primaria, reconociendo que la capacidad de regular el propio proceso de aprendizaje es tan importante como el dominio de los contenidos disciplinares. Los mapas conceptuales, las redes semánticas y los organizadores gráficos — herramientas derivadas de la teoría de Ausubel — son hoy recursos habituales en el diseño de unidades didácticas.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Enfoques de aprendizaje significativo -->
+        <div class="col-md-6 col-lg-4 fade-in">
+          <div class="card border-0 shadow-sm h-100 timeline-card">
+            <div class="card-body p-4">
+              <div class="rounded-circle bg-primary bg-opacity-10 d-inline-flex align-items-center justify-content-center mb-3" style="width:48px;height:48px;">
+                <i class="bi bi-link-45deg text-primary fs-5"></i>
+              </div>
+              <h5 class="fw-bold mb-2" style="color:#0a2a6c;">Enfoques de aprendizaje significativo</h5>
+              <p class="text-secondary">La teoría ausubeliana del aprendizaje significativo ha permeado profundamente las prácticas pedagógicas actuales. Los docentes utilizan organizadores previos al inicio de cada unidad para activar los conocimientos previos y crear puentes cognitivos con los nuevos contenidos. Las evaluaciones diagnósticas se emplean sistemáticamente para identificar las ideas previas de los estudiantes — incluso las concepciones erróneas — y ajustar la instrucción en consecuencia. El principio de que el aprendizaje debe ser sustantivo y no arbitrario ha inspirado metodologías como el aprendizaje basado en problemas, los proyectos integradores y las situaciones de aprendizaje contextualizadas, que buscan que el estudiante conecte la nueva información con su experiencia vital y su estructura cognitiva existente, superando el aprendizaje meramente memorístico.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Técnicas de andamiaje -->
+        <div class="col-md-6 col-lg-4 fade-in">
+          <div class="card border-0 shadow-sm h-100 timeline-card">
+            <div class="card-body p-4">
+              <div class="rounded-circle bg-primary bg-opacity-10 d-inline-flex align-items-center justify-content-center mb-3" style="width:48px;height:48px;">
+                <i class="bi bi-bricks text-primary fs-5"></i>
+              </div>
+              <h5 class="fw-bold mb-2" style="color:#0a2a6c;">Técnicas de andamiaje (scaffolding)</h5>
+              <p class="text-secondary">El concepto de andamiaje, derivado de la obra de Bruner y desarrollado posteriormente por Wood, Bruner y Ross, se ha convertido en una de las estrategias pedagógicas más utilizadas en la educación contemporánea. El andamiaje consiste en proporcionar apoyo temporal y ajustable al estudiante mientras desarrolla una competencia nueva, retirando progresivamente esa ayuda a medida que el aprendiz adquiere autonomía. En la práctica, esto se materializa en modelados, pistas, preguntas guía, plantillas de escritura, rúbricas de autoevaluación y tutoría entre pares. Las plataformas educativas digitales incorporan sistemas de andamiaje adaptativo que ajustan el nivel de dificultad y las ayudas en función del rendimiento del estudiante, personalizando la experiencia de aprendizaje de acuerdo con la teoría de la zona de desarrollo próximo.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Modelos de procesamiento de información -->
+        <div class="col-md-6 col-lg-4 fade-in">
+          <div class="card border-0 shadow-sm h-100 timeline-card">
+            <div class="card-body p-4">
+              <div class="rounded-circle bg-primary bg-opacity-10 d-inline-flex align-items-center justify-content-center mb-3" style="width:48px;height:48px;">
+                <i class="bi bi-cpu text-primary fs-5"></i>
+              </div>
+              <h5 class="fw-bold mb-2" style="color:#0a2a6c;">Modelos de procesamiento de información</h5>
+              <p class="text-secondary">El modelo de procesamiento de información — que describe la secuencia registros sensoriales → memoria de trabajo → memoria a largo plazo — ha influido notablemente en el diseño de materiales educativos y en la comprensión de las limitaciones cognitivas del aprendiz. La teoría de la carga cognitiva de Sweller, derivada directamente de este modelo, ha generado recomendaciones prácticas para reducir la carga extrínseca (presentación confusa, información irrelevante) y optimizar la carga intrínseca (complejidad inherente al contenido) y la carga relevante (procesamiento de esquematización). Los principios de multimedia de Mayer — como la coherencia, la señalización y la redundancia — se fundamentan en la arquitectura del procesamiento de información y orientan la creación de recursos digitales, videos educativos y presentaciones efectivas.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Instrucción diferenciada por estadio de desarrollo -->
+        <div class="col-md-6 col-lg-4 fade-in">
+          <div class="card border-0 shadow-sm h-100 timeline-card">
+            <div class="card-body p-4">
+              <div class="rounded-circle bg-primary bg-opacity-10 d-inline-flex align-items-center justify-content-center mb-3" style="width:48px;height:48px;">
+                <i class="bi bi-sort-numeric-up text-primary fs-5"></i>
+              </div>
+              <h5 class="fw-bold mb-2" style="color:#0a2a6c;">Instrucción diferenciada por estadio de desarrollo</h5>
+              <p class="text-secondary">La teoría piagetiana de los estadios cognitivos ha inspirado la práctica de la instrucción diferenciada, que adapta los contenidos, los procesos y los productos de aprendizaje al nivel de desarrollo cognitivo de los estudiantes. En la educación infantil, se priorizan las experiencias sensoriomotoras y concretas; en la primaria, se introducen gradualmente operaciones lógicas con material manipulativo; y en la secundaria y la universidad, se espera que los estudiantes manejen abstracciones, hipótesis y razonamientos formales. Los docentes que reconocen la diversidad de estadios en un mismo grupo emplean estrategias como la graduación de tareas, los centros de aprendizaje con niveles de complejidad diferenciados y la evaluación formativa continua que permite ajustar la instrucción en tiempo real.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Fundamentos de la psicología educativa -->
+        <div class="col-md-6 col-lg-4 fade-in">
+          <div class="card border-0 shadow-sm h-100 timeline-card">
+            <div class="card-body p-4">
+              <div class="rounded-circle bg-primary bg-opacity-10 d-inline-flex align-items-center justify-content-center mb-3" style="width:48px;height:48px;">
+                <i class="bi bi-mortarboard text-primary fs-5"></i>
+              </div>
+              <h5 class="fw-bold mb-2" style="color:#0a2a6c;">Fundamentos de la psicología educativa</h5>
+              <p class="text-secondary">El cognitivismo proporcionó los fundamentos científicos de la psicología educativa moderna. Conceptos como esquema mental, carga cognitiva, metacognición, codificación, consolidación y transferencia son hoy pilares de la formación docente en todo el mundo. Los programas de formación de profesores incluyen de manera sistemática estos constructos teóricos, y las investigaciones en educación se diseñan y evalúan desde marcos cognitivistas. La teoría de Gagné sobre los eventos de instrucción se utiliza en el diseño instruccional de cursos en línea, simulaciones y materiales educativos. La investigación sobre la memoria, la atención y la motivación intrínseca — todas líneas cognitivistas — sigue alimentando las políticas educativas y las reformas curriculares en América Latina y el mundo.</p>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- row -->
+    </div>
+  </section>
+
+  <!-- ═══ TABLA COMPARATIVA ═══ -->
+  <section id="tabla" class="py-5 bg-white">
+    <div class="container">
+      <div class="text-center mb-5 fade-in">
+        <h2 class="fw-bold" style="color:#0a2a6c;"><i class="bi bi-table me-2"></i>Tabla Comparativa</h2>
+        <p class="text-secondary">Comparación de los principales enfoques dentro del paradigma cognitivista</p>
+      </div>
+
+      <div class="row justify-content-center fade-in">
+        <div class="col-lg-10">
+          <div class="table-responsive shadow-sm rounded">
+            <table class="table table-bordered table-hover align-middle mb-0 bg-white">
+              <thead class="table-primary">
+                <tr class="text-center">
+                  <th scope="col" style="color:#0a2a6c;">Aspecto</th>
+                  <th scope="col" style="color:#0a2a6c;">Piaget</th>
+                  <th scope="col" style="color:#0a2a6c;">Bruner</th>
+                  <th scope="col" style="color:#0a2a6c;">Ausubel</th>
+                  <th scope="col" style="color:#0a2a6c;">Gagné</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="fw-semibold" style="color:#0a2a6c;">Enfoque central</td>
+                  <td>Desarrollo cognitivo por etapas</td>
+                  <td>Aprendizaje por descubrimiento</td>
+                  <td>Aprendizaje significativo</td>
+                  <td>Condiciones del aprendizaje</td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold" style="color:#0a2a6c;">Unidad de análisis</td>
+                  <td>Estadios cognitivos</td>
+                  <td>Modos de representación</td>
+                  <td>Estructura cognitiva previa</td>
+                  <td>Tipos de resultados de aprendizaje</td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold" style="color:#0a2a6c;">Papel del docente</td>
+                  <td>Facilitador de experiencias acordes al estadio</td>
+                  <td>Guía que proporciona andamiaje</td>
+                  <td>Organizador de contenidos y puentes cognitivos</td>
+                  <td>Diseñador de eventos instruccionales</td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold" style="color:#0a2a6c;">Papel del estudiante</td>
+                  <td>Constructor activo mediante asimilación y acomodación</td>
+                  <td>Descubridor que explora y resuelve problemas</td>
+                  <td>Procesador que conecta lo nuevo con lo previo</td>
+                  <td>Procesador de información en fases secuenciales</td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold" style="color:#0a2a6c;">Concepto clave</td>
+                  <td>Equilibración</td>
+                  <td>Andamiaje y curriculum en espiral</td>
+                  <td>Organizadores previos</td>
+                  <td>Nueve eventos de instrucción</td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold" style="color:#0a2a6c;">Tipo de aprendizaje que promueve</td>
+                  <td>Construcción espontánea por reorganización cognitiva</td>
+                  <td>Descubrimiento guiado e inducción</td>
+                  <td>Recepción significativa</td>
+                  <td>Instrucción sistemática y secuenciada</td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold" style="color:#0a2a6c;">Evaluación</td>
+                  <td>Observación del estadio cognitivo alcanzado</td>
+                  <td>Evaluación del proceso de descubrimiento</td>
+                  <td>Verificación de conexiones significativas</td>
+                  <td>Evaluación de resultados según taxonomía</td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold" style="color:#0a2a6c;">Aporte principal a la educación</td>
+                  <td>Respeto al desarrollo evolutivo del aprendiz</td>
+                  <td>Curriculum en espiral y aprendizaje por indagación</td>
+                  <td>Activación del conocimiento previo</td>
+                  <td>Diseño instruccional basado en ciencia cognitiva</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ LÍNEA DE TIEMPO INTERNA ═══ -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5 fade-in">
+        <h2 class="fw-bold" style="color:#0a2a6c;"><i class="bi bi-clock-history me-2"></i>Cronología del Cognitivismo</h2>
+        <p class="text-secondary">Hitos fundamentales en la evolución del paradigma cognitivista</p>
+      </div>
+
+      <div class="row justify-content-center fade-in">
+        <div class="col-lg-8">
+          <div class="list-group">
+
+            <div class="list-group-item border-0 shadow-sm mb-3 rounded">
+              <div class="d-flex align-items-center">
+                <span class="badge bg-primary rounded-pill me-3 flex-shrink-0">1947</span>
+                <div>
+                  <h6 class="fw-bold mb-1" style="color:#0a2a6c;">Piaget publica <em>La psicología de la inteligencia</em></h6>
+                  <p class="text-secondary small mb-0">Sistematiza la teoría de los estadios del desarrollo cognitivo y los mecanismos de asimilación, acomodación y equilibración.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="list-group-item border-0 shadow-sm mb-3 rounded">
+              <div class="d-flex align-items-center">
+                <span class="badge bg-primary rounded-pill me-3 flex-shrink-0">1956</span>
+                <div>
+                  <h6 class="fw-bold mb-1" style="color:#0a2a6c;">Nace la revolución cognitiva</h6>
+                  <p class="text-secondary small mb-0">En el Simposio de la Universidad de Dartmouth, Miller, Newell, Simon y otros consolidan la metáfora del procesamiento de información como alternativa al conductismo.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="list-group-item border-0 shadow-sm mb-3 rounded">
+              <div class="d-flex align-items-center">
+                <span class="badge bg-primary rounded-pill me-3 flex-shrink-0">1960</span>
+                <div>
+                  <h6 class="fw-bold mb-1" style="color:#0a2a6c;">Bruner publica <em>El proceso de la educación</em></h6>
+                  <p class="text-secondary small mb-0">Propone el aprendizaje por descubrimiento y el curriculum en espiral, influenciando reformas educativas en todo el mundo.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="list-group-item border-0 shadow-sm mb-3 rounded">
+              <div class="d-flex align-items-center">
+                <span class="badge bg-primary rounded-pill me-3 flex-shrink-0">1965</span>
+                <div>
+                  <h6 class="fw-bold mb-1" style="color:#0a2a6c;">Gagné publica <em>Las condiciones del aprendizaje</em></h6>
+                  <p class="text-secondary small mb-0">Presenta su modelo de nueve eventos de instrucción y la taxonomía de tipos de resultados de aprendizaje, fundamentando el diseño instruccional.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="list-group-item border-0 shadow-sm mb-3 rounded">
+              <div class="d-flex align-items-center">
+                <span class="badge bg-primary rounded-pill me-3 flex-shrink-0">1968</span>
+                <div>
+                  <h6 class="fw-bold mb-1" style="color:#0a2a6c;">Ausubel publica <em>Psicología educativa</em></h6>
+                  <p class="text-secondary small mb-0">Formaliza la teoría del aprendizaje significativo y la función de los organizadores previos como puentes cognitivos.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="list-group-item border-0 shadow-sm mb-3 rounded">
+              <div class="d-flex align-items-center">
+                <span class="badge bg-primary rounded-pill me-3 flex-shrink-0">1976</span>
+                <div>
+                  <h6 class="fw-bold mb-1" style="color:#0a2a6c;">Flavell acuña el término <em>metacognición</em></h6>
+                  <p class="text-secondary small mb-0">Introduce el estudio sistemático de los procesos de autoconocimiento y autorregulación cognitiva, abriendo una nueva línea de investigación educativa.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="list-group-item border-0 shadow-sm mb-3 rounded">
+              <div class="d-flex align-items-center">
+                <span class="badge bg-primary rounded-pill me-3 flex-shrink-0">1980</span>
+                <div>
+                  <h6 class="fw-bold mb-1" style="color:#0a2a6c;">Consolidación del paradigma</h6>
+                  <p class="text-secondary small mb-0">El cognitivismo se establece como marco dominante en psicología educativa, influyendo en currículos, formación docente y diseño de materiales a escala global.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CITA DESTACADA ═══ -->
+  <section class="py-5 bg-white">
+    <div class="container">
+      <div class="row justify-content-center fade-in">
+        <div class="col-lg-8">
+          <div class="card border-start border-primary border-4 shadow-sm">
+            <div class="card-body p-4">
+              <i class="bi bi-quote fs-1 text-primary opacity-25"></i>
+              <blockquote class="blockquote mb-0">
+                <p class="fst-italic text-secondary" style="color:#0a2a6c;">El factor más importante que influye en el aprendizaje es lo que el alumno ya sabe. Averígüese esto y enséñese en consecuencia.</p>
+                <footer class="blockquote-footer mt-2">David Ausubel, <cite title="Psicología educativa: un punto de vista cognoscitivo">Psicología educativa: un punto de vista cognoscitivo</cite> (1968)</footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ RECURSOS ADICIONALES ═══ -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5 fade-in">
+        <h2 class="fw-bold" style="color:#0a2a6c;"><i class="bi bi-bookmark me-2"></i>Recursos y Lecturas Recomendadas</h2>
+        <p class="text-secondary">Fuentes académicas para profundizar en el paradigma cognitivista</p>
+      </div>
+
+      <div class="row g-4 justify-content-center fade-in">
+        <div class="col-md-6 col-lg-4">
+          <div class="card border-0 shadow-sm h-100 timeline-card">
+            <div class="card-body p-4">
+              <i class="bi bi-journal-richtext fs-3 text-primary mb-2"></i>
+              <h6 class="fw-bold" style="color:#0a2a6c;">Piaget, J. (1947)</h6>
+              <p class="small text-secondary mb-0"><em>La psicología de la inteligencia</em>. París: Armand Colin. Obra fundamental que sistematiza la teoría del desarrollo cognitivo por estadios y los mecanismos de adaptación intelectual.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card border-0 shadow-sm h-100 timeline-card">
+            <div class="card-body p-4">
+              <i class="bi bi-journal-richtext fs-3 text-primary mb-2"></i>
+              <h6 class="fw-bold" style="color:#0a2a6c;">Bruner, J. (1960)</h6>
+              <p class="small text-secondary mb-0"><em>El proceso de la educación</em>. Cambridge: Harvard University Press. Propuesta revolucionaria sobre el aprendizaje por descubrimiento y la estructura de las disciplinas.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card border-0 shadow-sm h-100 timeline-card">
+            <div class="card-body p-4">
+              <i class="bi bi-journal-richtext fs-3 text-primary mb-2"></i>
+              <h6 class="fw-bold" style="color:#0a2a6c;">Ausubel, D. (1968)</h6>
+              <p class="small text-secondary mb-0"><em>Psicología educativa: un punto de vista cognoscitivo</em>. México: Trillas. Teoría del aprendizaje significativo y la función de los organizadores previos en la instrucción.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card border-0 shadow-sm h-100 timeline-card">
+            <div class="card-body p-4">
+              <i class="bi bi-journal-richtext fs-3 text-primary mb-2"></i>
+              <h6 class="fw-bold" style="color:#0a2a6c;">Gagné, R. (1965)</h6>
+              <p class="small text-secondary mb-0"><em>Las condiciones del aprendizaje</em>. Nueva York: Holt, Rinehart & Winston. Modelo de nueve eventos de instrucción y taxonomía de tipos de aprendizaje.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card border-0 shadow-sm h-100 timeline-card">
+            <div class="card-body p-4">
+              <i class="bi bi-journal-richtext fs-3 text-primary mb-2"></i>
+              <h6 class="fw-bold" style="color:#0a2a6c;">Flavell, J. (1976)</h6>
+              <p class="small text-secondary mb-0"><em>Metacognitive aspects of problem solving</em>. En L. Resnick (Ed.), The Nature of Intelligence. Artículo seminal que introduce formalmente el concepto de metacognición.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card border-0 shadow-sm h-100 timeline-card">
+            <div class="card-body p-4">
+              <i class="bi bi-journal-richtext fs-3 text-primary mb-2"></i>
+              <h6 class="fw-bold" style="color:#0a2a6c;">Sweller, J. (1988)</h6>
+              <p class="small text-secondary mb-0"><em>Cognitive load during problem solving</em>. Cognitive Science, 12, 257-285. Teoría de la carga cognitiva, derivación directa del modelo de procesamiento de información.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ NAVEGACIÓN ENTRE MÓDULOS ═══ -->
+  <section class="py-5 bg-white border-top">
+    <div class="container">
+      <div class="row g-4 fade-in">
+        <div class="col-md-6">
+          <a href="conductismo.html" class="card border-0 shadow-sm h-100 text-decoration-none d-block timeline-card">
+            <div class="card-body p-4 d-flex align-items-center">
+              <i class="bi bi-arrow-left fs-3 text-primary me-3 flex-shrink-0"></i>
+              <div>
+                <span class="small text-muted">Modulo anterior</span>
+                <h6 class="fw-bold mb-0" style="color:#0a2a6c;">Conductismo</h6>
+                <p class="small text-secondary mb-0">1900 — 1960</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6">
+          <a href="constructivismo.html" class="card border-0 shadow-sm h-100 text-decoration-none d-block timeline-card">
+            <div class="card-body p-4 d-flex align-items-center justify-content-end text-end">
+              <div>
+                <span class="small text-muted">Modulo siguiente</span>
+                <h6 class="fw-bold mb-0" style="color:#0a2a6c;">Constructivismo</h6>
+                <p class="small text-secondary mb-0">1960 — 2000</p>
+              </div>
+              <i class="bi bi-arrow-right fs-3 text-primary ms-3 flex-shrink-0"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (inyectado por components.js) -->
+  <div id="wiki-footer"></div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Componentes compartidos -->
+  <script src="../components.js"></script>
+
+</body>
+</html>

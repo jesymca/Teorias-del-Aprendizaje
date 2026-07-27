@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conectivismo — Wiki Teorías del Aprendizaje | UPTPC</title>
+  <meta name="description" content="Módulo sobre el Conectivismo como teoría del aprendizaje en la era digital. Wiki de teorías del aprendizaje — UPTPC, Unidad de Ciencia y Tecnología.">
+  <meta name="author" content="Jose Herrera">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <style>
+    .fade-in { opacity:0; transition:opacity .7s ease, transform .7s ease; transform:translateY(18px); }
+    .fade-in.visible { opacity:1; transform:translateY(0); }
+    .timeline-card { transition: border-color .3s ease, box-shadow .3s ease; }
+    #reading-progress { position:fixed; top:0; left:0; height:3px; background:var(--bs-primary); z-index:9999; width:0; transition:width .2s ease; }
+  </style>
+</head>
+<body class="bg-white">
+
+  <!-- Reading Progress Bar -->
+  <div id="reading-progress"></div>
+
+  <!-- Wiki Header Placeholder (injected by components.js) -->
+  <div id="wiki-header"></div>
+
+  <!-- Breadcrumb -->
+  <nav aria-label="breadcrumb" class="container mt-3 fade-in">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="../index.html"><i class="bi bi-house-door"></i> Inicio</a></li>
+      <li class="breadcrumb-item"><a href="../index.html#modulos">Módulos</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Conectivismo</li>
+    </ol>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="container py-5 fade-in" id="hero">
+    <div class="row align-items-center">
+      <div class="col-md-2 text-center mb-3 mb-md-0">
+        <div class="d-inline-flex align-items-center justify-content-center rounded-circle" style="width:90px;height:90px;background:#0a2a6c;">
+          <i class="bi bi-diagram-3 text-white" style="font-size:2.8rem;"></i>
+        </div>
+      </div>
+      <div class="col-md-10">
+        <h1 class="display-5 fw-bold" style="color:#0a2a6c;">Conectivismo</h1>
+        <p class="lead text-muted mb-2">Teoría del aprendizaje para la era digital</p>
+        <span class="badge rounded-pill" style="background:#0a2a6c;font-size:.95rem;">
+          <i class="bi bi-clock-history me-1"></i> Período: 2004 — Presente
+        </span>
+      </div>
+    </div>
+    <hr class="mt-4" style="border-color:#0a2a6c;opacity:.25;">
+  </section>
+
+  <!-- ========== INTRODUCCIÓN ========== -->
+  <section class="container py-4 fade-in" id="introduccion">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <h2 class="h3 fw-bold mb-3" style="color:#0a2a6c;"><i class="bi bi-bookmark-star me-2"></i>Introducción</h2>
+        <p>
+          El conectivismo emerge como una teoría del aprendizaje propuesta originalmente por <strong>George Siemens</strong> en 2004, en un contexto donde las tecnologías digitales, las redes de información y la globalización habían transformado radicalmente la manera en que las personas acceden, procesan y comparten el conocimiento. Esta teoría se posiciona como una respuesta directa a las limitaciones de las teorías clásicas —conductismo, cognitivismo y constructivismo— frente a un entorno caracterizado por la abundancia de datos, la velocidad del cambio informativo y la interconexión permanente entre individuos, instituciones y dispositivos automatizados.
+        </p>
+        <p>
+          En el conectivismo, el aprendizaje no se concibe como un proceso interno e individual de construcción mental, sino como la <em>formación y mantenimiento de conexiones</em> entre nodos dispersos en una red. Un nodo puede ser una persona, una base de datos, un algoritmo de inteligencia artificial, una biblioteca digital o cualquier fuente que almacene y transmita información. La capacidad de navegar entre estos nodos, de evaluar su pertinencia y de integrar sus aportaciones en decisiones contextuales constituye, según esta perspectiva, el núcleo del acto de aprender.
+        </p>
+        <p>
+          Desde su formulación, el conectivismo ha generado debates intensos en la comunidad académica: algunos lo consideran una teoría plena del aprendizaje, mientras otros lo catalogan como un paradigma pedagógico o incluso como una metáfora descriptiva de la realidad digital. Independientemente de esta controversia, sus principios han permeado profundamente en la educación contemporánea —MOOCs, redes de aprendizaje profesional, plataformas colaborativas y herramientas de inteligencia artificial—, lo que justifica su estudio detallado en este módulo.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== AUTORES PRINCIPALES ========== -->
+  <section class="container py-5 fade-in" id="autores">
+    <h2 class="h3 fw-bold mb-4" style="color:#0a2a6c;"><i class="bi bi-people me-2"></i>Autores Principales</h2>
+    <p class="mb-4">
+      El conectivismo se sustenta en las contribuciones de diversos pensadores que, desde disciplinas complementarias —pedagogía, filosofía de la educación, sociología de la comunicación y estudios culturales—, han articulado una visión centrada en las redes como estructuras fundamentales del conocimiento y del aprendizaje. A continuación se presenta un análisis de cada autor clave, sus obras referenciales y su aportación específica al marco conectivista.
+    </p>
+
+    <div class="row g-4">
+
+      <!-- Siemens -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 border-0 shadow-sm timeline-card" style="border-left:4px solid #0a2a6c;">
+          <div class="card-body">
+            <div class="d-flex align-items-center mb-3">
+              <div class="flex-shrink-0 d-inline-flex align-items-center justify-content-center rounded" style="width:48px;height:48px;background:#0a2a6c;">
+                <i class="bi bi-lightbulb text-white" style="font-size:1.4rem;"></i>
+              </div>
+              <h5 class="ms-3 mb-0 fw-bold" style="color:#0a2a6c;">George Siemens</h5>
+            </div>
+            <p class="small text-muted mb-1"><strong>2004 — Canadá</strong></p>
+            <p>
+              George Siemens formuló la primera articulación sistemática del conectivismo en su artículo <em>"Connectivism: A Learning Theory for the Digital Age"</em> (2004), posteriormente ampliado en el libro <em>Knowing Knowledge</em> (2006). Siemens argumenta que las teorías tradicionales del aprendizaje fueron diseñadas para épocas en las que la velocidad del cambio era lenta y la información era escasa; en la era digital, la abundancia informativa y la obsolescencia rápida del conocimiento exigen un modelo que reconozca la distribución del saber en redes tecnológicas y sociales. Su aportación central es el principio de que <strong>la capacidad de conectar fuentes especializadas es más valiosa que el conocimiento individual almacenado</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Downes -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 border-0 shadow-sm timeline-card" style="border-left:4px solid #0a2a6c;">
+          <div class="card-body">
+            <div class="d-flex align-items-center mb-3">
+              <div class="flex-shrink-0 d-inline-flex align-items-center justify-content-center rounded" style="width:48px;height:48px;background:#0a2a6c;">
+                <i class="bi bi-share text-white" style="font-size:1.4rem;"></i>
+              </div>
+              <h5 class="ms-3 mb-0 fw-bold" style="color:#0a2a6c;">Stephen Downes</h5>
+            </div>
+            <p class="small text-muted mb-1"><strong>2005 — Canadá</strong></p>
+            <p>
+              Stephen Downes, investigador del National Research Council de Canadá, complementó la propuesta de Siemens con su concepto de <em>"conocimiento conectivo"</em> (<em>connective knowledge</em>). Downes sostiene que el conocimiento emerge de la interconexión entre entidades distribuidas, de manera similar a cómo las propiedades de una red neuronal surgen de las conexiones entre neuronas individuales, no de cada neurona por sí misma. Es coautor del primer MOOC (<em>Connectivism and Connective Knowledge</em>, 2008), experiencia que demostró empíricamente los principios de aprendizaje distribuido y autoorganizado. Downes enfatiza la <strong>autonomía del learner, la diversidad de fuentes y la interacción como mecanismos de validez epistémica</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Castells -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 border-0 shadow-sm timeline-card" style="border-left:4px solid #0a2a6c;">
+          <div class="card-body">
+            <div class="d-flex align-items-center mb-3">
+              <div class="flex-shrink-0 d-inline-flex align-items-center justify-content-center rounded" style="width:48px;height:48px;background:#0a2a6c;">
+                <i class="bi bi-globe2 text-white" style="font-size:1.4rem;"></i>
+              </div>
+              <h5 class="ms-3 mb-0 fw-bold" style="color:#0a2a6c;">Manuel Castells</h5>
+            </div>
+            <p class="small text-muted mb-1"><strong>1996–2010 — España/EE.UU.</strong></p>
+            <p>
+              Manuel Castells, sociólogo de la comunicación, proporcionó el marco macrosocial en el que el conectivismo opera. Su trilogía <em>La Era de la Información</em> (1996–1998) describe la "sociedad red" como una estructura social donde los flujos de información codificada constituyen la organización fundamental de la producción, el poder y la experiencia humana. Castells argumenta que la <strong>red es la morphología social dominante</strong> de nuestra época y que quienes carecen de acceso a estas redes quedan excluidos de los circuitos centrales de innovación y decisión. Su teoría de la sociedad red fundamenta el principio conectivista de que el aprendizaje no puede entenderse fuera de las infraestructuras digitales que lo vehiculizan.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Jenkins -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 border-0 shadow-sm timeline-card" style="border-left:4px solid #0a2a6c;">
+          <div class="card-body">
+            <div class="d-flex align-items-center mb-3">
+              <div class="flex-shrink-0 d-inline-flex align-items-center justify-content-center rounded" style="width:48px;height:48px;background:#0a2a6c;">
+                <i class="bi bi-megaphone text-white" style="font-size:1.4rem;"></i>
+              </div>
+              <h5 class="ms-3 mb-0 fw-bold" style="color:#0a2a6c;">Henry Jenkins</h5>
+            </div>
+            <p class="small text-muted mb-1"><strong>2006 — EE.UU.</strong></p>
+            <p>
+              Henry Jenkins, investigador de estudios de medios, aportó al conectivismo su conceptualización de la <em>"cultura participativa"</em> y la <em>"convergencia mediática"</em>. En <em>Convergence Culture</em> (2006) y el informe <em>Confronting the Challenges of Participatory Culture</em> (2009, MacArthur Foundation), Jenkins describe un entorno donde los consumidores de medios se transforman en productores activos, donde las comunidades de fans, los bloggers y los creadores de contenido circulan y remixan información de manera colaborativa. Esta cultura participativa valida el postulado conectivista de que <strong>el aprendizaje se produce en comunidades descentralizadas donde la creación compartida es tan importante como la recepción individual</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== POSTULADOS BÁSICOS ========== -->
+  <section class="container py-5 fade-in" id="postulados">
+    <h2 class="h3 fw-bold mb-4" style="color:#0a2a6c;"><i class="bi bi-list-check me-2"></i>Postulados Básicos</h2>
+    <p class="mb-4">
+      Los postulados del conectivismo constituyen un conjunto de principios que redefinen la naturaleza del conocimiento, los mecanismos del aprendizaje y las condiciones de validez epistémica en un entorno digital hiperconectado. Cada postulado se articula en diálogo con las limitaciones detectadas en las teorías precedentes y se fundamenta en las características estructurales de la sociedad red. A continuación se desglosan los seis postulados centrales con sus implicaciones teóricas y prácticas.
+    </p>
+
+    <div class="accordion" id="accordionPostulados">
+
+      <!-- Postulado 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1" style="color:#0a2a6c;font-weight:700;">
+            <i class="bi bi-1-circle me-2"></i> El aprendizaje es el proceso de crear conexiones entre nodos de información
+          </button>
+        </h2>
+        <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#accordionPostulados">
+          <div class="accordion-body">
+            <p>
+              Este postulado redefinió radicalmente la concepción del aprendizaje. En el conductismo, aprender equivale a modificar conductas observable; en el cognitivismo, a reorganizar estructuras mentales internas; en el constructivismo, a construir significados a partir de la experiencia individual. El conectivismo, en contraste, postula que <strong>el aprendizaje consiste en la formación y el fortalecimiento de conexiones</strong> —neurales, conceptuales, sociales y tecnológicas— entre unidades discretas de información denominadas <em>nodos</em>. Un nodo no es necesariamente un individuo; puede ser un artículo científico, un motor de búsqueda, una comunidad virtual, un sensor IoT o un modelo de lenguaje artificial.
+            </p>
+            <p>
+              La metáfora central es la <em>red</em>: el conocimiento no reside en un punto, sino en la topología de las interconexiones. Siemens lo expresa así: «La capacidad de aprender, de crear conexiones, de navegar la complejidad, de explorar y de construir understanding es más importante que el conocimiento almacenado en un momento particular». Esta perspectiva implica que el acto pedagógico debe orientarse a facilitar el <strong>tránsito entre nodos</strong>, no a depositar contenidos en la mente del estudiante.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Postulado 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2" style="color:#0a2a6c;font-weight:700;">
+            <i class="bi bi-2-circle me-2"></i> El conocimiento está distribuido en redes, no poseído por individuos
+          </button>
+        </h2>
+        <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionPostulados">
+          <div class="accordion-body">
+            <p>
+              El segundo postulado desplaza el locus del conocimiento del sujeto individual al sistema interconectado. Si el conocimiento es una propiedad emergente de las relaciones entre nodos, entonces <strong>ningún individuo puede "poseer" conocimiento completo</strong> sobre un dominio complejo; lo que posee es una representación parcial, necesariamente incompleta, que se actualiza y se valida mediante la interacción con otros nodos de la red.
+            </p>
+            <p>
+              Esta distribución tiene dimensiones tecnológicas —bases de datos, algoritmos de recomendación, repositorios abiertos— y dimensiones sociales —comunidades de práctica, redes profesionales, espacios de deliberación colectiva. Downes lo denomina <em>"conocimiento conectivo"</em>: un tipo de conocimiento que surge de la <em>conexión</em> misma, de modo similar a cómo una sinfonía emerge de la relación entre notas individuales, no de cada nota por separado. Esta perspectiva cuestiona la evaluación tradicional basada en la retención individual y propone métricas centradas en la <strong>capacidad de movilizar recursos distribuidos</strong> para resolver problemas contextuales.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Postulado 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3" style="color:#0a2a6c;font-weight:700;">
+            <i class="bi bi-3-circle me-2"></i> La capacidad de saber dónde encontrar información es más crítica que poseerla
+          </button>
+        </h2>
+        <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionPostulados">
+          <div class="accordion-body">
+            <p>
+              En un contexto de abundancia informativa y obsolescencia acelerada —la "halflife del conocimiento" se reduce progresivamente—, Siemens postula que <strong>la competencia clave no es la retención, sino la navegación</strong>. Saber dónde hallar la información pertinente, cómo evaluar su fiabilidad y cómo integrarla en un marco decisional constituye una habilidad de orden superior que trasciende la memorización de datos.
+            </p>
+            <p>
+              Este principio se inspira parcialmente en la epistemología conectivista de Downes, quien argumenta que la validez del conocimiento conectivo se determina por la <em>diversidad</em> de las fuentes, la <em>autonomía</em> de los nodos participantes, la <em>interacción</em> entre ellos y la <em>apertura</em> del sistema. En términos educativos, esto implica que el currículo debepriorizar la <strong>alfabetización digital, la evaluación crítica de fuentes y la competencia de búsqueda estratégica</strong> sobre la transmisión enciclopédica de contenidos fijos. La metáfora del <em>curador de contenidos</em> —que selecciona, filtra y organiza información para una comunidad— encarna este postulado en la práctica.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Postulado 4 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading4">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4" style="color:#0a2a6c;font-weight:700;">
+            <i class="bi bi-4-circle me-2"></i> El aprendizaje ocurre en entornos diversos, incluidos agentes no humanos (IA, bases de datos)
+          </button>
+        </h2>
+        <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionPostulados">
+          <div class="accordion-body">
+            <p>
+              Este postulado distingue al conectivismo de toda teoría precedente por su inclusión explícita de <strong>agentes no humanos</strong> como participantes activos en el proceso de aprendizaje. Siemens reconoce que bases de datos, algoritmos de machine learning, sistemas de recomendación, redes semánticas y, más recientemente, modelos generativos de lenguaje (GPT, LLM) <em>procesan, organizan y generan información</em> de maneras que afectan directamente cómo los humanos aprenden.
+            </p>
+            <p>
+              El postulado no atribuye consciencia a estos agentes, pero reconoce su rol funcional: un sistema de IA que identifica patrones en datos médicos, un buscador que prioriza fuentes relevantes o un repositorio que auto-organiza contenido por afinidad semántica son <em>nodos</em> cuya contribución al aprendizaje de un humano es comparable a la de un mentor o un colega. Esto implica que <strong>el diseño educativo debe considerar la ecología completa de nodos</strong> —humanos y no humanos—, no solo las interacciones profesor-estudiante. En la era de la inteligencia artificial generativa, este postulado adquiere una relevancia sin precedentes.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Postulado 5 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading5">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5" style="color:#0a2a6c;font-weight:700;">
+            <i class="bi bi-5-circle me-2"></i> La toma de decisiones es un proceso de aprendizaje porque los contextos cambian rápidamente
+          </button>
+        </h2>
+        <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionPostulados">
+          <div class="accordion-body">
+            <p>
+              Siemens postula que, en un entorno digital donde la información se actualiza continuamente y las condiciones contextuales mutan con celeridad, <strong>elegir entre opciones informativas es intrínsecamente un acto de aprendizaje</strong>. Decidir qué fuente consultar, qué algoritmo utilizar, qué comunidad integrar o qué herramienta adoptar implica una evaluación situacional que genera conocimiento en el mismo momento en que se ejecuta.
+            </p>
+            <p>
+              Este postulado responde a la paradoja de la <em>obsolescencia del conocimiento</strong>: lo que se aprende hoy puede ser irrelevante mañana, por lo que la competencia permanente no es el saber almacenado, sino la <em>capacidad de decidir</em> qué saber buscar, qué saber actualizar y qué saber descartar. En el ámbito educativo, esto se traduce en pedagogías que privilegian la <strong>resolución de problemas abiertos, la toma de decisiones informada y la adaptación continua</strong> sobre la reproducción de respuestas predefinidas. La evaluación, bajo esta lógica, debe medir la calidad decisional del estudiante, no solo la precisión de sus respuestas memorizadas.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Postulado 6 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading6">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6" style="color:#0a2a6c;font-weight:700;">
+            <i class="bi bi-6-circle me-2"></i> Nutrir y mantener redes es esencial para el aprendizaje continuo
+          </button>
+        </h2>
+        <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#accordionPostulados">
+          <div class="accordion-body">
+            <p>
+              El último postulado conectivista enfatiza que las redes —tanto las personales como las institucionales y las tecnológicas— requieren <strong>cuidado, mantenimiento y renovación</strong> constante. Una red que no se actualiza, que pierde nodos valiosos o que se encierra en conexiones homogéneas se degrada: la información circula con menor diversidad, la innovación disminuye y el aprendizaje se estanca.
+            </p>
+            <p>
+              Siemens utiliza el concepto de <em>"network nurturing"</em> para describir las prácticas deliberadas de curación de conexiones: agregar nuevos nodos, eliminar conexiones obsoletas, diversificar las fuentes, participar activamente en comunidades y compartir recursos con reciprocidad. Este principio se materializa en los <strong>Professional Learning Networks (PLNs)</strong>, donde educadores y profesionales construyen deliberadamente redes de contacts, fuentes y herramientas para sostener su desarrollo profesional. En la educación formal, esto implica diseñar experiencias de aprendizaje que enseñen a los estudiantes <strong>no solo contenidos, sino la competencia de construir y sostener redes</strong> de conocimiento a lo largo de su vida.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== IMPACTO EN LA EDUCACIÓN ACTUAL ========== -->
+  <section class="container py-5 fade-in" id="impacto">
+    <h2 class="h3 fw-bold mb-4" style="color:#0a2a6c;"><i class="bi bi-rocket-takeoff me-2"></i>Impacto en la Educación Actual</h2>
+    <p class="mb-4">
+      Los principios del conectivismo han permeado múltiples dimensiones de la educación contemporánea, desde la reforma curricular hasta la arquitectura de las plataformas de aprendizaje. A continuación se analizan ocho ámbitos de impacto, cada uno ilustrado con ejemplos concretos y vinculado a los postulados teóricos que lo sustentan.
+    </p>
+
+    <div class="row g-4">
+
+      <!-- 1. Alfabetización digital -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 border-0 shadow-sm timeline-card" style="border-top:4px solid #0a2a6c;">
+          <div class="card-body">
+            <div class="mb-2"><i class="bi bi-laptop" style="color:#0a2a6c;font-size:1.5rem;"></i></div>
+            <h5 class="fw-bold" style="color:#0a2a6c;">Alfabetización digital y currículos de aprendizaje en red</h5>
+            <p>
+              Universidades y sistemas educativos nacionales han incorporado competencias de alfabetización digital como objetivos transversales del currículo. La UNESCO, la OCDE y la ISTE han publicado marcos de competencias digitales que privilegian la <strong>capacidad de buscar, evaluar, organizar y compartir información en redes</strong> —competencias directamente derivadas del postulado conectivista de que navegar es más importante que memorizar. Ejemplos: el Digital Literacy Framework de la Universidad de Edimburgo, el programa DigComp de la Unión Europea y los estándares ISTE para estudiantes, todos orientados a formar <em>navegantes de conocimiento</em>, no receptores pasivos.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. MOOCs -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 border-0 shadow-sm timeline-card" style="border-top:4px solid #0a2a6c;">
+          <div class="card-body">
+            <div class="mb-2"><i class="bi bi-mortarboard" style="color:#0a2a6c;font-size:1.5rem;"></i></div>
+            <h5 class="fw-bold" style="color:#0a2a6c;">MOOCs y recursos educativos abiertos</h5>
+            <p>
+              Los MOOCs (<em>Massive Open Online Courses</em>) son la expresión más visible del conectivismo en la práctica educativa. El primer MOOC —<em>Connectivism and Connective Knowledge</em> (CCK08), diseñado por Siemens y Downes— fue explícitamente conectivista: sin currículo prescriptivo, centrado en la autonomía del estudiante, la diversidad de recursos y la interacción entre participantes. Plataformas como Coursera, edX y FutureLearn han popularizado el modelo, aunque muchos MOOCs contemporáneos adoptan un diseño más instructivista que conectivista. Los <strong>Recursos Educativos Abiertos (OER)</strong> —libros de texto, videos, simulaciones disponibles bajo licencias Creative Commons— democratizan el acceso a nodos de conocimiento y encarnan el principio de distribución.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Social media -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 border-0 shadow-sm timeline-card" style="border-top:4px solid #0a2a6c;">
+          <div class="card-body">
+            <div class="mb-2"><i class="bi bi-chat-dots" style="color:#0a2a6c;font-size:1.5rem;"></i></div>
+            <h5 class="fw-bold" style="color:#0a2a6c;">Redes sociales como plataformas de aprendizaje</h5>
+            <p>
+              Twitter, YouTube, Reddit, Discord, WhatsApp y TikTok funcionan, en la práctica, como infraestructuras de aprendizaje informal donde millones de personas acceden, intercambian y co-construyen conocimiento. Los hashtags académicos en Twitter (#AcademicTwitter, #PhDChat), las comunidades de práctica en Reddit (r/science, r/education), los canales educativos en YouTube y los grupos de estudio en WhatsApp constituyen <strong>redes de nodos humanos</strong> que generan conocimiento distribuido. Jenkins conceptualizó estos espacios como manifestaciones de cultura participativa; Siemens y Downes los interpretan como <em>ecologías de aprendizaje</em> donde el valor educativo reside en la conexión, no en la transmisión unidireccional.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. IA -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 border-0 shadow-sm timeline-card" style="border-top:4px solid #0a2a6c;">
+          <div class="card-body">
+            <div class="mb-2"><i class="bi bi-robot" style="color:#0a2a6c;font-size:1.5rem;"></i></div>
+            <h5 class="fw-bold" style="color:#0a2a6c;">Herramientas de aprendizaje asistidas por IA</h5>
+            <p>
+              La inteligencia artificial generativa —ChatGPT, Claude, Gemini, Copilot— encarna literalmente el postulado conectivista sobre <strong>agentes no humanos como participantes en el aprendizaje</strong>. Estos sistemas actúan como nodos que procesan, sintetizan y generan información, permitiendo al estudiante interactuar con un interlocutor que no es humano pero que contribuye activamente a la construcción de understanding. Los sistemas de tutoría inteligente (ITS), los algoritmos de aprendizaje adaptativo (Knewton, DreamBox) y los motores de recomendación de contenidos (Coursera, Khan Academy) son también agentes no humanos que configuran la experiencia de aprendizaje. Siemens anticipó esta dimensión en 2004; la explosión de IA generativa post-2022 la ha hecho ineludible.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. Co-construcción -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 border-0 shadow-sm timeline-card" style="border-top:4px solid #0a2a6c;">
+          <div class="card-body">
+            <div class="mb-2"><i class="bi bi-pencil-square" style="color:#0a2a6c;font-size:1.5rem;"></i></div>
+            <h5 class="fw-bold" style="color:#0a2a6c;">Construcción colaborativa del conocimiento en línea</h5>
+            <p>
+              Wikipedia, GitHub, los wikis corporativos y las plataformas de co-authoring (Google Docs, Overleaf) son ejemplos paradigmáticos de <strong>construcción colaborativa distribuida</strong>. En Wikipedia, miles de editores contribuyen, corrigen y debaten artículos sin una jerarquía central; en GitHub, desarrolladores de todo el mundo co-construyen software mediante forks, pull requests y merge; en Overleaf, investigadores co-editan artículos científicos en tiempo real. Estas plataformas materializan los principios conectivistas de conocimiento distribuido, autonomía de nodos, interacción y apertura. Jenkins los describe como manifestaciones de cultura participativa; Downes los analiza como <em>redes de validez epistémica</em> donde la calidad emerge de la interacción diversa, no de la autoridad individual.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. Learning analytics -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 border-0 shadow-sm timeline-card" style="border-top:4px solid #0a2a6c;">
+          <div class="card-body">
+            <div class="mb-2"><i class="bi bi-graph-up-arrow" style="color:#0a2a6c;font-size:1.5rem;"></i></div>
+            <h5 class="fw-bold" style="color:#0a2a6c;">Analítica del aprendizaje (<em>Learning Analytics</em>)</h5>
+            <p>
+              La analítica del aprendizaje —la medición, recolección, análisis y reporte de datos sobre learners y sus contextos— constituye una aplicación directa del principio de que <strong>los agentes no humanos procesan información relevante para el aprendizaje</strong>. Plataformas LMS (Moodle, Canvas, Blackboard) generan dashboards de participación, trayectorias de navegación y predicciones de riesgo que orientan decisiones pedagógicas. Downes argumenta que estos datos, procesados algorítmicamente, constituyen <em>conocimiento conectivo</em> sobre el estado de la red educativa. Los learning analytics encarnan también el postulado decisional: los instructores <em>deciden</em> intervenciones pedagógicas basándose en información procesada por agentes no humanos, lo que constituye aprendizaje en sí mismo.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7. PLNs -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 border-0 shadow-sm timeline-card" style="border-top:4px solid #0a2a6c;">
+          <div class="card-body">
+            <div class="mb-2"><i class="bi bi-diagram-2" style="color:#0a2a6c;font-size:1.5rem;"></i></div>
+            <h5 class="fw-bold" style="color:#0a2a6c;">Redes de aprendizaje profesional (PLNs)</h5>
+            <p>
+              Los <strong>Professional Learning Networks (PLNs)</strong> son redes deliberadamente construidas por educadores y profesionales para sostener su desarrollo continuo. Un PLN incluye contacts en Twitter, suscripciones a blogs académicos, memberships en comunidades Slack/Discord, participación en webinars y conferencias virtuales, y uso de herramientas de curación (Feedly, Pocket, Diigo). El PLN es la materialización más directa del postulado sobre <em>nutrir y mantener redes</em>: el profesional no espera que la institución provea todo su aprendizaje; construye, diversifica y cura activamente su red de fuentes. Numerosos estudios (Trust, 2012; Raju, 2017; Greenhow & Askari, 2022) documentan cómo los PLNs transforman la formación continua del docente.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8. P2P -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 border-0 shadow-sm timeline-card" style="border-top:4px solid #0a2a6c;">
+          <div class="card-body">
+            <div class="mb-2"><i class="bi bi-arrow-left-right" style="color:#0a2a6c;font-size:1.5rem;"></i></div>
+            <h5 class="fw-bold" style="color:#0a2a6c;">Modelos de aprendizaje descentralizado y peer-to-peer</h5>
+            <p>
+              Las arquitecturas peer-to-peer (P2P) —donde cada nodo es simultáneamente consumidor y productor— representan la morphología ideal del aprendizaje conectivista. Plataformas como Peer-to-Peer University (P2PU), los circles de Learning Circle Global, los coworking spaces de aprendizaje y las comunidades de código abierto operan sin un instructor central; el conocimiento circula horizontalmente entre pares que enseñan y aprenden reciprocamiente. Castells identifica estas estructuras como <em>"redes autoorganizadas"</em> dentro de la sociedad red; Siemens las describe como <strong>ecologías donde la diversidad de nodos y la autonomía individual generan aprendizaje emergente</strong>. Estos modelos desafían la pedagogía institucional tradicional y proponen una educación donde la jerarquía es substituida por la interconexión.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== TABLA COMPARATIVA ========== -->
+  <section class="container py-5 fade-in" id="tabla">
+    <h2 class="h3 fw-bold mb-4" style="color:#0a2a6c;"><i class="bi bi-table me-2"></i>Tabla Comparativa: Conectivismo vs. Teorías Precedentes</h2>
+    <p class="mb-4">
+      La siguiente tabla sintetiza las diferencias fundamentales entre el conectivismo y las tres teorías clásicas del aprendizaje —conductismo, cognitivismo y constructivismo— en seis dimensiones críticas. Esta comparación permite visibilizar cómo cada teoría conceptualiza el conocimiento, el learner, el rol del instructor, el contexto de aprendizaje, la evaluación y la tecnología, lo cual es indispensable para comprender la especificidad del conectivismo y su ruptura con los paradigmas anteriores.
+    </p>
+
+    <div class="table-responsive">
+      <table class="table table-bordered table-hover align-middle" style="border-color:#0a2a6c;">
+        <thead style="background:#0a2a6c;color:#fff;">
+          <tr>
+            <th style="min-width:160px;">Dimensión</th>
+            <th style="min-width:160px;">Conductismo</th>
+            <th style="min-width:160px;">Cognitivismo</th>
+            <th style="min-width:160px;">Constructivismo</th>
+            <th style="min-width:180px;background:#0d3d8f;">Conectivismo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="fw-bold" style="color:#0a2a6c;">Naturaleza del conocimiento</td>
+            <td>Objetivo, externo, transferible por estímulo-respuesta</td>
+            <td>Internalizado en estructuras mentales (esquemas, mapas cognitivos)</td>
+            <td>Subjetivo, construido por el individuo desde su experiencia</td>
+            <td class="fw-bold" style="background:#e8f0fe;color:#0a2a6c;">Distribuido en redes; emerge de conexiones entre nodos</td>
+          </tr>
+          <tr>
+            <td class="fw-bold" style="color:#0a2a6c;">Rol del learner</td>
+            <td>Receptor pasivo; repuestas condicionadas</td>
+            <td>Procesador activo de información; codifica, almacena, recupera</td>
+            <td>Constructor activo de significados; interpreta la realidad</td>
+            <td class="fw-bold" style="background:#e8f0fe;color:#0a2a6c;">Navegante y connector; forma y mantiene conexiones entre nodos</td>
+          </tr>
+          <tr>
+            <td class="fw-bold" style="color:#0a2a6c;">Rol del instructor</td>
+            <td>Diseñador de estímulos y contingencias; dispensador de refuerzos</td>
+            <td>Facilitador de procesamiento; organiza información para codificación eficiente</td>
+            <td>Facilitador, mediador, guía; crea ambientes de discovery</td>
+            <td class="fw-bold" style="background:#e8f0fe;color:#0a2a6c;">Curador de redes; modela conexiones, no contenidos</td>
+          </tr>
+          <tr>
+            <td class="fw-bold" style="color:#0a2a6c;">Contexto de aprendizaje</td>
+            <td>Controlado, estructurado; ambiente de refuerzo predefinido</td>
+            <td>Interno (mente); ambiente externo como input de procesamiento</td>
+            <td>Social, situado; aprendizaje encarnado en contextos culturales</td>
+            <td class="fw-bold" style="background:#e8f0fe;color:#0a2a6c;">Distribuido, digital, interconectado; incluye agentes no humanos</td>
+          </tr>
+          <tr>
+            <td class="fw-bold" style="color:#0a2a6c;">Evaluación</td>
+            <td>Medición de conductas observable; pruebas estandarizadas</td>
+            <td>Medición de estructuras mentales; tests de comprensión, transfer</td>
+            <td>Evaluación auténtica, portfolio, rubricas de proceso</td>
+            <td class="fw-bold" style="background:#e8f0fe;color:#0a2a6c;">Evaluación de capacidad decisional, navegación de redes y calidad de conexiones</td>
+          </tr>
+          <tr>
+            <td class="fw-bold" style="color:#0a2a6c;">Uso de tecnología</td>
+            <td>Instrumento de refuerzo; máquinas de enseñanza (Skinner)</td>
+            <td>Herramienta cognitiva; amplifica procesamiento mental</td>
+            <td>Mediador cultural; herramienta de construcción y colaboración</td>
+            <td class="fw-bold" style="background:#e8f0fe;color:#0a2a6c;">Nodo de la red; agente no humano que procesa, organiza y genera información</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ========== CRÍTICAS Y DEBATES ========== -->
+  <section class="container py-5 fade-in" id="criticas">
+    <h2 class="h3 fw-bold mb-4" style="color:#0a2a6c;"><i class="bi bi-exclamation-triangle me-2"></i>Críticas y Debates Académicos</h2>
+    <p class="mb-4">
+      El conectivismo no ha estado exento de controversia. Desde su formulación, académicos de diversas tradiciones han cuestionado su status epistémico, su coherencia interna y su capacidad explicativa. Un análisis equilibrado exige considerar estas objeciones con la misma rigurosidad que los postulados.
+    </p>
+
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card border-0 shadow-sm timeline-card" style="border-left:4px solid #dc3545;">
+          <div class="card-body">
+            <h5 class="fw-bold text-danger"><i class="bi bi-x-circle me-1"></i> ¿Es realmente una teoría del aprendizaje?</h5>
+            <p>
+              Plön Verhagen (2006) argumentó que el conectivismo es más una <em>perspectiva pedagógica</em> que una teoría del aprendizaje, porque no explica <em>cómo</em> se produce el aprendizaje a nivel psicológico, solo <em> dónde</em> se localiza. Karen Starkey (2017) replicó que confunde <em>conocimiento</em> con <em>información</em> y que la metáfora de la red, aunque descriptiva, carece de mecanismos explicativos testables. Bill Kerr (2007) sugirió que el conectivismo amalgama insights de múltiples teorías sin ofrecer un marco unificador original.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card border-0 shadow-sm timeline-card" style="border-left:4px solid #198754;">
+          <div class="card-body">
+            <h5 class="fw-bold text-success"><i class="bi bi-check-circle me-1"></i> Defensas y justificaciones</h5>
+            <p>
+              Siemens respondió que el conectivismo no pretende competir con las neurociencias o la psicología cognitiva en el nivel micro; su ambition es explicar el aprendizaje a nivel <em>macro</em> —ecológico, social, tecnológico—, un nivel que las teorías clásicas ignoran. Downes arguyó que el conocimiento conectivo es un tipo ontológicamente distinto de conocimiento, no una metáfora, y que su testabilidad reside en la <em>predicción de patrones emergentes</em> en redes complejas. La comunidad de cMOOCs ha generado evidencia empírica sobre aprendizaje autoorganizado que valida, al menos parcialmente, los principios conectivistas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== REFERENCIAS ========== -->
+  <section class="container py-5 fade-in" id="referencias">
+    <h2 class="h3 fw-bold mb-4" style="color:#0a2a6c;"><i class="bi bi-book me-2"></i>Referencias Fundamentales</h2>
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item border-0 ps-0">
+            <strong>Siemens, G.</strong> (2004). <em>Connectivism: A Learning Theory for the Digital Age.</em> Elearnspace. <a href="https://www.elearnspace.org/Articles/connectivism.htm" target="_blank" rel="noopener" style="color:#0a2a6c;">elearnspace.org</a>
+          </li>
+          <li class="list-group-item border-0 ps-0">
+            <strong>Siemens, G.</strong> (2006). <em>Knowing Knowledge.</em> Lulu Press.
+          </li>
+          <li class="list-group-item border-0 ps-0">
+            <strong>Downes, S.</strong> (2005). <em>An Introduction to Connective Knowledge.</em> Stephen's Web.
+          </li>
+          <li class="list-group-item border-0 ps-0">
+            <strong>Downes, S.</strong> (2007). <em>Connectivism and Connective Knowledge.</em> CCK08 MOOC.
+          </li>
+          <li class="list-group-item border-0 ps-0">
+            <strong>Castells, M.</strong> (1996–1998). <em>La Era de la Información: Economía, Sociedad y Cultura.</em> Vol. I–III. Alianza Editorial / Blackwell.
+          </li>
+          <li class="list-group-item border-0 ps-0">
+            <strong>Jenkins, H.</strong> (2006). <em>Convergence Culture: Where Old and New Media Collide.</em> NYU Press.
+          </li>
+          <li class="list-group-item border-0 ps-0">
+            <strong>Jenkins, H.</strong> et al. (2009). <em>Confronting the Challenges of Participatory Culture: Media Education for the 21st Century.</em> MacArthur Foundation.
+          </li>
+          <li class="list-group-item border-0 ps-0">
+            <strong>Verhagen, P.</strong> (2006). <em>Connectivism: A New Learning Theory?</em> Surf.
+          </li>
+          <li class="list-group-item border-0 ps-0">
+            <strong>Kerr, B.</strong> (2007). <em>A Challenge to Connectivism.</em> LeadOpp.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== NAVIGATION ========== -->
+  <section class="container py-5 fade-in" id="navigation">
+    <div class="d-flex justify-content-between align-items-center">
+      <a href="electica.html" class="btn btn-outline-primary" style="color:#0a2a6c;border-color:#0a2a6c;">
+        <i class="bi bi-arrow-left me-1"></i> Anterior: Eclectica
+      </a>
+      <a href="conclusion.html" class="btn" style="background:#0a2a6c;color:#fff;">
+        Siguiente: Conclusiones <i class="bi bi-arrow-right ms-1"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- Wiki Footer Placeholder (injected by components.js) -->
+  <div id="wiki-footer"></div>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Shared components -->
+  <script src="../components.js"></script>
+
+  <!-- Fade-in observer -->
+  <script>
+    // Intersection Observer for fade-in animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    // Reading progress bar
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+      document.getElementById('reading-progress').style.width = progress + '%';
+    });
+  </script>
+
+</body>
+</html>

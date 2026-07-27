@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cambios Conceptuales — Wiki Teorias del Aprendizaje | UPTPC</title>
+  <meta name="description" content="Modulo de Cambios Conceptuales: teoria de reestructuracion de esquemas mentales de Posner, Strike, Hewson y Vosniadou. Wiki UPTPC." />
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+
+  <!-- Estilos minimos en head (solo animaciones fade-in, sin CSS personalizado de layout) -->
+  <style>
+    .fade-in { opacity:0; transition:opacity .7s ease, transform .7s ease; transform:translateY(18px); }
+    .fade-in.visible { opacity:1; transform:translateY(0); }
+    .timeline-card { transition: border-color .3s ease, box-shadow .3s ease; }
+    #reading-progress { position:fixed; top:0; left:0; height:3px; background:var(--bs-primary); z-index:9999; width:0; transition:width .2s ease; }
+  </style>
+</head>
+<body class="bg-white">
+
+  <!-- Barra de progreso de lectura -->
+  <div id="reading-progress"></div>
+
+  <!-- Header -->
+  <div id="wiki-header"></div>
+
+  <!-- ═══ BREADCRUMB ═══ -->
+  <nav aria-label="breadcrumb" class="bg-light py-2 border-bottom">
+    <div class="container">
+      <ol class="breadcrumb mb-0 small">
+        <li class="breadcrumb-item"><a href="../index.html" class="text-decoration-none"><i class="bi bi-house-door me-1"></i>Inicio</a></li>
+        <li class="breadcrumb-item"><a href="../index.html#modulos" class="text-decoration-none">Modulos</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Cambios Conceptuales</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- ═══ HERO ═══ -->
+  <section id="inicio" class="py-5 text-center bg-white">
+    <div class="container fade-in">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="rounded-circle bg-primary bg-opacity-10 d-inline-flex align-items-center justify-content-center mb-4" style="width:96px;height:96px;">
+            <i class="bi bi-arrow-repeat fs-1 text-primary"></i>
+          </div>
+          <span class="badge bg-primary rounded-pill mb-3 px-3 py-2 fs-6">1980 — 2000</span>
+          <h1 class="display-5 fw-bold mb-3" style="color:#0a2a6c;">Cambios Conceptuales</h1>
+          <p class="lead text-secondary mb-4">La reestructuracion de los esquemas mentales como condicion esencial para el aprendizaje significativo en ciencias. Cuando los conocimientos previos resultan insuficientes para explicar nuevos fenomenos, el aprendiz debe abandonar o transformar sus concepciones originales en un proceso que, lejos de ser inmediato, resulta gradual, complejo y en ocasiones incompleto.</p>
+          <p class="small text-muted">Elaborado por <strong>Jose Herrera</strong> — UPTPC, Unidad de Ciencia y Tecnologia</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ INTRODUCCION ═══ -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row justify-content-center fade-in">
+        <div class="col-lg-8">
+          <h2 class="fw-bold mb-4" style="color:#0a2a6c;"><i class="bi bi-info-circle me-2"></i>Introduccion</h2>
+          <p class="text-secondary">La teoria del cambio conceptual emerge durante la decada de 1980 como respuesta a las limitaciones del enfoque constructivista clasico para explicar por que muchos estudiantes persisten en sus ideas erroneas a pesar de la instruccion formal. Investigadores como George Posner, Kenneth Strike, Peter Hewson y Stella Vosniadou demostraron que los aprendices no simplemente acumulan informacion nueva sobre un vacio cognitivo, sino que poseen estructuras conceptuales previas —a menudo denominadas <em>concepciones alternativas</em> o <em>misconceptions</em>— que resisten activamente el cambio. Estas concepciones, formadas a partir de la experiencia cotidiana y la interaccion con el entorno, funcionan como filtros interpretativos que distorsionan o bloquean la asimilacion de conceptos cientificos.</p>
+          <p class="text-secondary">El campo del cambio conceptual se desarrollo principalmente en el ambito de la educacion cientifica, donde resulto evidente que los estudiantes llegaban al aula con ideas firmemente arraigadas sobre fenomenos como la gravedad, el movimiento, la fotosintesis o la estructura atomica, que contradecian abiertamente los modelos cientificos aceptados. La investigacion revelo que la simple presentacion de la informacion correcta era insuficiente para desplazar estas concepciones; se requerian condiciones especificas de insatisfaccion, inteligibilidad, plausibilidad y fecundidad para que el cambio conceptual ocurriera. Este hallazgo transformo radicalmente la manera en que se conciben la ensenanza y el aprendizaje de las ciencias, desplazando el enfasis desde la transmision de contenidos hacia la reestructuracion activa del pensamiento del estudiante.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ AUTORES PRINCIPALES ═══ -->
+  <section id="autores" class="py-5 bg-white">
+    <div class="container">
+      <div class="text-center mb-5 fade-in">
+        <h2 class="fw-bold" style="color:#0a2a6c;"><i class="bi bi-people me-2"></i>Autores Principales</h2>
+        <p class="text-secondary">Pioneros de la teoria del cambio conceptual en la educacion cientifica</p>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- George Posner -->
+        <div class="col-md-6 col-lg-3 fade-in">
+          <div class="card border-light timeline-card shadow-sm h-100 text-center">
+            <div class="card-header bg-primary text-white py-3">
+              <i class="bi bi-arrow-repeat fs-2 mb-2 d-block"></i>
+              <h6 class="fw-bold mb-0">George Posner</h6>
+            </div>
+            <div class="card-body">
+              <span class="badge bg-primary bg-opacity-10 text-primary rounded-pill mb-2">Modelo de Cambio Conceptual</span>
+              <p class="small text-secondary">George Posner, junto con Kenneth Strike, Peter Hewson y William Gertzog, propuso en 1982 el celebre modelo de cambio conceptual que lleva su nombre. Este modelo establece que para que un concepto sea reemplazado, el aprendiz debe experimentar insatisfaccion con su concepcion existente y percibir que la nueva concepcion es inteligible, plausible y fructifera. La obra de Posner constituye el referente fundacional de toda la teoria del cambio conceptual y ha sido citada miles de veces en la literatura de educacion cientifica. Su modelo se convirtio en el marco teorico dominante para disenar secuencias de instruccion que buscan promover la reestructuracion cognitiva en el aula de ciencias.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kenneth Strike -->
+        <div class="col-md-6 col-lg-3 fade-in">
+          <div class="card border-light timeline-card shadow-sm h-100 text-center">
+            <div class="card-header bg-primary text-white py-3">
+              <i class="bi bi-lightbulb fs-2 mb-2 d-block"></i>
+              <h6 class="fw-bold mb-0">Kenneth Strike</h6>
+            </div>
+            <div class="card-body">
+              <span class="badge bg-primary bg-opacity-10 text-primary rounded-pill mb-2">Condiciones para el Cambio</span>
+              <p class="small text-secondary">Kenneth Strike, filosofo de la educacion, aporto la dimension epistemologica y racional al modelo de cambio conceptual. Su contribucion fue fundamental para articular las condiciones bajo las cuales un cambio conceptual resulta justificado desde el punto de vista del aprendiz. Strike argumento que el cambio conceptual no es un proceso puramente psicologico, sino que involucra una evaluacion racional de las teorias en competencia: el aprendiz debe percibir que existe una anomalia genuina en su concepcion actual y que la nueva concepcion ofrece una explicacion superior. Su trabajo enfatizo la importancia del conflicto cognitivo como motor del cambio y la necesidad de que la instruccion cree las condiciones intelectuales para que el estudiante reconozca las limitaciones de sus ideas previas.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Peter Hewson -->
+        <div class="col-md-6 col-lg-3 fade-in">
+          <div class="card border-light timeline-card shadow-sm h-100 text-center">
+            <div class="card-header bg-primary text-white py-3">
+              <i class="bi bi-diagram-3 fs-2 mb-2 d-block"></i>
+              <h6 class="fw-bold mb-0">Peter Hewson</h6>
+            </div>
+            <div class="card-body">
+              <span class="badge bg-primary bg-opacity-10 text-primary rounded-pill mb-2">Teoria del Cambio Conceptual</span>
+              <p class="small text-secondary">Peter Hewson desarrollo la nocion de <em>estatus conceptual</em> como clave para comprender el cambio conceptual. Segun Hewson, cada concepto posee un estatus que determina su probabilidad de ser utilizado por el aprendiz: un concepto con estatus alto es el que se considera inteligible, plausible y fructifero. El cambio conceptual ocurre cuando el estatus del concepto nuevo aumenta mientras que el del concepto antiguo disminuye. Hewson tambien introdujo la distincion entre <em>asimilacion</em> —cuando la nueva informacion se incorpora a esquemas existentes— y <em>acomodacion</em> —cuando los esquemas deben reestructurarse. Su teoria ha sido ampliamente aplicada en el diseno de unidades curriculares de fisica, quimica y biologia que buscan la transformacion conceptual profunda de los estudiantes.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stella Vosniadou -->
+        <div class="col-md-6 col-lg-3 fade-in">
+          <div class="card border-light timeline-card shadow-sm h-100 text-center">
+            <div class="card-header bg-primary text-white py-3">
+              <i class="bi bi-layers fs-2 mb-2 d-block"></i>
+              <h6 class="fw-bold mb-0">Stella Vosniadou</h6>
+            </div>
+            <div class="card-body">
+              <span class="badge bg-primary bg-opacity-10 text-primary rounded-pill mb-2">Teoria de Marcos</span>
+              <p class="small text-secondary">Stella Vosniadou propuso la <em>teoria de marcos del cambio conceptual</em> (<em>framework theory</em>), que explica por que los ninos desarrollan concepciones sinteticas o hibridas durante el proceso de aprendizaje cientifico. Segun Vosniadou, los ninos construyen desde temprana edad una teoria de marcos basada en presuposiciones ontologicas y epistemologicas derivadas de la experiencia cotidiana —por ejemplo, que los objetos caen porque estan hechos de materia pesada—. Cuando la instruccion cientifica contradice estas presuposiciones, los ninos no abandonan inmediatamente su marco; en su lugar, producen modelos sinteticos que combinan elementos del conocimiento cotidiano y del cientifico. Sus investigaciones sobre modelos mentales de la Tierra, la gravedad y la fuerza han sido determinantes para comprender la complejidad del cambio conceptual en la educacion infantil.</p>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- row -->
+    </div>
+  </section>
+
+  <!-- ═══ POSTULADOS BASICOS ═══ -->
+  <section id="postulados" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5 fade-in">
+        <h2 class="fw-bold" style="color:#0a2a6c;"><i class="bi bi-list-check me-2"></i>Postulados Basicos</h2>
+        <p class="text-secondary">Principios fundamentales de la teoria del cambio conceptual</p>
+      </div>
+
+      <div class="row justify-content-center fade-in">
+        <div class="col-lg-8">
+          <div class="accordion" id="accordionPostulados">
+
+            <!-- Postulado 1 -->
+            <div class="accordion-item border-0 shadow-sm mb-3">
+              <h3 class="accordion-header" id="heading1">
+                <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                  <i class="bi bi-1-circle me-2 text-primary"></i>Las concepciones previas son resistentes al cambio
+                </button>
+              </h3>
+              <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#accordionPostulados">
+                <div class="accordion-body text-secondary">
+                  <p>Los aprendices poseen marcos conceptuales preexistentes —frecuentemente denominados <em>concepciones alternativas</em>, <em>ideas previas</em> o <em>misconceptions</em>— que se han construido a lo largo de anos de experiencia cotidiana con el mundo fisico y social. Estas concepciones no son simples errores puntuales, sino estructuras cognitivas coherentes y funcionales que permiten al individuo interpretar y predecir fenomenos de su entorno con un grado aceptable de exito en la vida diaria. Por esta razon, resultan extraordinariamente resistentes a la instruccion formal: el estudiante no ve necesidad de abandonar una concepcion que le ha funcionado en la practica cotidiana, aunque sea incompatible con el conocimiento cientifico. La investigacion ha demostrado que incluso despues de instruccion explicita, los estudiantes frecuentemente regresan a sus concepciones originales cuando se enfrentan a situaciones novedosas o contextualmente diferentes, lo que evidencia la profundidad y persistencia de estas estructuras cognitivas.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Postulado 2 -->
+            <div class="accordion-item border-0 shadow-sm mb-3">
+              <h3 class="accordion-header" id="heading2">
+                <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                  <i class="bi bi-2-circle me-2 text-primary"></i>Condiciones necesarias: insatisfaccion, inteligibilidad, plausibilidad y fecundidad
+                </button>
+              </h3>
+              <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionPostulados">
+                <div class="accordion-body text-secondary">
+                  <p>Segun el modelo de Posner y colaboradores (1982), el cambio conceptual requiere que se cumplan cuatro condiciones simultaneas. En primer lugar, el aprendiz debe experimentar <strong>insatisfaccion</strong> con su concepcion existente, lo que generalmente ocurre cuando la concepcion previa no logra explicar una anomalia o un fenomeno contraintuitivo. En segundo lugar, la nueva concepcion debe ser <strong>inteligible</strong>, es decir, el aprendiz debe poder comprenderla y representarla mentalmente de manera coherente. En tercer lugar, la nueva concepcion debe resultar <strong>plausible</strong>, lo que implica que el aprendiz la perciba como creible y consistente con otras creencias que sostiene. Finalmente, la nueva concepcion debe ser <strong>fructifera</strong>, lo que significa que debe abrir nuevas posibilidades explicativas, permitir resolver problemas que la concepcion anterior no podia abordar y generar predicciones exitosas. Cuando estas cuatro condiciones se cumplen de manera conjunta, la probabilidad de que ocurra un cambio conceptual genuino aumenta significativamente.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Postulado 3 -->
+            <div class="accordion-item border-0 shadow-sm mb-3">
+              <h3 class="accordion-header" id="heading3">
+                <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                  <i class="bi bi-3-circle me-2 text-primary"></i>El aprendizaje cientifico implica reemplazar creencias profundamente arraigadas
+                </button>
+              </h3>
+              <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionPostulados">
+                <div class="accordion-body text-secondary">
+                  <p>A diferencia de otros enfoques que conciben el aprendizaje como la adicion de informacion nueva a una estructura cognitiva preexistente, la teoria del cambio conceptual sostiene que aprender ciencia frecuentemente requiere la <strong>sustitucion</strong> de creencias profundamente arraigadas por concepciones cientificamente aceptadas. Este proceso no es meramente acumulativo, sino que implica una reestructuracion radical de las categorias ontologicas y epistemologicas del aprendiz. Por ejemplo, para comprender que el calor es energia en transito y no una sustancia material, el estudiante debe abandonar la nocion cotidiana de que el calor es un fluido que fluye de un cuerpo a otro. Del mismo modo, aceptar que la Tierra es una esfera en rotacion en el espacio requiere desechar la intuicion perceptual de que el suelo es plano y estacionario. Estos reemplazos conceptuales no son triviales, ya que involucran transformaciones en las presuposiciones fundamentales que el aprendiz tiene sobre la naturaleza del mundo fisico.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Postulado 4 -->
+            <div class="accordion-item border-0 shadow-sm mb-3">
+              <h3 class="accordion-header" id="heading4">
+                <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                  <i class="bi bi-4-circle me-2 text-primary"></i>El cambio conceptual es gradual e incompleto: modelos hibridos y sinteticos
+                </button>
+              </h3>
+              <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionPostulados">
+                <div class="accordion-body text-secondary">
+                  <p>Una de las contribuciones mas importantes de la teoria del cambio conceptual, particularmente a partir de los trabajos de Vosniadou, es la comprension de que el cambio conceptual no es un evento abrupto ni un proceso de sustitucion limpia. Por el contrario, se trata de un proceso <strong>gradual</strong> que transcurre a traves de estados intermedios en los cuales el aprendiz combina elementos de su concepcion original con elementos de la concepcion cientifica, produciendo lo que Vosniadou denomina <em>modelos sinteticos</em> o <em>modelos hibridos</em>. Por ejemplo, un nino que esta aprendiendo que la Tierra es esferica puede generar un modelo mental de una Tierra hueca con personas viviendo en su interior, o una Tierra plana con una region esferica en la parte superior. Estos modelos sinteticos no son simplemente errores, sino intentos genuinos del aprendiz por reconciliar la nueva informacion con sus presuposiciones ontologicas existentes. El reconocimiento de que el cambio conceptual es frecuentemente incompleto ha llevado a los investigadores a proponer modelos mas sofisticados que el reemplazo directo, incluyendo la <em>asimilacion</em>, la <em>acresion</em> y la <em>reestructuracion</em> como mecanismos complementarios de cambio.</p>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- accordion -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ IMPACTO EN LA EDUCACION ACTUAL ═══ -->
+  <section id="impacto" class="py-5 bg-white">
+    <div class="container">
+      <div class="text-center mb-5 fade-in">
+        <h2 class="fw-bold" style="color:#0a2a6c;"><i class="bi bi-graph-up-arrow me-2"></i>Impacto en la Educacion Actual</h2>
+        <p class="text-secondary">Como la teoria del cambio conceptual ha transformado la practica educativa contemporanea</p>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- 1. Reforma de la educacion cientifica -->
+        <div class="col-md-6 col-lg-4 fade-in">
+          <div class="card border-light timeline-card shadow-sm h-100">
+            <div class="card-body">
+              <div class="d-flex align-items-center mb-3">
+                <div class="rounded-circle bg-primary bg-opacity-10 d-flex align-items-center justify-content-center me-3" style="width:48px;height:48px;min-width:48px;">
+                  <i class="bi bi-mortarboard fs-5 text-primary"></i>
+                </div>
+                <h5 class="fw-bold mb-0" style="color:#0a2a6c;">Reforma de la educacion cientifica</h5>
+              </div>
+              <p class="text-secondary small">La teoria del cambio conceptual ha sido uno de los motores principales de la reforma de la educacion cientifica a nivel mundial. Documentos como los <em>National Science Education Standards</em> (Estados Unidos, 1996) y los marcos curriculares de la OCDE incorporan explicitamente la necesidad de identificar y abordar las concepciones previas de los estudiantes como paso previo a la instruccion. Los curriculos de ciencias contemporaneos se disenan bajo la premisa de que la ensenanza eficaz no comienza con la presentacion de conceptos nuevos, sino con la exploracion de las ideas que los estudiantes ya poseen. Esta perspectiva ha transformado los planes de estudio de fisica, quimica, biologia y ciencias de la Tierra en numerosos paises, desplazando el enfasis desde la cobertura exhaustiva de contenidos hacia la comprension conceptual profunda de un numero menor de ideas centrales.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Identificacion de concepciones previas -->
+        <div class="col-md-6 col-lg-4 fade-in">
+          <div class="card border-light timeline-card shadow-sm h-100">
+            <div class="card-body">
+              <div class="d-flex align-items-center mb-3">
+                <div class="rounded-circle bg-primary bg-opacity-10 d-flex align-items-center justify-content-center me-3" style="width:48px;height:48px;min-width:48px;">
+                  <i class="bi bi-search fs-5 text-primary"></i>
+                </div>
+                <h5 class="fw-bold mb-0" style="color:#0a2a6c;">Identificacion de concepciones previas</h5>
+              </div>
+              <p class="text-secondary small">Una de las contribuciones mas visibles de la teoria del cambio conceptual en la practica educativa es la sistematizacion de estrategias para identificar las concepciones previas de los estudiantes antes de la instruccion. Se han desarrollado instrumentos diagnosticos como cuestionarios de opcion multiple con justificaciones, entrevistas clinicas semiestructuradas, mapas conceptuales de diagnostico y tareas de prediccion-observacion-explicacion. Estas herramientas permiten al docente conocer con precision las ideas que los estudiantes traen al aula, lo que posibilita el diseno de secuencias didacticas que aborden directamente las concepciones alternativas mas frecuentes y persistentes. En la actualidad, existen catalogos extensos de concepciones alternativas documentadas en fisica, quimica, biologia y matematicas, que constituyen recursos invaluables para la planificacion educativa.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Pedagogia del conflicto conceptual -->
+        <div class="col-md-6 col-lg-4 fade-in">
+          <div class="card border-light timeline-card shadow-sm h-100">
+            <div class="card-body">
+              <div class="d-flex align-items-center mb-3">
+                <div class="rounded-circle bg-primary bg-opacity-10 d-flex align-items-center justify-content-center me-3" style="width:48px;height:48px;min-width:48px;">
+                  <i class="bi bi-lightning fs-5 text-primary"></i>
+                </div>
+                <h5 class="fw-bold mb-0" style="color:#0a2a6c;">Pedagogia del conflicto conceptual</h5>
+              </div>
+              <p class="text-secondary small">La pedagogia del conflicto conceptual se deriva directamente de la condicion de insatisfaccion propuesta por Posner. Esta estrategia consiste en crear deliberadamente una situacion en la que la concepcion previa del estudiante produce una prediccion que contradice la evidencia observada, generando asi un estado de <em>desequilibrio cognitivo</em> que motiva la busqueda de una explicacion alternativa. La secuencia tipica involucra: primero, pedir al estudiante que prediga que sucedera en una situacion determinada; segundo, realizar el experimento o la demostracion que produce un resultado inesperado; tercero, facilitar la discusion sobre las razones de la discrepancia; y cuarto, introducir la concepcion cientifica como explicacion mas poderosa. Esta metodologia ha demostrado ser particularmente efectiva en la ensenanza de conceptos contraintuitivos como la inercia, la presion atmosferica o la seleccion natural.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Aprendizaje basado en indagacion en STEM -->
+        <div class="col-md-6 col-lg-4 fade-in">
+          <div class="card border-light timeline-card shadow-sm h-100">
+            <div class="card-body">
+              <div class="d-flex align-items-center mb-3">
+                <div class="rounded-circle bg-primary bg-opacity-10 d-flex align-items-center justify-content-center me-3" style="width:48px;height:48px;min-width:48px;">
+                  <i class="bi bi-clipboard-data fs-5 text-primary"></i>
+                </div>
+                <h5 class="fw-bold mb-0" style="color:#0a2a6c;">Aprendizaje basado en indagacion en STEM</h5>
+              </div>
+              <p class="text-secondary small">El enfoque de aprendizaje basado en indagacion (<em>inquiry-based learning</em>) en las disciplinas STEM se ha enriquecido considerablemente con los aportes de la teoria del cambio conceptual. La indagacion cientifica en el aula no se limita a la realizacion de experimentos, sino que se estructura como un proceso de construccion y revision de explicaciones que parte de las preguntas y concepciones de los estudiantes. La investigacion sobre cambio conceptual ha demostrado que la indagacion es mas efectiva cuando se orienta hacia la evaluacion critica de las propias ideas, en lugar de simplemente verificar resultados experimentales. En los programas de formacion de ingenieros, medicos y cientificos, la indagacion guiada se utiliza para confrontar las concepciones ingenuas de los estudiantes con evidencia empirica y modelos teoricos, promoviendo asi una comprension mas profunda y duradera de los fundamentos conceptuales de cada disciplina.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Instrumentos de evaluacion diagnostica -->
+        <div class="col-md-6 col-lg-4 fade-in">
+          <div class="card border-light timeline-card shadow-sm h-100">
+            <div class="card-body">
+              <div class="d-flex align-items-center mb-3">
+                <div class="rounded-circle bg-primary bg-opacity-10 d-flex align-items-center justify-content-center me-3" style="width:48px;height:48px;min-width:48px;">
+                  <i class="bi bi-clipboard-check fs-5 text-primary"></i>
+                </div>
+                <h5 class="fw-bold mb-0" style="color:#0a2a6c;">Instrumentos de evaluacion diagnostica</h5>
+              </div>
+              <p class="text-secondary small">La teoria del cambio conceptual ha impulsado el desarrollo de una amplia gama de instrumentos de evaluacion diagnostica que van mas alla de la simple medicion de conocimientos declarativos. Los <em>inventarios conceptuales</em> como el Force Concept Inventory (FCI) de Hestenes, el Conceptual Survey of Electricity and Magnetism y el Biology Concept Inventory se disenan especificamente para detectar concepciones alternativas y medir el grado de cambio conceptual logrado despues de la instruccion. A diferencia de los examenes tradicionales, estos instrumentos presentan opciones de respuesta que reflejan las concepciones erroneas mas comunes, lo que permite al docente identificar con precision los obstaculos conceptuales que persisten. Los resultados de estos diagnosticos se utilizan para ajustar las estrategias de ensenanza, crear ciclos de retroalimentacion formativa y evaluar la eficacia de las intervenciones pedagogicas.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Enfoques constructivistas del curriculo de ciencias -->
+        <div class="col-md-6 col-lg-4 fade-in">
+          <div class="card border-light timeline-card shadow-sm h-100">
+            <div class="card-body">
+              <div class="d-flex align-items-center mb-3">
+                <div class="rounded-circle bg-primary bg-opacity-10 d-flex align-items-center justify-content-center me-3" style="width:48px;height:48px;min-width:48px;">
+                  <i class="bi bi-journal-richtext fs-5 text-primary"></i>
+                </div>
+                <h5 class="fw-bold mb-0" style="color:#0a2a6c;">Enfoques constructivistas del curriculo</h5>
+              </div>
+              <p class="text-secondary small">La teoria del cambio conceptual ha influido profundamente en los enfoques constructivistas del curriculo de ciencias, particularmente en el modelo de <em>ensenanza para el cambio conceptual</em> propuesto por Rowland, Stavy y otros autores. Este modelo curricular se estructura en fases que incluyen: la exploracion de las ideas previas de los estudiantes, la introduccion de situaciones de conflicto cognitivo, la construccion de nuevas concepciones a traves de la negociacion de significados, la aplicacion de las nuevas concepciones en contextos diversos y la reflexion metacognitiva sobre el proceso de cambio. Los curriculos contemporaneos de ciencias en Latinoamerica, como los propuestos por la UNESCO y los ministerios de educacion de la region, incorporan estos principios al enfatizar la comprension conceptual sobre la memorizacion de hechos, la resolucion de problemas autenticos y la evaluacion formativa orientada a la deteccion de concepciones alternativas.</p>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- row -->
+
+      <!-- Additional paragraph about conceptual understanding -->
+      <div class="row justify-content-center mt-5 fade-in">
+        <div class="col-lg-8">
+          <div class="card border-0 shadow-sm bg-primary bg-opacity-10">
+            <div class="card-body p-4">
+              <h5 class="fw-bold mb-3" style="color:#0a2a6c;"><i class="bi bi-star me-2"></i>Comprension conceptual sobre memorizacion</h5>
+              <p class="text-secondary mb-0">Una de las implicaciones mas profundas de la teoria del cambio conceptual es la reorientacion de la evaluacion y la ensenanza desde la memorizacion de hechos y procedimientos hacia la comprension conceptual genuina. Los investigadores del cambio conceptual han demostrado que los estudiantes pueden reproducir definiciones y formulas cientificas sin haber comprendido realmente los conceptos subyacentes, fenomeno que denominan <em>aprendizaje ritual</em> o <em>aprendizaje por accumulated facts</em>. La teoria del cambio conceptual aboga por una educacion cientifica que priorice la comprension profunda de un numero reducido de ideas centrales, la capacidad de transferir los conceptos a nuevas situaciones y la habilidad de argumentar cientificamente, en lugar de la acumulacion enciclopedica de informacion. Esta perspectiva ha inspirado movimientos de reforma educativa como la <em>enseñanza para la comprension</em> y los <em>estandares de ciencia de siguiente generación</em> (NGSS) que promueven las practicas cientificas y la explicacion de fenomenos como metas centrales de la educacion.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ TABLA COMPARATIVA ═══ -->
+  <section id="tabla" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5 fade-in">
+        <h2 class="fw-bold" style="color:#0a2a6c;"><i class="bi bi-table me-2"></i>Tabla Comparativa</h2>
+        <p class="text-secondary">Comparacion de los modelos y aportes de los principales autores del cambio conceptual</p>
+      </div>
+
+      <div class="row justify-content-center fade-in">
+        <div class="col-lg-10">
+          <div class="table-responsive">
+            <table class="table table-hover table-bordered align-middle shadow-sm">
+              <thead class="table-primary">
+                <tr class="text-center">
+                  <th scope="col" style="color:#0a2a6c;">Criterio</th>
+                  <th scope="col" style="color:#0a2a6c;">George Posner</th>
+                  <th scope="col" style="color:#0a2a6c;">Kenneth Strike</th>
+                  <th scope="col" style="color:#0a2a6c;">Peter Hewson</th>
+                  <th scope="col" style="color:#0a2a6c;">Stella Vosniadou</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="fw-semibold" style="color:#0a2a6c;">Contribucion principal</td>
+                  <td>Modelo de cambio conceptual (1982)</td>
+                  <td>Condiciones epistemologicas para el cambio</td>
+                  <td>Teoria del estatus conceptual</td>
+                  <td>Teoria de marcos del cambio conceptual</td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold" style="color:#0a2a6c;">Enfoque teorico</td>
+                  <td>Racionalista: condiciones necesarias para el reemplazo</td>
+                  <td>Filosofico: justificacion racional del cambio</td>
+                  <td>Cognitivo: estatus y competencia de conceptos</td>
+                  <td>Constructivista: presuposiciones y modelos sinteticos</td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold" style="color:#0a2a6c;">Tipo de cambio</td>
+                  <td>Reemplazo conceptual</td>
+                  <td>Revision racional de teorias</td>
+                  <td>Cambio de estatus (incremento/decremento)</td>
+                  <td>Reestructuracion gradual con modelos hibridos</td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold" style="color:#0a2a6c;">Motor del cambio</td>
+                  <td>Insatisfaccion + condiciones de la nueva concepcion</td>
+                  <td>Conflicto cognitivo y anomalia</td>
+                  <td>Modificacion del estatus conceptual</td>
+                  <td>Contradiccion entre presuposiciones y evidencia</td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold" style="color:#0a2a6c;">Vision del aprendiz</td>
+                  <td>Agente racional que evalua concepciones</td>
+                  <td>Epistemologo que justifica creencias</td>
+                  <td>Constructor que asigna estatus a conceptos</td>
+                  <td>Nino que genera modelos mentales sinteticos</td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold" style="color:#0a2a6c;">Ambito de aplicacion</td>
+                  <td>Educacion cientifica general</td>
+                  <td>Filosofia de la educacion y ciencia</td>
+                  <td>Curriculo de fisica y ciencias</td>
+                  <td>Desarrollo cognitivo y educacion infantil</td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold" style="color:#0a2a6c;">Limitacion reconocida</td>
+                  <td>Modelo de reemplazo demasiado simple</td>
+                  <td>Enfasis excesivo en la racionalidad</td>
+                  <td>Dificultad para medir el estatus conceptual</td>
+                  <td>Complejidad de los modelos sinteticos</td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold" style="color:#0a2a6c;">Obra representativa</td>
+                  <td>"Accommodation of a Scientific Conception" (1982)</td>
+                  <td>"Epistemological and Rationality Criteria" (1983)</td>
+                  <td>"A Conceptual Change Approach to Science Learning" (1981)</td>
+                  <td>"Capturing and Modeling the Process of Conceptual Change" (1994)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional comparison table: Cambio conceptual vs. other approaches -->
+      <div class="row justify-content-center mt-5 fade-in">
+        <div class="col-lg-10">
+          <h4 class="fw-bold mb-4" style="color:#0a2a6c;"><i class="bi bi-arrow-left-right me-2"></i>Cambio Conceptual vs. Otros Enfoques</h4>
+          <div class="table-responsive">
+            <table class="table table-hover table-bordered align-middle shadow-sm">
+              <thead class="table-primary">
+                <tr class="text-center">
+                  <th scope="col" style="color:#0a2a6c;">Dimension</th>
+                  <th scope="col" style="color:#0a2a6c;">Cambio Conceptual</th>
+                  <th scope="col" style="color:#0a2a6c;">Constructivismo</th>
+                  <th scope="col" style="color:#0a2a6c;">Conductismo</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="fw-semibold" style="color:#0a2a6c;">Concepcion del aprendiz</td>
+                  <td>Sujeto con concepciones previas que deben reestructurarse</td>
+                  <td>Constructor activo del conocimiento</td>
+                  <td>Organismo que responde a estimulos</td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold" style="color:#0a2a6c;">Rol del docente</td>
+                  <td>Facilitador del conflicto cognitivo y la reestructuracion</td>
+                  <td>Mediador y guia del aprendizaje</td>
+                  <td>Disenador de contingencias de reforzamiento</td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold" style="color:#0a2a6c;">Evaluacion</td>
+                  <td>Diagnostica de concepciones previas y cambio conceptual</td>
+                  <td>Formativa y orientada a procesos</td>
+                  <td>Sumativa y centrada en conductas observables</td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold" style="color:#0a2a6c;">Estrategia central</td>
+                  <td>Conflicto conceptual y reemplazo de ideas</td>
+                  <td>Andamiaje y zona de desarrollo proximo</td>
+                  <td>Refuerzo y practica repetida</td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold" style="color:#0a2a6c;">Tipo de aprendizaje</td>
+                  <td>Reestructuracion radical de esquemas</td>
+                  <td>Construccion progresiva de significados</td>
+                  <td>Asociacion estimulo-respuesta</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ LINEA DE TIEMPO INTERNA ═══ -->
+  <section id="linea-tiempo" class="py-5 bg-white">
+    <div class="container">
+      <div class="text-center mb-5 fade-in">
+        <h2 class="fw-bold" style="color:#0a2a6c;"><i class="bi bi-clock-history me-2"></i>Linea de Tiempo del Cambio Conceptual</h2>
+        <p class="text-secondary">Hitos fundamentales en el desarrollo de la teoria</p>
+      </div>
+
+      <div class="row justify-content-center fade-in">
+        <div class="col-lg-8">
+          <div class="list-group">
+
+            <div class="list-group-item border-start border-primary border-4 mb-3 shadow-sm">
+              <div class="d-flex align-items-center mb-1">
+                <span class="badge bg-primary me-2">1980</span>
+                <h6 class="fw-bold mb-0" style="color:#0a2a6c;">Primeras investigaciones sobre concepciones alternativas</h6>
+              </div>
+              <p class="small text-secondary mb-0">Investigadores como Novick y Nussbaum en Israel, y McCloskey en Estados Unidos, documentan sistematicamente las concepciones erroneas de los estudiantes en fisica y biologia, estableciendo la base empirica para la teoria del cambio conceptual.</p>
+            </div>
+
+            <div class="list-group-item border-start border-primary border-4 mb-3 shadow-sm">
+              <div class="d-flex align-items-center mb-1">
+                <span class="badge bg-primary me-2">1982</span>
+                <h6 class="fw-bold mb-0" style="color:#0a2a6c;">Modelo de Posner, Strike, Hewson y Gertzog</h6>
+              </div>
+              <p class="small text-secondary mb-0">Se publica el articulo fundacional "Accommodation of a Scientific Conception: Toward a Theory of Conceptual Change" en la revista <em>Science Education</em>, que establece las cuatro condiciones para el cambio conceptual y se convierte en el marco de referencia dominante del campo.</p>
+            </div>
+
+            <div class="list-group-item border-start border-primary border-4 mb-3 shadow-sm">
+              <div class="d-flex align-items-center mb-1">
+                <span class="badge bg-primary me-2">1985-1990</span>
+                <h6 class="fw-bold mb-0" style="color:#0a2a6c;">Desarrollo de instrumentos diagnosticos</h6>
+              </div>
+              <p class="small text-secondary mb-0">Se crean los primeros inventarios conceptuales estandarizados, como el Force Concept Inventory, que permiten medir con precision las concepciones previas de los estudiantes y evaluar la eficacia de las intervenciones pedagogicas orientadas al cambio conceptual.</p>
+            </div>
+
+            <div class="list-group-item border-start border-primary border-4 mb-3 shadow-sm">
+              <div class="d-flex align-items-center mb-1">
+                <span class="badge bg-primary me-2">1992-1994</span>
+                <h6 class="fw-bold mb-0" style="color:#0a2a6c;">Teoria de marcos de Vosniadou</h6>
+              </div>
+              <p class="small text-secondary mb-0">Vosniadou publica sus investigaciones sobre modelos mentales sinteticos en ninos, demostrando que el cambio conceptual es un proceso gradual que involucra estados intermedios hibridos, y proponiendo la teoria de marcos como explicacion alternativa al modelo de reemplazo directo.</p>
+            </div>
+
+            <div class="list-group-item border-start border-primary border-4 mb-3 shadow-sm">
+              <div class="d-flex align-items-center mb-1">
+                <span class="badge bg-primary me-2">1998-2000</span>
+                <h6 class="fw-bold mb-0" style="color:#0a2a6c;">Revision critica y modelos multidimensionales</h6>
+              </div>
+              <p class="small text-secondary mb-0">Autores como diSessa, Chi y Thagard proponen revisiones del modelo original, incorporando perspectivas ontologicas, de fragmentacion cognitiva y de compromiso emocional. El campo se enriquece con modelos que reconocen la multiplicidad de mecanismos de cambio y la importancia de los factores afectivos y sociales en el proceso de reestructuracion conceptual.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ RECURSOS Y REFERENCIAS ═══ -->
+  <section id="recursos" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5 fade-in">
+        <h2 class="fw-bold" style="color:#0a2a6c;"><i class="bi bi-bookmark-star me-2"></i>Recursos y Referencias</h2>
+        <p class="text-secondary">Fuentes academicas fundamentales para profundizar en la teoria del cambio conceptual</p>
+      </div>
+
+      <div class="row justify-content-center fade-in">
+        <div class="col-lg-8">
+          <div class="list-group shadow-sm">
+
+            <div class="list-group-item">
+              <div class="d-flex align-items-start">
+                <i class="bi bi-journal-text text-primary me-3 mt-1"></i>
+                <div>
+                  <h6 class="fw-bold mb-1" style="color:#0a2a6c;">Posner, G. J., Strike, K. A., Hewson, P. W., &amp; Gertzog, W. A. (1982)</h6>
+                  <p class="small text-secondary mb-0">Accommodation of a scientific conception: Toward a theory of conceptual change. <em>Science Education</em>, 66(2), 211-227. Articulo fundacional que establece las cuatro condiciones para el cambio conceptual.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="list-group-item">
+              <div class="d-flex align-items-start">
+                <i class="bi bi-journal-text text-primary me-3 mt-1"></i>
+                <div>
+                  <h6 class="fw-bold mb-1" style="color:#0a2a6c;">Vosniadou, S. (1994)</h6>
+                  <p class="small text-secondary mb-0">Capturing and modeling the process of conceptual change. <em>Learning and Instruction</em>, 4(1), 45-69. Introduce la teoria de marcos y los modelos sinteticos como explicacion del cambio conceptual gradual.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="list-group-item">
+              <div class="d-flex align-items-start">
+                <i class="bi bi-journal-text text-primary me-3 mt-1"></i>
+                <div>
+                  <h6 class="fw-bold mb-1" style="color:#0a2a6c;">Hewson, P. W. (1981)</h6>
+                  <p class="small text-secondary mb-0">A conceptual change approach to science learning. <em>European Journal of Science Education</em>, 3(4), 383-396. Propone la nocion de estatus conceptual como clave para comprender el proceso de cambio.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="list-group-item">
+              <div class="d-flex align-items-start">
+                <i class="bi bi-journal-text text-primary me-3 mt-1"></i>
+                <div>
+                  <h6 class="fw-bold mb-1" style="color:#0a2a6c;">diSessa, A. A. (1993)</h6>
+                  <p class="small text-secondary mb-0">Toward an epistemology of physics. <em>Cognition and Instruction</em>, 10(2-3), 105-225. Propone la teoria de los fenomenologicos primitivos como alternativa al modelo de reemplazo conceptual.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="list-group-item">
+              <div class="d-flex align-items-start">
+                <i class="bi bi-journal-text text-primary me-3 mt-1"></i>
+                <div>
+                  <h6 class="fw-bold mb-1" style="color:#0a2a6c;">Chi, M. T. H. (1992)</h6>
+                  <p class="small text-secondary mb-0">Conceptual change within and across ontological categories: Examples from learning and discovery in science. En R. Giere (Ed.), <em>Cognitive Models of Science</em>. Propone la reclasificacion ontologica como mecanismo central del cambio conceptual.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ NAVIGATION ═══ -->
+  <section class="py-4 bg-white border-top">
+    <div class="container">
+      <div class="row align-items-center fade-in">
+        <div class="col-6 text-start">
+          <a href="humanismo.html" class="btn btn-outline-primary btn-lg text-decoration-none">
+            <i class="bi bi-arrow-left me-2"></i>Humanismo
+          </a>
+        </div>
+        <div class="col-6 text-end">
+          <a href="electica.html" class="btn btn-primary btn-lg text-decoration-none">
+            Ecléctica<i class="bi bi-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div id="wiki-footer"></div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Componentes compartidos -->
+  <script src="../components.js"></script>
+
+</body>
+</html>

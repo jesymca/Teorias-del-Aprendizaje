@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecléctica — Wiki Teorías del Aprendizaje | UPTPC</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <style>
+        .fade-in { opacity:0; transition:opacity .7s ease, transform .7s ease; transform:translateY(18px); }
+        .fade-in.visible { opacity:1; transform:translateY(0); }
+        .timeline-card { transition: border-color .3s ease, box-shadow .3s ease; }
+        #reading-progress { position:fixed; top:0; left:0; height:3px; background:var(--bs-primary); z-index:9999; width:0; transition:width .2s ease; }
+    </style>
+</head>
+<body class="bg-white">
+
+    <!-- Reading Progress Bar -->
+    <div id="reading-progress"></div>
+
+    <!-- Wiki Header Placeholder -->
+    <div id="wiki-header"></div>
+
+    <!-- Breadcrumb Navigation -->
+    <nav aria-label="breadcrumb" class="container mt-3">
+        <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="../index.html" class="text-decoration-none"><i class="bi bi-house-door"></i> Inicio</a></li>
+            <li class="breadcrumb-item"><a href="../index.html#modulos" class="text-decoration-none">Módulos</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Ecléctica</li>
+        </ol>
+    </nav>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <header class="container py-5 fade-in">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <span class="badge bg-primary mb-3 fs-6"><i class="bi bi-calendar-range"></i> 1990 — Presente</span>
+                <h1 class="display-3 fw-bold" style="color:#0a2a6c;">
+                    <i class="bi bi-shuffle"></i> Ecléctica
+                </h1>
+                <p class="lead text-muted mt-3">
+                    El enfoque ecléctico en educación reconoce que ninguna teoría única puede explicar la complejidad del aprendizaje humano en todos los contextos. Surge como respuesta a las limitaciones de los modelos paradigmáticos unilaterales y propone una integración pragmática de múltiples perspectivas teóricas, combinando los aportes del conductismo, el cognitivismo, el constructivismo y el conectivismo para diseñar experiencias educativas más efectivas y adaptadas a la diversidad de los aprendices.
+                </p>
+            </div>
+            <div class="col-lg-4 text-center mt-4 mt-lg-0">
+                <div class="rounded-circle d-inline-flex align-items-center justify-content-center" style="width:180px;height:180px;background:rgba(10,42,108,.08);">
+                    <i class="bi bi-shuffle" style="font-size:5rem;color:#0a2a6c;"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== AUTORES PRINCIPALES ==================== -->
+    <section class="container py-5 fade-in" id="autores">
+        <h2 class="fw-bold mb-2" style="color:#0a2a6c;">
+            <i class="bi bi-people-fill"></i> Autores Principales
+        </h2>
+        <p class="text-muted mb-4">
+            El enfoque ecléctico ha sido articulado por diversos teóricos que, desde perspectivas complementarias, han abogado por la integración de modelos en lugar de la adhesión rígida a un solo paradigma. A continuación se presentan los cuatro autores más representativos de esta corriente, cuyas contribuciones han sido fundamentales para consolidar la visión de que la enseñanza efectiva requiere un repertorio teórico amplio y flexible.
+        </p>
+
+        <div class="row g-4">
+            <!-- Robert Sternberg -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm timeline-card" onmouseenter="this.style.borderColor='#0a2a6c';this.style.boxShadow='0 .5rem 1rem rgba(10,42,108,.15)'" onmouseleave="this.style.borderColor='';this.style.boxShadow=''">
+                    <div class="card-body text-center">
+                        <div class="rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width:80px;height:80px;background:rgba(10,42,108,.08);">
+                            <i class="bi bi-brain" style="font-size:2.2rem;color:#0a2a6c;"></i>
+                        </div>
+                        <h5 class="card-title fw-bold" style="color:#0a2a6c;">Robert Sternberg</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Teoría Triárquica de la Inteligencia</h6>
+                        <p class="card-text small">
+                            Sternberg propuso que la inteligencia no es un constructo unitario, sino que se compone de tres dimensiones: la analítica, la creativa y la práctica. Su modelo triárquico sugiere que los programas educativos deben abordar estas tres facetas de manera integrada, combinando estrategias de enseñanza que estimulen el razonamiento lógico, la producción de ideas originales y la aplicación contextualizada del conocimiento. Esta perspectiva intrínsecamente ecléctica rechaza la reducción de la inteligencia a una sola medida y promueve enfoques pedagógicos diversificados.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Robert Gagné -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm timeline-card" onmouseenter="this.style.borderColor='#0a2a6c';this.style.boxShadow='0 .5rem 1rem rgba(10,42,108,.15)'" onmouseleave="this.style.borderColor='';this.style.boxShadow=''">
+                    <div class="card-body text-center">
+                        <div class="rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width:80px;height:80px;background:rgba(10,42,108,.08);">
+                            <i class="bi bi-diagram-3" style="font-size:2.2rem;color:#0a2a6c;"></i>
+                        </div>
+                        <h5 class="card-title fw-bold" style="color:#0a2a6c;">Robert M. Gagné</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Modelo Integrativo de las Condiciones del Aprendizaje</h6>
+                        <p class="card-text small">
+                            Gagné desarrolló un modelo que integra principios conductistas y cognitivistas al identificar cinco categorías de aprendizaje — desde señales hasta solución de problemas — cada una con condiciones internas y externas distintas. Su enfoque de diseño instruccional, articulado en nueve eventos de la enseñanza, representa un esfuerzo sistemático por combinar los aportes de distintas teorías en un marco coherente. Gagné demostró que la selección de estrategias debe estar condicionada por el tipo de resultado de aprendizaje esperado, un principio fundamental del eclecticismo pedagógico.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- M. David Merrill -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm timeline-card" onmouseenter="this.style.borderColor='#0a2a6c';this.style.boxShadow='0 .5rem 1rem rgba(10,42,108,.15)'" onmouseleave="this.style.borderColor='';this.style.boxShadow=''">
+                    <div class="card-body text-center">
+                        <div class="rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width:80px;height:80px;background:rgba(10,42,108,.08);">
+                            <i class="bi bi-list-check" style="font-size:2.2rem;color:#0a2a6c;"></i>
+                        </div>
+                        <h5 class="card-title fw-bold" style="color:#0a2a6c;">M. David Merrill</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Principios Fundamentales de la Instrucción</h6>
+                        <p class="card-text small">
+                            Merrill sintetizó decades de investigación en diseño instruccional para proponer cinco principios fundamentales: tarea, activación, demostración, aplicación e integración. Estos principios, validados empíricamente, trascienden las fronteras de cualquier teoría individual y constituyen un marco ecléctico para la evaluación y el diseño de materiales educativos. Merrill argumentó que la instrucción efectiva es aquella que cumple estos principios independientemente de la orientación teórica de origen, lo que representa una postura abiertamente integradora y pragmática.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charles Reigeluth -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm timeline-card" onmouseenter="this.style.borderColor='#0a2a6c';this.style.boxShadow='0 .5rem 1rem rgba(10,42,108,.15)'" onmouseleave="this.style.borderColor='';this.style.boxShadow=''">
+                    <div class="card-body text-center">
+                        <div class="rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width:80px;height:80px;background:rgba(10,42,108,.08);">
+                            <i class="bi bi-layer-backward" style="font-size:2.2rem;color:#0a2a6c;"></i>
+                        </div>
+                        <h5 class="card-title fw-bold" style="color:#0a2a6c;">Charles Reigeluth</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Teoría de la Elaboración</h6>
+                        <p class="card-text small">
+                            Reigeluth propuso la teoría de la elaboración como estrategia macro-level para la organización de contenidos curriculares. Su modelo sugiere partir de ideas simples y epítomes conceptuales para ir elaborando progresivamente hacia niveles de complejidad creciente. Este enfoque integra elementos cognitivistas de organización del conocimiento con principios constructivistas de aprendizaje significativo, y ha sido aplicado exitosamente en el diseño de currículos técnicos y profesionales. Reigeluth también ha sido un defensor de la educación personalizada, abogando por sistemas que adapten la instrucción a las necesidades individuales del aprendiz.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== POSTULADOS BÁSICOS ==================== -->
+    <section class="container py-5 fade-in" id="postulados">
+        <h2 class="fw-bold mb-2" style="color:#0a2a6c;">
+            <i class="bi bi-chat-left-quote-fill"></i> Postulados Básicos
+        </h2>
+        <p class="text-muted mb-4">
+            El enfoque ecléctico se sustenta en un conjunto de principios fundamentales que guían la toma de decisiones pedagógicas. Estos postulados no constituyen una teoría cerrada, sino más bien un marco orientador que reconoce la complejidad del aprendizaje humano y la necesidad de recurrir a múltiples lentes teóricos según el contexto, los objetivos y las características de los aprendices. A continuación se presentan los cinco postulados centrales del eclecticismo pedagógico.
+        </p>
+
+        <div class="accordion" id="accordionPostulados">
+            <!-- Postulado 1 -->
+            <div class="accordion-item border-0 mb-3 shadow-sm">
+                <h3 class="accordion-header">
+                    <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#post1" aria-expanded="true" style="color:#0a2a6c;">
+                        <i class="bi bi-1-circle-fill me-2"></i> Ninguna teoría única explica completamente el aprendizaje en todos los contextos
+                    </button>
+                </h3>
+                <div id="post1" class="accordion-collapse collapse show" data-bs-parent="#accordionPostulados">
+                    <div class="accordion-body">
+                        <p>
+                            Cada teoría del aprendizaje —ya sea conductista, cognitivista, constructivista o conectivista— ha sido desarrollada para explicar fenómenos específicos dentro de condiciones particulares. El conductismo, por ejemplo, ofrece herramientas poderosas para el condicionamiento de respuestas básicas y la formación de hábitos, pero resulta insuficiente para dar cuenta de los procesos de comprensión profunda y transferencia de conocimiento. De manera análoga, el constructivismo explica la construcción activa de significados, pero carece de prescripciones claras para la enseñanza de habilidades procedimentales bien definidas.
+                        </p>
+                        <p>
+                            El enfoque ecléctico reconoce estas limitaciones inherentes a cada paradigma y postula que la complejidad del aprendizaje humano —que involucra dimensiones cognitivas, afectivas, sociales y contextuales— requiere una mirada plural que no puede ser reducida a un solo marco explicativo. Esta posición no implica relativismo teórico, sino un compromiso con la integración fundamentada de perspectivas complementarias.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Postulado 2 -->
+            <div class="accordion-item border-0 mb-3 shadow-sm">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#post2" style="color:#0a2a6c;">
+                        <i class="bi bi-2-circle-fill me-2"></i> La enseñanza efectiva combina elementos de múltiples teorías
+                    </button>
+                </h3>
+                <div id="post2" class="accordion-collapse collapse" data-bs-parent="#accordionPostulados">
+                    <div class="accordion-body">
+                        <p>
+                            En la práctica docente cotidiana, los profesores más efectivos no se adhieren rígidamente a un solo enfoque teórico, sino que seleccionan y combinan estrategias provenientes de distintas tradiciones pedagógicas según las demandas de la situación. Una clase de matemáticas puede requerir la práctica repetitiva propia del enfoque conductista para la automatización de cálculos, la organización de esquemas cognitivista para la comprensión de conceptos abstractos, y la resolución colaborativa de problemas constructivista para el desarrollo del pensamiento crítico.
+                        </p>
+                        <p>
+                            Este postulado se fundamenta en la evidencia empírica que demuestra que los programas de instrucción que integran múltiples enfoques obtienen resultados superiores a aquellos que se limitan a una sola orientación. La combinación deliberada y fundamentada de estrategias permite abordar la diversidad de estilos de aprendizaje, niveles de competencia previa y objetivos instruccionales que coexisten en cualquier contexto educativo real.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Postulado 3 -->
+            <div class="accordion-item border-0 mb-3 shadow-sm">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#post3" style="color:#0a2a6c;">
+                        <i class="bi bi-3-circle-fill me-2"></i> El diseño instruccional debe vincular la teoría con los objetivos y las características del aprendiz
+                    </button>
+                </h3>
+                <div id="post3" class="accordion-collapse collapse" data-bs-parent="#accordionPostulados">
+                    <div class="accordion-body">
+                        <p>
+                            El diseño instruccional ecléctico no selecciona teorías al azar ni por preferencia personal, sino que establece un criterio de pertinencia basado en la naturaleza de los objetivos de aprendizaje y las características de los estudiantes. Gagné fue pionero en este principio al proponer que las condiciones de aprendizaje debían variar según el tipo de resultado esperado: la información verbal requiere condiciones distintas a las habilidades intelectuales, y estas a su vez difieren de las estrategias cognitivas o las actitudes.
+                        </p>
+                        <p>
+                            Este postulado implica que el diseñador instruccional debe poseer un conocimiento profundo de las distintas teorías y sus prescripciones, así como la capacidad de diagnosticar las necesidades específicas de los aprendices y el contexto educativo. Solo a partir de este análisis riguroso es posible tomar decisiones fundamentadas sobre qué elementos teóricos integrar y cómo articularlos en una secuencia instruccional coherente.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Postulado 4 -->
+            <div class="accordion-item border-0 mb-3 shadow-sm">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#post4" style="color:#0a2a6c;">
+                        <i class="bi bi-4-circle-fill me-2"></i> El eclecticismo valora el pragmatismo sobre la ortodoxia teórica
+                    </button>
+                </h3>
+                <div id="post4" class="accordion-collapse collapse" data-bs-parent="#accordionPostulados">
+                    <div class="accordion-body">
+                        <p>
+                            A diferencia de las posiciones paradigmáticas que defienden la superioridad de una teoría sobre las demás, el enfoque ecléctico adopta un criterio pragmático: el valor de una teoría reside en su capacidad para resolver problemas educativos concretos. Este pragmatismo no debe confundirse con el eclecticismo superficial o la falta de rigor; se trata de una posición epistemológica fundamentada que reconoce que la utilidad práctica es un criterio legítimo y necesario para la evaluación de teorías en el ámbito aplicado de la educación.
+                        </p>
+                        <p>
+                            La ortodoxia teórica, si bien puede ofrecer coherencia interna, frecuentemente sacrifica la efectividad pedagógica al forzar la adaptación de situaciones educativas diversas a un marco explicativo único. El pragmatismo ecléctico, por el contrario, prioriza los resultados de aprendizaje y la pertinencia contextual, lo que exige una evaluación constante de la eficacia de las estrategias seleccionadas y la disposición a modificar el enfoque cuando la evidencia lo requiera.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Postulado 5 -->
+            <div class="accordion-item border-0 mb-3 shadow-sm">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#post5" style="color:#0a2a6c;">
+                        <i class="bi bi-5-circle-fill me-2"></i> Los docentes deben desarrollar flexibilidad teórica y repertorio pedagógico
+                    </button>
+                </h3>
+                <div id="post5" class="accordion-collapse collapse" data-bs-parent="#accordionPostulados">
+                    <div class="accordion-body">
+                        <p>
+                            El enfoque ecléctico exige del docente una formación que trascienda la especialización en un solo paradigma. La flexibilidad teórica se refiere a la capacidad de comprender, evaluar y aplicar distintas perspectivas teóricas según las demandas de la situación, sin caer en la adhesión dogmática a ninguna de ellas. El repertorio pedagógico, por su parte, comprende el conjunto de estrategias, técnicas y recursos que el docente domina y puede desplegar de manera adaptativa.
+                        </p>
+                        <p>
+                            Esta competencia requiere una formación docente que promueva la reflexión metateórica, es decir, la capacidad de analizar las fortalezas y limitaciones de cada enfoque y tomar decisiones fundamentadas. Los programas de formación docente deben incluir el estudio comparado de teorías del aprendizaje, el análisis de casos prácticos que requieran la integración de enfoques, y la práctica reflexiva que permita a los futuros profesores construir su propio repertorio ecléctico a partir de la experiencia y la evidencia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== IMPACTO EN LA EDUCACIÓN ACTUAL ==================== -->
+    <section class="container py-5 fade-in" id="impacto">
+        <h2 class="fw-bold mb-2" style="color:#0a2a6c;">
+            <i class="bi bi-graph-up-arrow"></i> Impacto en la Educación Actual
+        </h2>
+        <p class="text-muted mb-4">
+            El enfoque ecléctico ha permeado profundamente las prácticas educativas contemporáneas, influyendo en el diseño de políticas curriculares, la formación del profesorado y el desarrollo de tecnologías educativas. Su impacto se manifiesta en la tendencia creciente hacia modelos pedagógicos flexibles, adaptativos y centrados en la evidencia, que rechazan las soluciones universales en favor de aproximaciones contextualizadas. A continuación se describen las principales manifestaciones de este impacto en la educación actual.
+        </p>
+
+        <div class="row g-4">
+            <!-- Mixed-method pedagogy -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm timeline-card" onmouseenter="this.style.borderColor='#0a2a6c';this.style.boxShadow='0 .5rem 1rem rgba(10,42,108,.15)'" onmouseleave="this.style.borderColor='';this.style.boxShadow=''">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="rounded d-flex align-items-center justify-content-center me-3" style="width:48px;height:48px;background:rgba(10,42,108,.08);flex-shrink:0;">
+                                <i class="bi bi-mortarboard-fill" style="font-size:1.4rem;color:#0a2a6c;"></i>
+                            </div>
+                            <h5 class="mb-0 fw-bold" style="color:#0a2a6c;">Pedagogía de métodos mixtos</h5>
+                        </div>
+                        <p class="card-text">
+                            La pedagogía de métodos mixtos (mixed-method pedagogy) constituye una de las expresiones más claras del eclecticismo en la práctica educativa. Este enfoque combina metodologías cuantitativas y cualitativas, así como estrategias directivas y constructivistas, en un mismo diseño de intervención educativa. Por ejemplo, un curso puede emplear la instrucción directa para la enseñanza de conceptos fundamentales, el aprendizaje cooperativo para el desarrollo de habilidades sociales, y el aprendizaje basado en proyectos para la integración y aplicación del conocimiento. Esta combinación permite atender la diversidad de necesidades de aprendizaje dentro del aula y aprovechar las fortalezas de cada metodología en el momento oportuno.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Adaptive instructional design -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm timeline-card" onmouseenter="this.style.borderColor='#0a2a6c';this.style.boxShadow='0 .5rem 1rem rgba(10,42,108,.15)'" onmouseleave="this.style.borderColor='';this.style.boxShadow=''">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="rounded d-flex align-items-center justify-content-center me-3" style="width:48px;height:48px;background:rgba(10,42,108,.08);flex-shrink:0;">
+                                <i class="bi bi-sliders" style="font-size:1.4rem;color:#0a2a6c;"></i>
+                            </div>
+                            <h5 class="mb-0 fw-bold" style="color:#0a2a6c;">Diseño instruccional adaptativo</h5>
+                        </div>
+                        <p class="card-text">
+                            El diseño instruccional adaptativo se basa en la premisa ecléctica de que la instrucción debe ajustarse a las características individuales del aprendiz. Los sistemas de aprendizaje adaptativo —impulsados por inteligencia artificial y análisis de datos— seleccionan dinámicamente estrategias de diferentes marcos teóricos según el rendimiento, las preferencias y el progreso del estudiante. Un sistema puede ofrecer práctica repetitiva (conductismo) cuando detecta lagunas en conocimientos básicos, organizar la información en esquemas y mapas conceptuales (cognitivismo) para facilitar la comprensión, y proponer proyectos de investigación (constructivismo) cuando el estudiante demuestra dominio suficiente. Esta adaptabilidad en tiempo real es la materialización tecnológica del eclecticismo pedagógico.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Competency-based education -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm timeline-card" onmouseenter="this.style.borderColor='#0a2a6c';this.style.boxShadow='0 .5rem 1rem rgba(10,42,108,.15)'" onmouseleave="this.style.borderColor='';this.style.boxShadow=''">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="rounded d-flex align-items-center justify-content-center me-3" style="width:48px;height:48px;background:rgba(10,42,108,.08);flex-shrink:0;">
+                                <i class="bi bi-award-fill" style="font-size:1.4rem;color:#0a2a6c;"></i>
+                            </div>
+                            <h5 class="mb-0 fw-bold" style="color:#0a2a6c;">Educación basada en competencias</h5>
+                        </div>
+                        <p class="card-text">
+                            Los marcos de educación basada en competencias (EBC) son inherentemente eclécticos, pues una competencia integra conocimientos, habilidades y actitudes que no pueden desarrollarse desde un solo enfoque teórico. El componente declarativo puede requerir estrategias de transmisión directa, el procedimental necesita práctica guiada y retroalimentación, y el actitudinal demanda experiencias de reflexión y participación social. La EBC, ampliamente adoptada en la educación superior y la formación profesional en América Latina, representa un modelo curricular que obliga a la integración de perspectivas teóricas diversas para lograr resultados de aprendizaje complejos e integrados.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flexible curriculum models -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm timeline-card" onmouseenter="this.style.borderColor='#0a2a6c';this.style.boxShadow='0 .5rem 1rem rgba(10,42,108,.15)'" onmouseleave="this.style.borderColor='';this.style.boxShadow=''">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="rounded d-flex align-items-center justify-content-center me-3" style="width:48px;height:48px;background:rgba(10,42,108,.08);flex-shrink:0;">
+                                <i class="bi bi-journal-text" style="font-size:1.4rem;color:#0a2a6c;"></i>
+                            </div>
+                            <h5 class="mb-0 fw-bold" style="color:#0a2a6c;">Modelos curriculares flexibles</h5>
+                        </div>
+                        <p class="card-text">
+                            Los modelos curriculares contemporáneos han abandonado la rigidez de los diseños unidimensionales en favor de estructuras flexibles que permitan la integración de múltiples enfoques pedagógicos. Los currículos modulares, los sistemas de créditos transferibles y los programas interdisciplinarios son ejemplos de esta tendencia. Un módulo de un programa puede fundamentarse en el aprendizaje por descubrimiento, mientras otro puede emplear la instrucción directa; ambos coexisten dentro de un diseño curricular coherente que se adapta a la naturaleza de cada contenido y a las necesidades de la población estudiantil. Esta flexibilidad es una consecuencia directa del principio ecléctico de que no existe un enfoque único para todos los contextos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Teacher training on multiple theoretical lenses -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm timeline-card" onmouseenter="this.style.borderColor='#0a2a6c';this.style.boxShadow='0 .5rem 1rem rgba(10,42,108,.15)'" onmouseleave="this.style.borderColor='';this.style.boxShadow=''">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="rounded d-flex align-items-center justify-content-center me-3" style="width:48px;height:48px;background:rgba(10,42,108,.08);flex-shrink:0;">
+                                <i class="bi bi-person-workspace" style="font-size:1.4rem;color:#0a2a6c;"></i>
+                            </div>
+                            <h5 class="mb-0 fw-bold" style="color:#0a2a6c;">Formación docente en múltiples lentes teóricos</h5>
+                        </div>
+                        <p class="card-text">
+                            Los programas contemporáneos de formación docente han incorporado progresivamente el estudio comparado de teorías del aprendizaje como componente esencial del perfil profesional del educador. Se espera que los profesores en formación no solo conozcan las distintas teorías, sino que desarrollen la competencia para analizar críticamente sus supuestos, evaluar su aplicabilidad en contextos específicos y seleccionar las estrategias más pertinentes. Esta formación en «alfabetización teórica múltiple» es una manifestación directa del enfoque ecléctico y constituye un requisito para la práctica docente reflexiva y fundamentada en la evidencia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Evidence-based teaching & personalized learning -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm timeline-card" onmouseenter="this.style.borderColor='#0a2a6c';this.style.boxShadow='0 .5rem 1rem rgba(10,42,108,.15)'" onmouseleave="this.style.borderColor='';this.style.boxShadow=''">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="rounded d-flex align-items-center justify-content-center me-3" style="width:48px;height:48px;background:rgba(10,42,108,.08);flex-shrink:0;">
+                                <i class="bi bi-person-check-fill" style="font-size:1.4rem;color:#0a2a6c;"></i>
+                            </div>
+                            <h5 class="mb-0 fw-bold" style="color:#0a2a6c;">Enseñanza basada en evidencia y rutas de aprendizaje personalizadas</h5>
+                        </div>
+                        <p class="card-text">
+                            La práctica docente basada en evidencia (evidence-based teaching) es la expresión más rigurosa del pragmatismo ecléctico: las decisiones pedagógicas se toman en función de la evidencia empírica disponible sobre su efectividad, no en función de la lealtad a un paradigma. Complementariamente, las rutas de aprendizaje personalizadas (personalized learning pathways) representan la aplicación del eclecticismo a nivel individual, donde cada estudiante sigue una trayectoria educativa adaptada a su perfil, combinando recursos y estrategias de distintas procedencias teóricas. Las plataformas de aprendizaje digital han facilitado enormemente la implementación de estas rutas, permitiendo la integración de actividades conductuales, cognitivas y constructivistas en secuencias personalizadas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TABLA COMPARATIVA ==================== -->
+    <section class="container py-5 fade-in" id="tabla">
+        <h2 class="fw-bold mb-2" style="color:#0a2a6c;">
+            <i class="bi bi-table"></i> Tabla Comparativa
+        </h2>
+        <p class="text-muted mb-4">
+            La siguiente tabla presenta una comparación de los principales autores del enfoque ecléctico, destacando su teoría de referencia, los principios integradores que proponen, su contribución al diseño instruccional y el ámbito de aplicación preferente. Esta síntesis permite apreciar la diversidad dentro del propio eclecticismo y las complementariedades entre los distintos enfoques.
+        </p>
+
+        <div class="table-responsive shadow-sm">
+            <table class="table table-bordered table-hover align-middle mb-0">
+                <thead style="background:#0a2a6c;color:#fff;">
+                    <tr>
+                        <th class="text-center" scope="col">Autor</th>
+                        <th class="text-center" scope="col">Teoría / Modelo</th>
+                        <th class="text-center" scope="col">Principio Integrador</th>
+                        <th class="text-center" scope="col">Contribución al Diseño Instruccional</th>
+                        <th class="text-center" scope="col">Ámbito de Aplicación</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="fw-bold" style="color:#0a2a6c;">Robert Sternberg</td>
+                        <td>Teoría Triárquica de la Inteligencia</td>
+                        <td>La inteligencia es multidimensional: analítica, creativa y práctica</td>
+                        <td>Actividades diversificadas que aborden las tres facetas intelectuales</td>
+                        <td>Evaluación educativa, programas de enriquecimiento intelectual</td>
+                    </tr>
+                    <tr>
+                        <td class="fw-bold" style="color:#0a2a6c;">Robert M. Gagné</td>
+                        <td>Condiciones del Aprendizaje</td>
+                        <td>Distintos tipos de aprendizaje requieren condiciones instruccionales distintas</td>
+                        <td>Nueve eventos de la instrucción; jerarquía de aprendizaje</td>
+                        <td>Diseño instruccional sistémico, formación militar y corporativa</td>
+                    </tr>
+                    <tr>
+                        <td class="fw-bold" style="color:#0a2a6c;">M. David Merrill</td>
+                        <td>Principios Fundamentales de la Instrucción</td>
+                        <td>Principios universales de instrucción efectiva validados empíricamente</td>
+                        <td>Marco de evaluación y diseño basado en cinco principios</td>
+                        <td>Evaluación de materiales educativos, diseño de cursos en línea</td>
+                    </tr>
+                    <tr>
+                        <td class="fw-bold" style="color:#0a2a6c;">Charles Reigeluth</td>
+                        <td>Teoría de la Elaboración</td>
+                        <td>Organización progresiva del contenido de lo simple a lo complejo</td>
+                        <td>Secuenciación por epítomes; diseño macro-instruccional</td>
+                        <td>Curriculum técnico-profesional, educación personalizada</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- ==================== NAVIGATION BUTTONS ==================== -->
+    <section class="container py-5 fade-in">
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+            <a href="cambios-conceptuales.html" class="btn btn-outline-primary btn-lg">
+                <i class="bi bi-arrow-left"></i> Anterior: Cambios Conceptuales
+            </a>
+            <a href="conectivismo.html" class="btn btn-primary btn-lg">
+                Siguiente: Conectivismo <i class="bi bi-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Wiki Footer Placeholder -->
+    <div id="wiki-footer"></div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Shared Components -->
+    <script src="../components.js"></script>
+
+    <!-- Fade-in & Reading Progress -->
+    <script>
+        // Fade-in on scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeEls = document.querySelectorAll('.fade-in');
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+            fadeEls.forEach(function(el) { observer.observe(el); });
+
+            // Reading progress bar
+            window.addEventListener('scroll', function() {
+                var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+                var scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                var progress = (scrollTop / scrollHeight) * 100;
+                document.getElementById('reading-progress').style.width = progress + '%';
+            });
+        });
+    </script>
+
+</body>
+</html>
